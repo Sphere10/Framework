@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69D27619-6E82-41AB-8C7F-F75DAC64AED5}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Framework.NUnit.Android</RootNamespace>
+    <AssemblyName>Sphere10.Framework.NUnit.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;__MOBILE__;__ANDROID__;TPL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;__MOBILE__;__ANDROID__;TPL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.NUnitLite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Sphere10.Framework.NUnit\DACTestFixture.cs">
+      <Link>DACTestFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.NUnit\NUnitTool.cs">
+      <Link>NUnitTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.NUnit\UnitTestDAC.cs">
+      <Link>UnitTestDAC.cs</Link>
+    </Compile>
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Framework.Android\Sphere10.Framework.Android.csproj">
+      <Project>{d85dc277-3302-4826-9f27-bb55acb4dd99}</Project>
+      <Name>Sphere10.Framework.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Framework.Data.Android\Sphere10.Framework.Data.Android.csproj">
+      <Project>{80eca3fa-056c-4025-96f6-73bdb11cc6a2}</Project>
+      <Name>Sphere10.Framework.Data.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Framework.Data.Sqlite.Android\Sphere10.Framework.Data.Sqlite.Android.csproj">
+      <Project>{044052ea-799a-4987-8297-f7ef073024f1}</Project>
+      <Name>Sphere10.Framework.Data.Sqlite.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /S /F /Y $(TargetDir)\*.dll ..\..\..\Precompiled\Android\$(ConfigurationName)\$(PlatformName)\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

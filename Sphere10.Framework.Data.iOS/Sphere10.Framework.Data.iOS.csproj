@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{908E9432-2437-47D2-9722-5A6CDFABBF54}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sphere10.Framework.Data</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Sphere10.Framework.Data.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;TPL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;TPL</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Sphere10.Framework.Data\ADO.NET\AutoClosingDataReader.cs">
+      <Link>ADO.NET\AutoClosingDataReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\ADO.NET\DataReaderDecorator.cs">
+      <Link>ADO.NET\DataReaderDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\ADO.NET\DbConnectionDecorator.cs">
+      <Link>ADO.NET\DbConnectionDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\ADO.NET\DbTransactionDecorator.cs">
+      <Link>ADO.NET\DbTransactionDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\ADO.NET\RestrictedConnection.cs">
+      <Link>ADO.NET\RestrictedConnection.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\ADO.NET\RestrictedTransaction.cs">
+      <Link>ADO.NET\RestrictedTransaction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\BulkInsertOptions.cs">
+      <Link>BulkInsertOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CellSpec.cs">
+      <Link>CellSpec.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\CachedCsvReader.cs">
+      <Link>CSV\CachedCsvReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\CachedCsvReader.CsvBindingList.cs">
+      <Link>CSV\CachedCsvReader.CsvBindingList.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\CachedCsvReader.CsvPropertyDescriptor.cs">
+      <Link>CSV\CachedCsvReader.CsvPropertyDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\CachedCsvReader.CsvRecordComparer.cs">
+      <Link>CSV\CachedCsvReader.CsvRecordComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\CsvReader.cs">
+      <Link>CSV\CsvReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\CsvReader.DataReaderValidations.cs">
+      <Link>CSV\CsvReader.DataReaderValidations.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\CsvReader.RecordEnumerator.cs">
+      <Link>CSV\CsvReader.RecordEnumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\ExceptionMessage.Designer.cs">
+      <Link>CSV\ExceptionMessage.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\MalformedCsvException.cs">
+      <Link>CSV\MalformedCsvException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\MissingFieldAction.cs">
+      <Link>CSV\MissingFieldAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\MissingFieldCsvException.cs">
+      <Link>CSV\MissingFieldCsvException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\ParseErrorAction.cs">
+      <Link>CSV\ParseErrorAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\ParseErrorEventArgs.cs">
+      <Link>CSV\ParseErrorEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\CSV\ValueTrimmingOptions.cs">
+      <Link>CSV\ValueTrimmingOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\AutoIdentityDAC.cs">
+      <Link>DAC\AutoIdentityDAC.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\DACBase.cs">
+      <Link>DAC\DACBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\DACDecorator.cs">
+      <Link>DAC\DACDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\DACScope.cs">
+      <Link>DAC\DACScope.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\DACTool.cs">
+      <Link>DAC\DACTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\DBMSType.cs">
+      <Link>DAC\DBMSType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\IDAC.cs">
+      <Link>DAC\IDAC.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\IDACAsyncExtensions.cs">
+      <Link>DAC\IDACAsyncExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\IDACExtensions.cs">
+      <Link>DAC\IDACExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\MSSQLDAC.cs">
+      <Link>DAC\MSSQLDAC.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DAC\SchemaCache.cs">
+      <Link>DAC\SchemaCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\DataTool.cs">
+      <Link>DataTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Extensions\DataReaderExtensions.cs">
+      <Link>Extensions\DataReaderExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Extensions\DataRowExtensions.cs">
+      <Link>Extensions\DataRowExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Extensions\DataSetExtensions.cs">
+      <Link>Extensions\DataSetExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Extensions\DataTableExtensions.cs">
+      <Link>Extensions\DataTableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Extensions\DBSchemaExtensions.cs">
+      <Link>Extensions\DBSchemaExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Extensions\LinqToSqlExtensions.cs">
+      <Link>Extensions\LinqToSqlExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\MSSQLTool.cs">
+      <Link>MSSQLTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\ArtificialKeys.cs">
+      <Link>Schema\ArtificialKeys.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBColumnSchema.cs">
+      <Link>Schema\DBColumnSchema.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBForeignKeySchema.cs">
+      <Link>Schema\DBForeignKeySchema.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBKeyRoot.cs">
+      <Link>Schema\DBKeyRoot.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBKeyType.cs">
+      <Link>Schema\DBKeyType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBObject.cs">
+      <Link>Schema\DBObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBPrimaryKeySchema.cs">
+      <Link>Schema\DBPrimaryKeySchema.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBSchema.cs">
+      <Link>Schema\DBSchema.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBTableSchema.cs">
+      <Link>Schema\DBTableSchema.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBTriggerSchema.cs">
+      <Link>Schema\DBTriggerSchema.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\Schema\DBUniqueConstraintSchema.cs">
+      <Link>Schema\DBUniqueConstraintSchema.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SequentialSqlGuidGenerator.cs">
+      <Link>SequentialSqlGuidGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\ANSI2003SQLBuilder.cs">
+      <Link>SQLBuilder\ANSI2003SQLBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\BatchSQLBuilder.cs">
+      <Link>SQLBuilder\BatchSQLBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\ColumnSpecification.cs">
+      <Link>SQLBuilder\ColumnSpecification.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\ColumnValue.cs">
+      <Link>SQLBuilder\ColumnValue.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\BaseSQLSpecificationObject.cs">
+      <Link>SQLBuilder\Expressions\BaseSQLSpecificationObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\ConstraintType.cs">
+      <Link>SQLBuilder\Expressions\ConstraintType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\Hint.cs">
+      <Link>SQLBuilder\Expressions\Hint.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\SQL.cs">
+      <Link>SQLBuilder\Expressions\SQL.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\SQLExpression.cs">
+      <Link>SQLBuilder\Expressions\SQLExpression.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\SQLExpressionType.cs">
+      <Link>SQLBuilder\Expressions\SQLExpressionType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\SQLExpressionValueType.cs">
+      <Link>SQLBuilder\Expressions\SQLExpressionValueType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\SQLOperator.cs">
+      <Link>SQLBuilder\Expressions\SQLOperator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\SQLSortDirection.cs">
+      <Link>SQLBuilder\Expressions\SQLSortDirection.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\TableSpecification2.cs">
+      <Link>SQLBuilder\Expressions\TableSpecification2.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\TableType.cs">
+      <Link>SQLBuilder\Expressions\TableType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\Expressions\TextEncoding.cs">
+      <Link>SQLBuilder\Expressions\TextEncoding.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\FirebirdSQLBuilder.cs">
+      <Link>SQLBuilder\FirebirdSQLBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\ISQLBuilder.cs">
+      <Link>SQLBuilder\ISQLBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\MSSQLBuilder.cs">
+      <Link>SQLBuilder\MSSQLBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\PrimaryKeySpecification.cs">
+      <Link>SQLBuilder\PrimaryKeySpecification.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SQLBuilderBase.cs">
+      <Link>SQLBuilder\SQLBuilderBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SQLBuilderCommand.cs">
+      <Link>SQLBuilder\SQLBuilderCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SQLBuilderDecorator.cs">
+      <Link>SQLBuilder\SQLBuilderDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SQLBuilderExtensions.cs">
+      <Link>SQLBuilder\SQLBuilderExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SQLBuilderValueKind.cs">
+      <Link>SQLBuilder\SQLBuilderValueKind.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SQLBuilderWithTableBasedVariables.cs">
+      <Link>SQLBuilder\SQLBuilderWithTableBasedVariables.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SqliteSQLBuilder.cs">
+      <Link>SQLBuilder\SqliteSQLBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SQLStatement.cs">
+      <Link>SQLBuilder\SQLStatement.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\SQLStatementType.cs">
+      <Link>SQLBuilder\SQLStatementType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\TableSpecification.cs">
+      <Link>SQLBuilder\TableSpecification.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Data\SQLBuilder\VeryLargeSQLBuilder.cs">
+      <Link>SQLBuilder\VeryLargeSQLBuilder.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Sphere10.Framework.Data\CSV\ExceptionMessage.resx">
+      <Link>CSV\ExceptionMessage.resx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Framework.iOS\Sphere10.Framework.iOS.csproj">
+      <Project>{BDC7755B-E7EB-4403-80A8-72AC20D8AE78}</Project>
+      <Name>Sphere10.Framework.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /S /F /Y $(TargetDir)\*.dll ..\..\..\Precompiled\iOS\$(ConfigurationName)\$(PlatformName)\
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC07B659-953E-4B1C-89C8-ABFB53EACBEC}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sphere10.Application.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Sphere10.Application.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Sphere10.Application\ApplicationLifecycle.cs">
+      <Link>ApplicationLifecycle.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyAttributesManager.cs">
+      <Link>Attributes\AssemblyAttributesManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyCompanyLinkAttribute.cs">
+      <Link>Attributes\AssemblyCompanyLinkAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyCompanyNumberAttribute.cs">
+      <Link>Attributes\AssemblyCompanyNumberAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyDefaultProductKeyAttribute.cs">
+      <Link>Attributes\AssemblyDefaultProductKeyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyProductCodeAttribute.cs">
+      <Link>Attributes\AssemblyProductCodeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyProductHelp.cs">
+      <Link>Attributes\AssemblyProductHelp.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyProductHelpCHMAttribute.cs">
+      <Link>Attributes\AssemblyProductHelpCHMAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyProductHelpPDFAttribute.cs">
+      <Link>Attributes\AssemblyProductHelpPDFAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyProductHelpResourceAttribute.cs">
+      <Link>Attributes\AssemblyProductHelpResourceAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyProductLinkAttribute.cs">
+      <Link>Attributes\AssemblyProductLinkAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\AssemblyProductPurchaseLinkAttribute.cs">
+      <Link>Attributes\AssemblyProductPurchaseLinkAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\ContextHelpAttribute.cs">
+      <Link>Attributes\ContextHelpAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\HelpTopicAttribute.cs">
+      <Link>Attributes\HelpTopicAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\RegisterSettingsAttribute.cs">
+      <Link>Attributes\RegisterSettingsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Attributes\UseSettingsAttribute.cs">
+      <Link>Attributes\UseSettingsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\ComponentRegistry\ActivationType.cs">
+      <Link>ComponentRegistry\ActivationType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\ComponentRegistry\ComponentRegistry.cs">
+      <Link>ComponentRegistry\ComponentRegistry.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\ComponentRegistry\ComponentRegistryDefinition.cs">
+      <Link>ComponentRegistry\ComponentRegistryDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\ComponentRegistry\IModuleConfiguration.cs">
+      <Link>ComponentRegistry\IModuleConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\ComponentRegistry\ModuleConfigurationBase.cs">
+      <Link>ComponentRegistry\ModuleConfigurationBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\ApplicationServices.cs">
+      <Link>Components\ApplicationServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\BaseApplicationInitializeTask.cs">
+      <Link>Components\BaseApplicationInitializeTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\BaseConfigurationServices.cs">
+      <Link>Components\BaseConfigurationServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\BaseSettingsProvider.cs">
+      <Link>Components\BaseSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\BaseXmlFileSettingsProvider.cs">
+      <Link>Components\BaseXmlFileSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\ComponentSettings.cs">
+      <Link>Components\ComponentSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\IncrementUsageByOneTask.cs">
+      <Link>Components\IncrementUsageByOneTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\ProductServices.cs">
+      <Link>Components\ProductServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\RegisterSettingsViaAssemblyScanningTask.cs">
+      <Link>Components\RegisterSettingsViaAssemblyScanningTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\RegisterSettingsViaIocTask.cs">
+      <Link>Components\RegisterSettingsViaIocTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\SaveSettingsEndTask.cs">
+      <Link>Components\SaveSettingsEndTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\SoftwareService2WebServiceClient.cs">
+      <Link>Components\SoftwareService2WebServiceClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardBackgroundLicenseVerifier.cs">
+      <Link>Components\StandardBackgroundLicenseVerifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardConfigurationServices.cs">
+      <Link>Components\StandardConfigurationServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardDuplicateProcessDetector.cs">
+      <Link>Components\StandardDuplicateProcessDetector.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardHelpProvider.cs">
+      <Link>Components\StandardHelpProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseCodecTools.cs">
+      <Link>Components\StandardLicenseCodecTools.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseEnforcer.cs">
+      <Link>Components\StandardLicenseEnforcer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseKeyDecoder.cs">
+      <Link>Components\StandardLicenseKeyDecoder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseKeyEncoder.cs">
+      <Link>Components\StandardLicenseKeyEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseKeyProvider.cs">
+      <Link>Components\StandardLicenseKeyProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseKeyValidator.cs">
+      <Link>Components\StandardLicenseKeyValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseKeyValidatorWithVersionCheck.cs">
+      <Link>Components\StandardLicenseKeyValidatorWithVersionCheck.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseServices.cs">
+      <Link>Components\StandardLicenseServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardLicenseTool.cs">
+      <Link>Components\StandardLicenseTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardProductInformationProvider.cs">
+      <Link>Components\StandardProductInformationProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardProductInstanceCounter.cs">
+      <Link>Components\StandardProductInstanceCounter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardProductUsageProvider.cs">
+      <Link>Components\StandardProductUsageProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardSystemSettingsProvider.cs">
+      <Link>Components\StandardSystemSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardUserSettingsProvider.cs">
+      <Link>Components\StandardUserSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\StandardWebsiteLauncher.cs">
+      <Link>Components\StandardWebsiteLauncher.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Components\XMLFileSettingsProvider.cs">
+      <Link>Components\XMLFileSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\AutoRunType.cs">
+      <Link>DataObjects\AutoRunType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\BugReport.cs">
+      <Link>DataObjects\BugReport.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ClientRequest.cs">
+      <Link>DataObjects\ClientRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ComponentSettingsScope.cs">
+      <Link>DataObjects\ComponentSettingsScope.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\FeatureRequest.cs">
+      <Link>DataObjects\FeatureRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\HelpType.cs">
+      <Link>DataObjects\HelpType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\LicenseInformation.cs">
+      <Link>DataObjects\LicenseInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductComment.cs">
+      <Link>DataObjects\ProductComment.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductFeatureRights.cs">
+      <Link>DataObjects\ProductFeatureRights.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductInformation.cs">
+      <Link>DataObjects\ProductInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductLicense.cs">
+      <Link>DataObjects\ProductLicense.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductLicenseAction.cs">
+      <Link>DataObjects\ProductLicenseAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductLicenseCommand.cs">
+      <Link>DataObjects\ProductLicenseCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductLicenseFlags.cs">
+      <Link>DataObjects\ProductLicenseFlags.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductRights.cs">
+      <Link>DataObjects\ProductRights.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\ProductUsageInformation.cs">
+      <Link>DataObjects\ProductUsageInformation.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\DataObjects\UserType.cs">
+      <Link>DataObjects\UserType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Extensions\ComponentRegistryExtensions.cs">
+      <Link>Extensions\ComponentRegistryExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IApplicationEndTask.cs">
+      <Link>Interfaces\IApplicationEndTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IApplicationInitializeTask.cs">
+      <Link>Interfaces\IApplicationInitializeTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IApplicationServices.cs">
+      <Link>Interfaces\IApplicationServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IApplicationStartTask.cs">
+      <Link>Interfaces\IApplicationStartTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IAutoRunServices.cs">
+      <Link>Interfaces\IAutoRunServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IBackgroundLicenseVerifier.cs">
+      <Link>Interfaces\IBackgroundLicenseVerifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IConfigurationServices.cs">
+      <Link>Interfaces\IConfigurationServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IDuplicateProcessDetector.cs">
+      <Link>Interfaces\IDuplicateProcessDetector.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IHelpableObject.cs">
+      <Link>Interfaces\IHelpableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IHelpServices.cs">
+      <Link>Interfaces\IHelpServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\ILicenseEnforcer.cs">
+      <Link>Interfaces\ILicenseEnforcer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\ILicenseKeyDecoder.cs">
+      <Link>Interfaces\ILicenseKeyDecoder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\ILicenseKeyEncoder.cs">
+      <Link>Interfaces\ILicenseKeyEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\ILicenseKeyServices.cs">
+      <Link>Interfaces\ILicenseKeyServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\ILicenseKeyValidator.cs">
+      <Link>Interfaces\ILicenseKeyValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\ILicenseServices.cs">
+      <Link>Interfaces\ILicenseServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IProductInformationServices.cs">
+      <Link>Interfaces\IProductInformationServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IProductInstancesCounter.cs">
+      <Link>Interfaces\IProductInstancesCounter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IProductServices.cs">
+      <Link>Interfaces\IProductServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IProductUsageServices.cs">
+      <Link>Interfaces\IProductUsageServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\ISettingsServices.cs">
+      <Link>Interfaces\ISettingsServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\ISphere10SoftwareServices.cs">
+      <Link>Interfaces\ISphere10SoftwareServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IUserInterfaceServices.cs">
+      <Link>Interfaces\IUserInterfaceServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IUserNotificationServices.cs">
+      <Link>Interfaces\IUserNotificationServices.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\Interfaces\IWebsiteLauncher.cs">
+      <Link>Interfaces\IWebsiteLauncher.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Application\ModuleConfiguration.cs">
+      <Link>ModuleConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Framework.iOS\Sphere10.Framework.iOS.csproj">
+      <Project>{bdc7755b-e7eb-4403-80a8-72ac20d8ae78}</Project>
+      <Name>Sphere10.Framework.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /S /F /Y $(TargetDir)\*.dll ..\..\..\Precompiled\iOS\$(ConfigurationName)\$(PlatformName)\
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

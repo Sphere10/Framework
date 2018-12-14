@@ -1,0 +1,1174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F41BA18C-6F24-4003-9406-A07848E64FC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Framework.PCL</RootNamespace>
+    <AssemblyName>Sphere10.Framework.PCL</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;__MOBILE__;__PCL__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;__PCL__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <Content Include="..\sphere10.framework\readablerex\HowToUse.txt">
+      <Link>ReadableRex\HowToUse.txt</Link>
+    </Content>
+    <Content Include="..\sphere10.framework\settings\WriteUp.txt">
+      <Link>Settings\WriteUp.txt</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\sphere10.framework\cache\ActionCache.cs">
+      <Link>Cache\ActionCache.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\BulkFetchActionCache.cs">
+      <Link>Cache\BulkFetchActionCache.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\BulkFetchCacheBase.cs">
+      <Link>Cache\BulkFetchCacheBase.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\CacheBase.cs">
+      <Link>Cache\CacheBase.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\CachedItem.cs">
+      <Link>Cache\CachedItem.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\CacheReapPolicy.cs">
+      <Link>Cache\CacheReapPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\ExpirationPolicy.cs">
+      <Link>Cache\ExpirationPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\ICache.cs">
+      <Link>Cache\ICache.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\ICacheExtensions.cs">
+      <Link>Cache\ICacheExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\NullValuePolicy.cs">
+      <Link>Cache\NullValuePolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\PreloadedCache.cs">
+      <Link>Cache\PreloadedCache.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\cache\SessionCache.cs">
+      <Link>Cache\SessionCache.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\codebuilder\CodeBuilder.cs">
+      <Link>CodeBuilder\CodeBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\codebuilder\ComponentFactory.cs">
+      <Link>CodeBuilder\ComponentFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\ArrayTool.cs">
+      <Link>Collections\ArrayTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\BinaryHeap.cs">
+      <Link>Collections\BinaryHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\BTree.cs">
+      <Link>Collections\BTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\ByteArrayBuilder.cs">
+      <Link>Collections\ByteArrayBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\CircularBuffer.cs">
+      <Link>Collections\CircularBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\CollectionGroup.cs">
+      <Link>Collections\CollectionGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\CollectionTool.cs">
+      <Link>Collections\CollectionTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\DictionaryDecorator.cs">
+      <Link>Collections\DictionaryDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\EnumerableContainsSameComparer.cs">
+      <Link>Collections\EnumerableContainsSameComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\EnumerableSequenceEqualComparer.cs">
+      <Link>Collections\EnumerableSequenceEqualComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\EnumeratedItem.cs">
+      <Link>Collections\EnumeratedItem.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\EnumeratedItemDescription.cs">
+      <Link>Collections\EnumeratedItemDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\FileDictionary.cs">
+      <Link>Collections\FileDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\GraphNode.cs">
+      <Link>Collections\GraphNode.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\Grouping.cs">
+      <Link>Collections\Grouping.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\GroupOfAdjacent.cs">
+      <Link>Collections\GroupOfAdjacent.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\HierarchyNode.cs">
+      <Link>Collections\HierarchyNode.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\IHeap.cs">
+      <Link>Collections\IHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\IPersistedDictionary.cs">
+      <Link>Collections\IPersistedDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\ISequentialGuidGenerator.cs">
+      <Link>Collections\ISequentialGuidGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\LargeCollection.cs">
+      <Link>Collections\LargeCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\ListDecorator.cs">
+      <Link>Collections\ListDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\ListSet.cs">
+      <Link>Collections\ListSet.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\LookupEx.cs">
+      <Link>Collections\LookupEx.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\MultiKeyDictionary.cs">
+      <Link>Collections\MultiKeyDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\MultiKeyDictionary2.cs">
+      <Link>Collections\MultiKeyDictionary2.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\MultiKeyLookup.cs">
+      <Link>Collections\MultiKeyLookup.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\MultiKeyMap.cs">
+      <Link>Collections\MultiKeyMap.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\NotPersistedDictionary.cs">
+      <Link>Collections\NotPersistedDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\observable\IObservableCollection.cs">
+      <Link>Collections\Observable\IObservableCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\observable\ObservableCollectionItem.cs">
+      <Link>Collections\Observable\ObservableCollectionItem.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\observable\ObservableCollectionItemEventType.cs">
+      <Link>Collections\Observable\ObservableCollectionItemEventType.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\observable\ObservableDictionary.cs">
+      <Link>Collections\Observable\ObservableDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\observable\ObservableList.cs">
+      <Link>Collections\Observable\ObservableList.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\observable\ObservationWindow.cs">
+      <Link>Collections\Observable\ObservationWindow.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\ProducerConsumerQueue.cs">
+      <Link>Collections\ProducerConsumerQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\ReadOnlyDictionaryDecorator.cs">
+      <Link>Collections\ReadOnlyDictionaryDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SequentialGuidGenerator.cs">
+      <Link>Collections\SequentialGuidGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SerializableDictionarySurrogate.cs">
+      <Link>Collections\SerializableDictionarySurrogate.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SerializableDictionarySurrogate2.cs">
+      <Link>Collections\SerializableDictionarySurrogate2.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SerializableKeyValuePair.cs">
+      <Link>Collections\SerializableKeyValuePair.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SortedCollection.cs">
+      <Link>Collections\SortedCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\sorting\BubbleSort.cs">
+      <Link>Collections\Sorting\BubbleSort.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\sorting\InsertionSort.cs">
+      <Link>Collections\Sorting\InsertionSort.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\sorting\QuickSort.cs">
+      <Link>Collections\Sorting\QuickSort.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\sorting\SelectionSort.cs">
+      <Link>Collections\Sorting\SelectionSort.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\sorting\Sorter.cs">
+      <Link>Collections\Sorting\Sorter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\sorting\SortStrategy.cs">
+      <Link>Collections\Sorting\SortStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\sorting\SortStrategyFactory.cs">
+      <Link>Collections\Sorting\SortStrategyFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\sorting\SortType.cs">
+      <Link>Collections\Sorting\SortType.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SynchronizedDictionary.cs">
+      <Link>Collections\SynchronizedDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SynchronizedHeap.cs">
+      <Link>Collections\SynchronizedHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SynchronizedList.cs">
+      <Link>Collections\SynchronizedList.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\SyncronizedCollectionEx.cs">
+      <Link>Collections\SyncronizedCollectionEx.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\TopologicalSorter.cs">
+      <Link>Collections\TopologicalSorter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\TreeTraversalType.cs">
+      <Link>Collections\TreeTraversalType.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\collections\ValueReferenceInverseDictionary.cs">
+      <Link>Collections\ValueReferenceInverseDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\comparers\ByteArrayComparer.cs">
+      <Link>Comparers\ByteArrayComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\comparers\ByteArrayEqualityComparer.cs">
+      <Link>Comparers\ByteArrayEqualityComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\comparers\ComparableWrapper.cs">
+      <Link>Comparers\ComparableWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\comparers\GenericComparer.cs">
+      <Link>Comparers\GenericComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\comparers\ReinterpretArray.cs">
+      <Link>Comparers\ReinterpretArray.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\BinaryFormatter.cs">
+      <Link>Compatibility\WP80\BinaryFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\CipherMode.cs">
+      <Link>Compatibility\WP80\CipherMode.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\ElapsedEventArgs.cs">
+      <Link>Compatibility\WP80\ElapsedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\ISynchronizeInvoke.cs">
+      <Link>Compatibility\WP80\ISynchronizeInvoke.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\NonSerializedAttribute.cs">
+      <Link>Compatibility\WP80\NonSerializedAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\ObfuscationAttribute.cs">
+      <Link>Compatibility\WP80\ObfuscationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\PaddingMode.cs">
+      <Link>Compatibility\WP80\PaddingMode.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\Parallel.cs">
+      <Link>Compatibility\WP80\Parallel.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\SerializableAttribute.cs">
+      <Link>Compatibility\WP80\SerializableAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\Timer.cs">
+      <Link>Compatibility\WP80\Timer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\compatibility\wp80\WindowsPhone8.cs">
+      <Link>Compatibility\WP80\WindowsPhone8.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\conversion\BigEndianBitConverter.cs">
+      <Link>Conversion\BigEndianBitConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\conversion\DoubleConverter.cs">
+      <Link>Conversion\DoubleConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\conversion\EndianBitConverter.cs">
+      <Link>Conversion\EndianBitConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\conversion\Endianness.cs">
+      <Link>Conversion\Endianness.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\conversion\LittleEndianBitConverter.cs">
+      <Link>Conversion\LittleEndianBitConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\crud\CrudAction.cs">
+      <Link>Crud\CrudAction.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\crud\ICrudDataSource.cs">
+      <Link>Crud\ICrudDataSource.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\events\EventHandlerEx.cs">
+      <Link>Events\EventHandlerEx.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\exceptions\ApplicationAlreadyRunningException.cs">
+      <Link>Exceptions\ApplicationAlreadyRunningException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\exceptions\ExceptionTool.cs">
+      <Link>Exceptions\ExceptionTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\exceptions\IllegalValueException.cs">
+      <Link>Exceptions\IllegalValueException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\exceptions\InternalErrorException.cs">
+      <Link>Exceptions\InternalErrorException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\exceptions\QueueDisposedException.cs">
+      <Link>Exceptions\QueueDisposedException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\exceptions\SoftwareException.cs">
+      <Link>Exceptions\SoftwareException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\ActionExtensions.cs">
+      <Link>Extensions\ActionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\AssemblyExtensions.cs">
+      <Link>Extensions\AssemblyExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\BoolExtensions.cs">
+      <Link>Extensions\BoolExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\ByteArrayExtensions.cs">
+      <Link>Extensions\ByteArrayExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\CustomAttributesProviderExtensions.cs">
+      <Link>Extensions\CustomAttributesProviderExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\DateTimeExtensions.cs">
+      <Link>Extensions\DateTimeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\DictionaryExtensions.cs">
+      <Link>Extensions\DictionaryExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\DirectoryInfoExtensions.cs">
+      <Link>Extensions\DirectoryInfoExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\EnumExtensions.cs">
+      <Link>Extensions\EnumExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\ExceptionExtensions.cs">
+      <Link>Extensions\ExceptionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\FileInfoExtensions.cs">
+      <Link>Extensions\FileInfoExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\GuidExtensions.cs">
+      <Link>Extensions\GuidExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\HashSetExtensions.cs">
+      <Link>Extensions\HashSetExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\ICollectionExtensions.cs">
+      <Link>Extensions\ICollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\IEnumerableExtensions.cs">
+      <Link>Extensions\IEnumerableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\IListExtensions.cs">
+      <Link>Extensions\IListExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\ILookupExtensions.cs">
+      <Link>Extensions\ILookupExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\MemberInfoExtensions.cs">
+      <Link>Extensions\MemberInfoExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\NullableExtensions.cs">
+      <Link>Extensions\NullableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\NumericExtensions.cs">
+      <Link>Extensions\NumericExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\ObjectExtensions.cs">
+      <Link>Extensions\ObjectExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\ProducerConsumerQueueExtensions.cs">
+      <Link>Extensions\ProducerConsumerQueueExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\RandomExtensions.cs">
+      <Link>Extensions\RandomExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\StreamExtensions.cs">
+      <Link>Extensions\StreamExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\StringBuilderExtensions.cs">
+      <Link>Extensions\StringBuilderExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\StringCollectionExtensions.cs">
+      <Link>Extensions\StringCollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\StringExtensions.cs">
+      <Link>Extensions\StringExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\TaskExtensions.cs">
+      <Link>Extensions\TaskExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\TimespanExtensions.cs">
+      <Link>Extensions\TimespanExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\TreeExtensions.cs">
+      <Link>Extensions\TreeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\TypeExtensions.cs">
+      <Link>Extensions\TypeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\extensions\UniversalExtensions.cs">
+      <Link>Extensions\UniversalExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\fastreflection\ConstructorInvoker.cs">
+      <Link>FastReflection\ConstructorInvoker.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\fastreflection\FastReflectionCaches.cs">
+      <Link>FastReflection\FastReflectionCaches.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\fastreflection\FastReflectionExtensions.cs">
+      <Link>FastReflection\FastReflectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\fastreflection\FieldAccessor.cs">
+      <Link>FastReflection\FieldAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\fastreflection\MethodInvoker.cs">
+      <Link>FastReflection\MethodInvoker.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\fastreflection\PropertyAccessor.cs">
+      <Link>FastReflection\PropertyAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\filesystem\FileStore.cs">
+      <Link>FileSystem\FileStore.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\filesystem\FileStoreDisposedPolicy.cs">
+      <Link>FileSystem\FileStoreDisposedPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\filesystem\FileSystemTool.cs">
+      <Link>FileSystem\FileSystemTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\filesystem\PathTool.cs">
+      <Link>FileSystem\PathTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\filesystem\TempFileStore.cs">
+      <Link>FileSystem\TempFileStore.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\ApplicationChangedEvent.cs">
+      <Link>Hooks\ApplicationChangedEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\BaseDeviceHook.cs">
+      <Link>Hooks\BaseDeviceHook.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\BaseKeyboardHook.cs">
+      <Link>Hooks\BaseKeyboardHook.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\BaseMouseHook.cs">
+      <Link>Hooks\BaseMouseHook.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\DeviceHookStatus.cs">
+      <Link>Hooks\DeviceHookStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\IActiveApplicationMonitor.cs">
+      <Link>Hooks\IActiveApplicationMonitor.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\IDeviceHook.cs">
+      <Link>Hooks\IDeviceHook.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\IKeyboardHook.cs">
+      <Link>Hooks\IKeyboardHook.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\IMouseHook.cs">
+      <Link>Hooks\IMouseHook.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\hooks\NoOpActiveApplicationMonitor.cs">
+      <Link>Hooks\NoOpActiveApplicationMonitor.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\ioc\TinyIoC.cs">
+      <Link>IoC\TinyIoC.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\ioc\TinyIoCAspNetExtensions.cs">
+      <Link>IoC\TinyIoCAspNetExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\BackgroundOutputStream.cs">
+      <Link>IO\BackgroundOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\BitStream.cs">
+      <Link>IO\BitStream.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\BlockingStream.cs">
+      <Link>IO\BlockingStream.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\CircularStream.cs">
+      <Link>IO\CircularStream.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\EndianBinaryReader.cs">
+      <Link>IO\EndianBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\EndianBinaryWriter.cs">
+      <Link>IO\EndianBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\StreamDecorator.cs">
+      <Link>IO\StreamDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\StreamPipeline.cs">
+      <Link>IO\StreamPipeline.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\StreamProfiler.cs">
+      <Link>IO\StreamProfiler.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\io\StreamTool.cs">
+      <Link>IO\StreamTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\keyboard\Key.cs">
+      <Link>Keyboard\Key.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\keyboard\KeyEvent.cs">
+      <Link>Keyboard\KeyEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\keyboard\KeyState.cs">
+      <Link>Keyboard\KeyState.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\keyboard\ScanCode.cs">
+      <Link>Keyboard\ScanCode.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\lambda\LambdaTool.cs">
+      <Link>Lambda\LambdaTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\AsyncLogger.cs">
+      <Link>Logging\AsyncLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\ConsoleLogger.cs">
+      <Link>Logging\ConsoleLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\DecoratedLogger.cs">
+      <Link>Logging\DecoratedLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\FileAppendLogger.cs">
+      <Link>Logging\FileAppendLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\ILogger.cs">
+      <Link>Logging\ILogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\Log.cs">
+      <Link>Logging\Log.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\LogOptions.cs">
+      <Link>Logging\LogOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\MultiCastLogger.cs">
+      <Link>Logging\MultiCastLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\NoOpLogger.cs">
+      <Link>Logging\NoOpLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\SystemLog.cs">
+      <Link>Logging\SystemLog.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\TextWriterLogger.cs">
+      <Link>Logging\TextWriterLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\logging\TimestampLogger.cs">
+      <Link>Logging\TimestampLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mail\MailTool.cs">
+      <Link>Mail\MailTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\CodeErrorException.cs">
+      <Link>Math\Compiler\CodeErrorException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\CodeErrorsException.cs">
+      <Link>Math\Compiler\CodeErrorsException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\codegen\BasicFunctionGenerator.cs">
+      <Link>Math\Compiler\CodeGen\BasicFunctionGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\codegen\BasicTypeChecker.cs">
+      <Link>Math\Compiler\CodeGen\BasicTypeChecker.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\codegen\CodeGenerationException.cs">
+      <Link>Math\Compiler\CodeGen\CodeGenerationException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\codegen\IDynamicallyCompiledFunction.cs">
+      <Link>Math\Compiler\CodeGen\IDynamicallyCompiledFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\codegen\StandardFunctionResolver.cs">
+      <Link>Math\Compiler\CodeGen\StandardFunctionResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\CompilerException.cs">
+      <Link>Math\Compiler\CompilerException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\CompilerUtil.cs">
+      <Link>Math\Compiler\CompilerUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\InternalCompilerException.cs">
+      <Link>Math\Compiler\InternalCompilerException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\Associativity.cs">
+      <Link>Math\Compiler\Parser\Associativity.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\BinaryOperatorTree.cs">
+      <Link>Math\Compiler\Parser\BinaryOperatorTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\FactorTree.cs">
+      <Link>Math\Compiler\Parser\FactorTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\FunctionCallTree.cs">
+      <Link>Math\Compiler\Parser\FunctionCallTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\FunctionDeclarationTree.cs">
+      <Link>Math\Compiler\Parser\FunctionDeclarationTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\IfThenElseTree.cs">
+      <Link>Math\Compiler\Parser\IfThenElseTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\IfThenTree.cs">
+      <Link>Math\Compiler\Parser\IfThenTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\Operator.cs">
+      <Link>Math\Compiler\Parser\Operator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\Parser.cs">
+      <Link>Math\Compiler\Parser\Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\ParserException.cs">
+      <Link>Math\Compiler\Parser\ParserException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\SyntaxTree.cs">
+      <Link>Math\Compiler\Parser\SyntaxTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\parser\UnaryOperatorTree.cs">
+      <Link>Math\Compiler\Parser\UnaryOperatorTree.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\runtime\DefaultFunctionContext.cs">
+      <Link>Math\Compiler\Runtime\DefaultFunctionContext.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\runtime\DefaultMathContext.cs">
+      <Link>Math\Compiler\Runtime\DefaultMathContext.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\runtime\DefaultVariableContext.cs">
+      <Link>Math\Compiler\Runtime\DefaultVariableContext.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\runtime\IFunctionContext.cs">
+      <Link>Math\Compiler\Runtime\IFunctionContext.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\runtime\IMathContext.cs">
+      <Link>Math\Compiler\Runtime\IMathContext.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\runtime\IVariableContext.cs">
+      <Link>Math\Compiler\Runtime\IVariableContext.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\scanner\Scanner.cs">
+      <Link>Math\Compiler\Scanner\Scanner.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\scanner\ScannerErrorState.cs">
+      <Link>Math\Compiler\Scanner\ScannerErrorState.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\scanner\ScannerException.cs">
+      <Link>Math\Compiler\Scanner\ScannerException.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\scanner\ScannerState.cs">
+      <Link>Math\Compiler\Scanner\ScannerState.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\scanner\Token.cs">
+      <Link>Math\Compiler\Scanner\Token.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\compiler\scanner\TokenType.cs">
+      <Link>Math\Compiler\Scanner\TokenType.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\highorderfunctions\ArcLengthDerivativeFunction.cs">
+      <Link>Math\HighOrderFunctions\ArcLengthDerivativeFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\highorderfunctions\FunctionDerivative.cs">
+      <Link>Math\HighOrderFunctions\FunctionDerivative.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\highorderfunctions\FunctionIntegral.cs">
+      <Link>Math\HighOrderFunctions\FunctionIntegral.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\highorderfunctions\SpacelikeMinkowskiDerivativeFunction.cs">
+      <Link>Math\HighOrderFunctions\SpacelikeMinkowskiDerivativeFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\highorderfunctions\TimelikeMinkowskiDerivativeFunction.cs">
+      <Link>Math\HighOrderFunctions\TimelikeMinkowskiDerivativeFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\IFunction.cs">
+      <Link>Math\IFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\MathTool.cs">
+      <Link>Math\MathTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\Metric.cs">
+      <Link>Math\Metric.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\ParametricFunction.cs">
+      <Link>Math\ParametricFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\math\StaticRandom.cs">
+      <Link>Math\StaticRandom.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\memory\MemoryMetric.cs">
+      <Link>Memory\MemoryMetric.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\memory\MemoryTool.cs">
+      <Link>Memory\MemoryTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\memory\Page.cs">
+      <Link>Memory\Page.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\memory\PageManager.cs">
+      <Link>Memory\PageManager.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\ActionEqualityComparer.cs">
+      <Link>Misc\ActionEqualityComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\AlreadyExistsPolicy.cs">
+      <Link>Misc\AlreadyExistsPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\AuthenticationErrorCode.cs">
+      <Link>Misc\AuthenticationErrorCode.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\AuthenticationResult.cs">
+      <Link>Misc\AuthenticationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\CollectionConflictPolicy.cs">
+      <Link>Misc\CollectionConflictPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\DateTimeTool.cs">
+      <Link>Misc\DateTimeTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\DecayGauge.cs">
+      <Link>Misc\DecayGauge.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\DefaultDateAttribute.cs">
+      <Link>Misc\DefaultDateAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\EnumerableComparer.cs">
+      <Link>Misc\EnumerableComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\EnumTool.cs">
+      <Link>Misc\EnumTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\ErrorMessageAttribute.cs">
+      <Link>Misc\ErrorMessageAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\GST.cs">
+      <Link>Misc\GST.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\MetadataAttribute.cs">
+      <Link>Misc\MetadataAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\ObfuscationAttribute.cs">
+      <Link>Misc\ObfuscationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\Preconditions.cs">
+      <Link>Misc\Preconditions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\Result.cs">
+      <Link>Misc\Result.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\RuntimeTool.cs">
+      <Link>Misc\RuntimeTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\ShortGuid.cs">
+      <Link>Misc\ShortGuid.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\SingleApplicationInstanceScope.cs">
+      <Link>Misc\SingleApplicationInstanceScope.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\SortDirection.cs">
+      <Link>Misc\SortDirection.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\SortOption.cs">
+      <Link>Misc\SortOption.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\TypeSwitch.cs">
+      <Link>Misc\TypeSwitch.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\misc\UITargetReference.cs">
+      <Link>Misc\UITargetReference.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mouse\MouseButton.cs">
+      <Link>Mouse\MouseButton.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mouse\MouseButtonState.cs">
+      <Link>Mouse\MouseButtonState.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mouse\MouseClickEvent.cs">
+      <Link>Mouse\MouseClickEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mouse\MouseClickType.cs">
+      <Link>Mouse\MouseClickType.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mouse\MouseEvent.cs">
+      <Link>Mouse\MouseEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mouse\MouseMotionType.cs">
+      <Link>Mouse\MouseMotionType.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mouse\MouseMoveEvent.cs">
+      <Link>Mouse\MouseMoveEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\mouse\MouseWheelEvent.cs">
+      <Link>Mouse\MouseWheelEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\network\MimeTool.cs">
+      <Link>Network\MimeTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\network\NetworkTool.cs">
+      <Link>Network\NetworkTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\network\UrlShortner.cs">
+      <Link>Network\UrlShortner.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\network\UrlTool.cs">
+      <Link>Network\UrlTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\ActionDisposable.cs">
+      <Link>Objects\ActionDisposable.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\DeepObjectCloner.cs">
+      <Link>Objects\DeepObjectCloner.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\DeepObjectComparer.cs">
+      <Link>Objects\DeepObjectComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\Difference.cs">
+      <Link>Objects\Difference.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\Disposable.cs">
+      <Link>Objects\Disposable.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\FieldInstanceHolder.cs">
+      <Link>Objects\FieldInstanceHolder.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\IDeepObjectComparer.cs">
+      <Link>Objects\IDeepObjectComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\IInstanceHolder.cs">
+      <Link>Objects\IInstanceHolder.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\IObjectCloner.cs">
+      <Link>Objects\IObjectCloner.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\MobileCompatibleObjectCloner.cs">
+      <Link>Objects\MobileCompatibleObjectCloner.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\ObjectEncryptor.cs">
+      <Link>Objects\ObjectEncryptor.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\ObjectTool.cs">
+      <Link>Objects\ObjectTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\ObjectWithDefaultValues.cs">
+      <Link>Objects\ObjectWithDefaultValues.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\PrimitiveGenericEqualityComparer.cs">
+      <Link>Objects\PrimitiveGenericEqualityComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\Reference.cs">
+      <Link>Objects\Reference.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\ShallowObjectCloner.cs">
+      <Link>Objects\ShallowObjectCloner.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\TypeActivator.cs">
+      <Link>Objects\TypeActivator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\TypeChanger.cs">
+      <Link>Objects\TypeChanger.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\objects\TypeResolver.cs">
+      <Link>Objects\TypeResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\readablerex\RegexAlternation.cs">
+      <Link>ReadableRex\RegexAlternation.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\readablerex\RegexLazyQuantifier.cs">
+      <Link>ReadableRex\RegexLazyQuantifier.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\readablerex\RegexPattern.cs">
+      <Link>ReadableRex\RegexPattern.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\readablerex\RegexQuantifier.cs">
+      <Link>ReadableRex\RegexQuantifier.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\readablerex\RegexRange.cs">
+      <Link>ReadableRex\RegexRange.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\scopes\ActionScope.cs">
+      <Link>Scopes\ActionScope.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\scopes\ExecuteOnDisposeScope.cs">
+      <Link>Scopes\ExecuteOnDisposeScope.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\scopes\ScopeContext.cs">
+      <Link>Scopes\ScopeContext.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\scopes\ScopeTool.cs">
+      <Link>Scopes\ScopeTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\security\CodeAccessSecurityTool.cs">
+      <Link>Security\CodeAccessSecurityTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\security\CryptoTool.cs">
+      <Link>Security\CryptoTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\security\EncryptedAttribute.cs">
+      <Link>Security\EncryptedAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\security\EncryptionSaltPolicy.cs">
+      <Link>Security\EncryptionSaltPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\security\PasswordHash.cs">
+      <Link>Security\PasswordHash.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\security\SupportedHashAlgorithm.cs">
+      <Link>Security\SupportedHashAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\AndroidSettingsProvider.cs">
+      <Link>Settings\AndroidSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\AppSettingAttribute.cs">
+      <Link>Settings\AppSettingAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\BaseSettingsProvider.cs">
+      <Link>Settings\BaseSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\DirectorySettingsProvider.cs">
+      <Link>Settings\DirectorySettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\GenericSectionHandler.cs">
+      <Link>Settings\GenericSectionHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\GlobalSettings.cs">
+      <Link>Settings\GlobalSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\ISettingsProvider.cs">
+      <Link>Settings\ISettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\SettingsObject.cs">
+      <Link>Settings\SettingsObject.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\UserDefaultsSettingsProvider.cs">
+      <Link>Settings\UserDefaultsSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\UserSettings.cs">
+      <Link>Settings\UserSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\settings\WP8SettingsProvider.cs">
+      <Link>Settings\WP8SettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\ActionTextWriter.cs">
+      <Link>TextWriters\ActionTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\ActionTextWriterDecorator.cs">
+      <Link>TextWriters\ActionTextWriterDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\BaseTextWriter.cs">
+      <Link>TextWriters\BaseTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\ConsoleTextWriter.cs">
+      <Link>TextWriters\ConsoleTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\DebugTextWriter.cs">
+      <Link>TextWriters\DebugTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\FileAppendTextWriter.cs">
+      <Link>TextWriters\FileAppendTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\MultiCastTextWriter.cs">
+      <Link>TextWriters\MultiCastTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\NoOpTextWriter.cs">
+      <Link>TextWriters\NoOpTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\TextWriterDecorator.cs">
+      <Link>TextWriters\TextWriterDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\textwriters\TimeStampTextWriterDecorator.cs">
+      <Link>TextWriters\TimeStampTextWriterDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\Base32Converter.cs">
+      <Link>Text\Base32Converter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\Base62Converter.cs">
+      <Link>Text\Base62Converter.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\FastStringBuilder.cs">
+      <Link>Text\FastStringBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\Inflector.cs">
+      <Link>Text\Inflector.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\ParagraphBuilder.cs">
+      <Link>Text\ParagraphBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\ParseTool.cs">
+      <Link>Text\ParseTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\StringTokenizer.cs">
+      <Link>Text\StringTokenizer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\TextBank.cs">
+      <Link>Text\TextBank.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\text\TextTool.cs">
+      <Link>Text\TextTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\BackgroundProcessor.cs">
+      <Link>Threading\BackgroundProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\CallQueue.cs">
+      <Link>Threading\CallQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\DelayedAction.cs">
+      <Link>Threading\DelayedAction.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\IThreadSafeObject.cs">
+      <Link>Threading\IThreadSafeObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\PCLTimer.cs">
+      <Link>Threading\PCLTimer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\ActionJob.cs">
+      <Link>Threading\Scheduler\ActionJob.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\BaseJob.cs">
+      <Link>Threading\Scheduler\BaseJob.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\BaseJobSchedule.cs">
+      <Link>Threading\Scheduler\BaseJobSchedule.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\IJob.cs">
+      <Link>Threading\Scheduler\IJob.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\IJobSchedule.cs">
+      <Link>Threading\Scheduler\IJobSchedule.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\JobBuilder.cs">
+      <Link>Threading\Scheduler\JobBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\JobPolicy.cs">
+      <Link>Threading\Scheduler\JobPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\JobStatus.cs">
+      <Link>Threading\Scheduler\JobStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\OnDayOfMonthScheduler.cs">
+      <Link>Threading\Scheduler\OnDayOfMonthScheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\OnDayOfWeekScheduler.cs">
+      <Link>Threading\Scheduler\OnDayOfWeekScheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\OnIntervalSchedule.cs">
+      <Link>Threading\Scheduler\OnIntervalSchedule.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\ScheduleBuilder.cs">
+      <Link>Threading\Scheduler\ScheduleBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\Scheduler.cs">
+      <Link>Threading\Scheduler\Scheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\SchedulerPolicy.cs">
+      <Link>Threading\Scheduler\SchedulerPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\scheduler\SchedulerStatus.cs">
+      <Link>Threading\Scheduler\SchedulerStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\SyncronizationCallback.cs">
+      <Link>Threading\SyncronizationCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\ThreadPoolEx.cs">
+      <Link>Threading\ThreadPoolEx.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\ThreadSafeScope.cs">
+      <Link>Threading\ThreadSafeScope.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\ThreadTool.cs">
+      <Link>Threading\ThreadTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\threading\Throttle.cs">
+      <Link>Threading\Throttle.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\xml\BinaryContainer.cs">
+      <Link>Xml\BinaryContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\xml\IXmlSerializationTag.cs">
+      <Link>Xml\IXmlSerializationTag.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\xml\XmlDeepDeserializer.cs">
+      <Link>Xml\XmlDeepDeserializer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\xml\XmlDeepSerializer.cs">
+      <Link>Xml\XmlDeepSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\xml\XmlProvider.cs">
+      <Link>Xml\XmlProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\xml\XmlSerializationHelpers.cs">
+      <Link>Xml\XmlSerializationHelpers.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework\xml\XmlSerializationTag.cs">
+      <Link>Xml\XmlSerializationTag.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PCLCrypto, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d4421c8a4786956c, processorArchitecture=MSIL">
+      <HintPath>..\packages\PCLCrypto.2.0.147\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\PCLCrypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PInvoke.BCrypt, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.BCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.BCrypt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PInvoke.Kernel32, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.Kernel32.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Kernel32.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PInvoke.NCrypt, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.NCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.NCrypt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PInvoke.Windows.Core, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.Windows.Core.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Windows.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Validation, Version=2.2.0.0, Culture=neutral, PublicKeyToken=2fc06f0d701809a7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Validation.2.2.8\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

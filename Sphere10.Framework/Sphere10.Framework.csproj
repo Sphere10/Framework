@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CDD0FFB-6E00-42C3-9D77-427AB3451C0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Framework</RootNamespace>
+    <AssemblyName>Sphere10.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>True</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Sphere10.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>False</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>True</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CO_Config>Release|x86</CO_Config>
+    <CO_ProjectFilePath>..\..\Auto Mouse\AutoMouse WIN_Release_x86.obproj</CO_ProjectFilePath>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\PreloadedCache.cs" />
+    <Compile Include="Cache\BulkFetchActionCache.cs" />
+    <Compile Include="Cache\BulkFetchCacheBase.cs" />
+    <Compile Include="Cache\CachedItem.cs" />
+    <Compile Include="Cache\CacheReapPolicy.cs" />
+    <Compile Include="Cache\NullValuePolicy.cs" />
+    <Compile Include="Cache\ExpirationPolicy.cs" />
+    <Compile Include="Cache\ICacheExtensions.cs" />
+    <Compile Include="Cache\SessionCache.cs" />
+    <Compile Include="CodeBuilder\CodeBuilder.cs" />
+    <Compile Include="CodeBuilder\ComponentFactory.cs" />
+    <Compile Include="Collections\ArrayTool.cs" />
+    <Compile Include="Collections\ByteArrayBuilder.cs" />
+    <Compile Include="Collections\MultiKeyDictionary.cs" />
+    <Compile Include="Collections\ReferenceDictionary.cs" />
+    <Compile Include="Collections\ProducerConsumerQueue.cs" />
+    <Compile Include="Collections\CollectionDecorator.cs" />
+    <Compile Include="Collections\CollectionGroup.cs" />
+    <Compile Include="Collections\EnumerableContainsSameComparer.cs" />
+    <Compile Include="Collections\EnumerableSequenceEqualComparer.cs" />
+    <Compile Include="Collections\ListDecorator.cs" />
+    <Compile Include="Collections\Observable\ObservableList.cs" />
+    <Compile Include="Collections\Observable\ObservationWindow.cs" />
+    <Compile Include="Collections\Observable\ObservableCollectionItem.cs" />
+    <Compile Include="Collections\CollectionTool.cs" />
+    <Compile Include="Collections\BinaryHeap.cs" />
+    <Compile Include="Collections\BTree.cs" />
+    <Compile Include="Collections\CircularBuffer.cs" />
+    <Compile Include="Collections\LookupEx.cs" />
+    <Compile Include="Collections\Observable\ObservableCollectionItemEventType.cs" />
+    <Compile Include="Collections\Observable\ObservableDictionary.cs" />
+    <Compile Include="Collections\LargeCollection.cs" />
+    <Compile Include="Collections\ReadOnlyDictionaryDecorator.cs" />
+    <Compile Include="Collections\SyncronizedQueue.cs" />
+    <Compile Include="Collections\ValueReferenceInverseDictionary.cs" />
+    <Compile Include="Collections\SerializableDictionarySurrogate2.cs" />
+    <Compile Include="Collections\NotPersistedDictionary.cs" />
+    <Compile Include="Collections\MultiKeyMap.cs" />
+    <Compile Include="Collections\MultiKeyLookup.cs" />
+    <Compile Include="Collections\DictionaryDecorator.cs" />
+    <Compile Include="Collections\FileDictionary.cs" />
+    <Compile Include="Collections\GraphNode.cs" />
+    <Compile Include="Collections\GroupOfAdjacent.cs" />
+    <Compile Include="Collections\ISequentialGuidGenerator.cs" />
+    <Compile Include="Collections\SequentialGuidGenerator.cs" />
+    <Compile Include="Collections\IHeap.cs" />
+    <Compile Include="Collections\IPersistedDictionary.cs" />
+    <Compile Include="Collections\ListSet.cs" />
+    <Compile Include="Collections\Grouping.cs" />
+    <Compile Include="Collections\MultiKeyDictionary2.cs" />
+    <Compile Include="Collections\SerializableKeyValuePair.cs" />
+    <Compile Include="Collections\SortedCollection.cs" />
+    <Compile Include="Collections\Sorting\BubbleSort.cs" />
+    <Compile Include="Collections\Sorting\InsertionSort.cs" />
+    <Compile Include="Collections\Sorting\QuickSort.cs" />
+    <Compile Include="Collections\Sorting\SelectionSort.cs" />
+    <Compile Include="Collections\Sorting\Sorter.cs" />
+    <Compile Include="Collections\Sorting\SortStrategy.cs" />
+    <Compile Include="Collections\Sorting\SortStrategyFactory.cs" />
+    <Compile Include="Collections\Sorting\SortType.cs" />
+    <Compile Include="Collections\SynchronizedDictionary.cs" />
+    <Compile Include="Collections\SynchronizedList.cs" />
+    <Compile Include="Collections\SynchronizedHeap.cs" />
+    <Compile Include="Collections\SyncronizedCollectionEx.cs" />
+    <Compile Include="Collections\TopologicalSorter.cs" />
+    <Compile Include="Collections\TreeTraversalType.cs" />
+    <Compile Include="Comparers\ByteArrayComparer.cs" />
+    <Compile Include="Comparers\ByteArrayEqualityComparer.cs" />
+    <Compile Include="Comparers\ReinterpretArray.cs" />
+    <Compile Include="Compatibility\WP80\Parallel.cs" />
+    <Compile Include="Compatibility\WP80\CipherMode.cs" />
+    <Compile Include="Compatibility\WP80\ElapsedEventArgs.cs" />
+    <Compile Include="Compatibility\WP80\ISynchronizeInvoke.cs" />
+    <Compile Include="Compatibility\WP80\PaddingMode.cs" />
+    <Compile Include="Compatibility\WP80\NonSerializedAttribute.cs" />
+    <Compile Include="Compatibility\WP80\ObfuscationAttribute.cs" />
+    <Compile Include="Compatibility\WP80\SerializableAttribute.cs" />
+    <Compile Include="Compatibility\WP80\BinaryFormatter.cs" />
+    <Compile Include="Compatibility\WP80\Timer.cs" />
+    <Compile Include="Conversion\BigEndianBitConverter.cs" />
+    <Compile Include="Conversion\DoubleConverter.cs" />
+    <Compile Include="Conversion\EndianBitConverter.cs" />
+    <Compile Include="Conversion\Endianness.cs" />
+    <Compile Include="Conversion\LittleEndianBitConverter.cs" />
+    <Compile Include="Crud\CrudAction.cs" />
+    <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\ConnectionStringSettingsCollectionExtension.cs" />
+    <Compile Include="Extensions\MemberInfoExtensions.cs" />
+    <Compile Include="IoC\TinyIoCAspNetExtensions.cs" />
+    <Compile Include="IO\BitStream.cs" />
+    <Compile Include="Math\SchoenfeldFunctions.cs" />
+    <Compile Include="Misc\RuntimeTool.cs" />
+    <Compile Include="Misc\SortOption.cs" />
+    <Compile Include="Misc\SortDirection.cs" />
+    <Compile Include="Crud\ICrudDataSource.cs" />
+    <Compile Include="Exceptions\NotInitializedException.cs" />
+    <Compile Include="Exceptions\IllegalValueException.cs" />
+    <Compile Include="Exceptions\QueueDisposedException.cs" />
+    <Compile Include="Exceptions\InternalErrorException.cs" />
+    <Compile Include="Exceptions\ExceptionTool.cs" />
+    <Compile Include="Extensions\LinkedListExtensions.cs" />
+    <Compile Include="Extensions\SemaphoreSlimExtensions.cs" />
+    <Compile Include="Extensions\ProducerConsumerQueueExtensions.cs" />
+    <Compile Include="Extensions\ICollectionExtensions.cs" />
+    <Compile Include="Extensions\ILookupExtensions.cs" />
+    <Compile Include="Extensions\TaskExtensions.cs" />
+    <Compile Include="FileSystem\FileStoreDisposedPolicy.cs" />
+    <Compile Include="FileSystem\PathTool.cs" />
+    <Compile Include="FileSystem\TempFileStore.cs" />
+    <Compile Include="FileSystem\FileStore.cs" />
+    <Compile Include="Collections\Observable\IObservableCollection.cs" />
+    <Compile Include="IoC\TinyIoC.cs" />
+    <Compile Include="IO\EndianBinaryReader.cs" />
+    <Compile Include="IO\EndianBinaryWriter.cs" />
+    <Compile Include="Logging\AsyncLogger.cs" />
+    <Compile Include="Logging\ConsoleLogger.cs" />
+    <Compile Include="Logging\DecoratedLogger.cs" />
+    <Compile Include="Logging\FileAppendLogger.cs" />
+    <Compile Include="Logging\LogOptions.cs" />
+    <Compile Include="Logging\TimestampLogger.cs" />
+    <Compile Include="Math\Compiler\CodeErrorException.cs" />
+    <Compile Include="Math\Compiler\CodeErrorsException.cs" />
+    <Compile Include="Math\Compiler\CodeGen\BasicFunctionGenerator.cs" />
+    <Compile Include="Math\Compiler\CodeGen\BasicTypeChecker.cs" />
+    <Compile Include="Math\Compiler\CodeGen\CodeGenerationException.cs" />
+    <Compile Include="Math\Compiler\CodeGen\IDynamicallyCompiledFunction.cs" />
+    <Compile Include="Math\Compiler\CodeGen\StandardFunctionResolver.cs" />
+    <Compile Include="Math\Compiler\CompilerException.cs" />
+    <Compile Include="Math\Compiler\CompilerUtil.cs" />
+    <Compile Include="Math\Compiler\InternalCompilerException.cs" />
+    <Compile Include="Math\Compiler\Parser\Associativity.cs" />
+    <Compile Include="Math\Compiler\Parser\BinaryOperatorTree.cs" />
+    <Compile Include="Math\Compiler\Parser\FactorTree.cs" />
+    <Compile Include="Math\Compiler\Parser\FunctionCallTree.cs" />
+    <Compile Include="Math\Compiler\Parser\FunctionDeclarationTree.cs" />
+    <Compile Include="Math\Compiler\Parser\IfThenElseTree.cs" />
+    <Compile Include="Math\Compiler\Parser\IfThenTree.cs" />
+    <Compile Include="Math\Compiler\Parser\Operator.cs" />
+    <Compile Include="Math\Compiler\Parser\Parser.cs" />
+    <Compile Include="Math\Compiler\Parser\ParserException.cs" />
+    <Compile Include="Math\Compiler\Parser\SyntaxTree.cs" />
+    <Compile Include="Math\Compiler\Parser\UnaryOperatorTree.cs" />
+    <Compile Include="Math\Compiler\Runtime\DefaultFunctionContext.cs" />
+    <Compile Include="Math\Compiler\Runtime\DefaultMathContext.cs" />
+    <Compile Include="Math\Compiler\Runtime\DefaultVariableContext.cs" />
+    <Compile Include="Math\Compiler\Runtime\IFunctionContext.cs" />
+    <Compile Include="Math\Compiler\Runtime\IMathContext.cs" />
+    <Compile Include="Math\Compiler\Runtime\IVariableContext.cs" />
+    <Compile Include="Math\Compiler\Scanner\Scanner.cs" />
+    <Compile Include="Math\Compiler\Scanner\ScannerErrorState.cs" />
+    <Compile Include="Math\Compiler\Scanner\ScannerException.cs" />
+    <Compile Include="Math\Compiler\Scanner\ScannerState.cs" />
+    <Compile Include="Math\Compiler\Scanner\Token.cs" />
+    <Compile Include="Math\Compiler\Scanner\TokenType.cs" />
+    <Compile Include="Math\FastExp.cs" />
+    <Compile Include="Math\FastLog.cs" />
+    <Compile Include="Math\HighOrderFunctions\ArcLengthDerivativeFunction.cs" />
+    <Compile Include="Math\HighOrderFunctions\FunctionDerivative.cs" />
+    <Compile Include="Math\HighOrderFunctions\FunctionIntegral.cs" />
+    <Compile Include="Math\HighOrderFunctions\SpacelikeMinkowskiDerivativeFunction.cs" />
+    <Compile Include="Math\HighOrderFunctions\TimelikeMinkowskiDerivativeFunction.cs" />
+    <Compile Include="Math\IFunction.cs" />
+    <Compile Include="Math\Metric.cs" />
+    <Compile Include="Math\ParametricFunction.cs" />
+    <Compile Include="Math\Statistics.cs" />
+    <Compile Include="Memory\MemoryTool.cs" />
+    <Compile Include="Memory\MemoryMetric.cs" />
+    <Compile Include="Memory\Page.cs" />
+    <Compile Include="Memory\PageManager.cs" />
+    <Compile Include="Misc\CollectionConflictPolicy.cs" />
+    <Compile Include="Misc\AuthenticationResult.cs" />
+    <Compile Include="Compatibility\WP80\WindowsPhone8.cs" />
+    <Compile Include="Misc\DateTimeTool.cs" />
+    <Compile Include="Misc\DefaultDateAttribute.cs" />
+    <Compile Include="Misc\EnumTool.cs" />
+    <Compile Include="Misc\ObfuscationAttribute.cs" />
+    <Compile Include="Misc\AlreadyExistsPolicy.cs" />
+    <Compile Include="Misc\Preconditions.cs" />
+    <Compile Include="Misc\UITargetReference.cs" />
+    <Compile Include="Misc\Result.cs" />
+    <Compile Include="Misc\UrlID.cs" />
+    <Compile Include="Network\QueryStringBuilder.cs" />
+    <Compile Include="Network\UrlShortner.cs" />
+    <Compile Include="Network\UrlTool.cs" />
+    <Compile Include="Objects\MobileCompatibleObjectCloner.cs" />
+    <Compile Include="Objects\FieldInstanceHolder.cs" />
+    <Compile Include="Objects\IInstanceHolder.cs" />
+    <Compile Include="Objects\TypeActivator.cs" />
+    <Compile Include="Objects\ObjectEncryptor.cs" />
+    <Compile Include="Objects\TypeChanger.cs" />
+    <Compile Include="Objects\TypeResolver.cs" />
+    <Compile Include="ReadableRex\RegexAlternation.cs" />
+    <Compile Include="ReadableRex\RegexLazyQuantifier.cs" />
+    <Compile Include="ReadableRex\RegexPattern.cs" />
+    <Compile Include="ReadableRex\RegexQuantifier.cs" />
+    <Compile Include="ReadableRex\RegexRange.cs" />
+    <Compile Include="Scopes\DisposalScope.cs" />
+    <Compile Include="Scopes\ExecuteOnDisposeScope.cs" />
+    <Compile Include="Scopes\ScopeContext.cs" />
+    <Compile Include="Misc\ShortGuid.cs" />
+    <Compile Include="Objects\ActionDisposable.cs" />
+    <Compile Include="Objects\ShallowObjectCloner.cs" />
+    <Compile Include="Objects\DeepObjectComparer.cs" />
+    <Compile Include="Objects\DeepObjectCloner.cs" />
+    <Compile Include="Objects\Difference.cs" />
+    <Compile Include="Objects\IDeepObjectComparer.cs" />
+    <Compile Include="Objects\IObjectCloner.cs" />
+    <Compile Include="Objects\Reference.cs" />
+    <Compile Include="Scopes\ScopeTool.cs" />
+    <Compile Include="Security\CodeAccessSecurityTool.cs" />
+    <Compile Include="Security\PasswordHash.cs" />
+    <Compile Include="Settings\AndroidSettingsProvider.cs" />
+    <Compile Include="Settings\BaseSettingsProvider.cs" />
+    <Compile Include="Settings\ConfigTool.cs" />
+    <Compile Include="Settings\UserDefaultObject.cs" />
+    <Compile Include="Settings\UserDefaultsSettingsProvider.cs" />
+    <Compile Include="Settings\WP8SettingsProvider.cs" />
+    <Compile Include="IO\BlockingStream.cs" />
+    <Compile Include="IO\CircularStream.cs" />
+    <Compile Include="IO\StreamDecorator.cs" />
+    <Compile Include="IO\StreamPipeline.cs" />
+    <Compile Include="IO\StreamProfiler.cs" />
+    <Compile Include="Settings\GenericSectionHandler.cs" />
+    <Compile Include="TextWriters\BaseTextWriter.cs" />
+    <Compile Include="Exceptions\ApplicationAlreadyRunningException.cs" />
+    <Compile Include="Lambda\LambdaTool.cs" />
+    <Compile Include="Extensions\ActionExtensions.cs" />
+    <Compile Include="Extensions\AssemblyExtensions.cs" />
+    <Compile Include="Extensions\HashSetExtensions.cs" />
+    <Compile Include="Extensions\IListExtensions.cs" />
+    <Compile Include="Extensions\RandomExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Extensions\NumericExtensions.cs" />
+    <Compile Include="Extensions\CustomAttributesProviderExtensions.cs" />
+    <Compile Include="Extensions\ByteArrayExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\TreeExtensions.cs" />
+    <Compile Include="Hooks\ApplicationChangedEvent.cs" />
+    <Compile Include="Hooks\BaseDeviceHook.cs" />
+    <Compile Include="Hooks\BaseKeyboardHook.cs" />
+    <Compile Include="Hooks\BaseMouseHook.cs" />
+    <Compile Include="FileSystem\FileSystemTool.cs" />
+    <Compile Include="Mouse\MouseWheelEvent.cs" />
+    <Compile Include="Mouse\MouseClickEvent.cs" />
+    <Compile Include="Hooks\DeviceHookStatus.cs" />
+    <Compile Include="Hooks\IDeviceHook.cs" />
+    <Compile Include="Hooks\IActiveApplicationMonitor.cs" />
+    <Compile Include="Hooks\IKeyboardHook.cs" />
+    <Compile Include="Hooks\IMouseHook.cs" />
+    <Compile Include="Keyboard\Key.cs" />
+    <Compile Include="Keyboard\KeyEvent.cs" />
+    <Compile Include="Keyboard\KeyState.cs" />
+    <Compile Include="Mouse\MouseButton.cs" />
+    <Compile Include="Mouse\MouseButtonState.cs" />
+    <Compile Include="Mouse\MouseClickType.cs" />
+    <Compile Include="Mouse\MouseEvent.cs" />
+    <Compile Include="Mouse\MouseMoveEvent.cs" />
+    <Compile Include="Mouse\MouseMotionType.cs" />
+    <Compile Include="Hooks\NoOpActiveApplicationMonitor.cs" />
+    <Compile Include="Keyboard\ScanCode.cs" />
+    <Compile Include="Network\MimeTool.cs" />
+    <Compile Include="IO\StreamTool.cs" />
+    <Compile Include="TextWriters\ActionTextWriterDecorator.cs" />
+    <Compile Include="Logging\MultiCastLogger.cs" />
+    <Compile Include="Logging\SystemLog.cs" />
+    <Compile Include="Mail\MailTool.cs" />
+    <Compile Include="Math\MathTool.cs" />
+    <Compile Include="Scopes\ActionScope.cs" />
+    <Compile Include="Misc\AuthenticationErrorCode.cs" />
+    <Compile Include="IO\BackgroundOutputStream.cs" />
+    <Compile Include="Misc\ActionEqualityComparer.cs" />
+    <Compile Include="Comparers\ComparableWrapper.cs" />
+    <Compile Include="Misc\DecayGauge.cs" />
+    <Compile Include="Text\Base32Converter.cs" />
+    <Compile Include="Cache\ActionCache.cs" />
+    <Compile Include="Cache\CacheBase.cs" />
+    <Compile Include="Cache\ICache.cs" />
+    <Compile Include="Collections\EnumeratedItem.cs" />
+    <Compile Include="Misc\MetadataAttribute.cs" />
+    <Compile Include="Objects\Disposable.cs" />
+    <Compile Include="Misc\EnumerableComparer.cs" />
+    <Compile Include="Collections\EnumeratedItemDescription.cs" />
+    <Compile Include="Events\EventHandlerEx.cs" />
+    <Compile Include="Objects\PrimitiveGenericEqualityComparer.cs" />
+    <Compile Include="Misc\GST.cs" />
+    <Compile Include="Text\Base62Converter.cs" />
+    <Compile Include="Text\FastStringBuilder.cs" />
+    <Compile Include="Text\Inflector.cs" />
+    <Compile Include="Objects\ObjectTool.cs" />
+    <Compile Include="Objects\ObjectWithDefaultValues.cs" />
+    <Compile Include="Misc\SingleApplicationInstanceScope.cs" />
+    <Compile Include="Misc\ErrorMessageAttribute.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\TimespanExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="FastReflection\ConstructorInvoker.cs" />
+    <Compile Include="FastReflection\FastReflectionCaches.cs" />
+    <Compile Include="FastReflection\FastReflectionExtensions.cs" />
+    <Compile Include="FastReflection\FieldAccessor.cs" />
+    <Compile Include="FastReflection\MethodInvoker.cs" />
+    <Compile Include="FastReflection\PropertyAccessor.cs" />
+    <Compile Include="Comparers\GenericComparer.cs" />
+    <Compile Include="Security\CryptoTool.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\Log.cs" />
+    <Compile Include="Logging\NoOpLogger.cs" />
+    <Compile Include="Logging\TextWriterLogger.cs" />
+    <Compile Include="TextWriters\ActionTextWriter.cs" />
+    <Compile Include="TextWriters\ConsoleTextWriter.cs" />
+    <Compile Include="TextWriters\DebugTextWriter.cs" />
+    <Compile Include="TextWriters\FileAppendTextWriter.cs" />
+    <Compile Include="TextWriters\MultiCastTextWriter.cs" />
+    <Compile Include="TextWriters\NoOpTextWriter.cs" />
+    <Compile Include="Text\ParagraphBuilder.cs" />
+    <Compile Include="Math\StaticRandom.cs" />
+    <Compile Include="TextWriters\TextWriterDecorator.cs" />
+    <Compile Include="TextWriters\TimeStampTextWriterDecorator.cs" />
+    <Compile Include="Misc\TypeSwitch.cs" />
+    <Compile Include="Network\NetworkTool.cs" />
+    <Compile Include="Text\ParseTool.cs" />
+    <Compile Include="Collections\SerializableDictionarySurrogate.cs" />
+    <Compile Include="Exceptions\SoftwareException.cs" />
+    <Compile Include="Extensions\BoolExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DirectoryInfoExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Extensions\FileInfoExtensions.cs" />
+    <Compile Include="Extensions\GuidExtensions.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\NullableExtensions.cs" />
+    <Compile Include="Extensions\StringCollectionExtensions.cs" />
+    <Compile Include="Extensions\StringBuilderExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\UniversalExtensions.cs" />
+    <Compile Include="Collections\HierarchyNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Text\StringTokenizer.cs" />
+    <Compile Include="Security\SupportedHashAlgorithm.cs" />
+    <Compile Include="Text\TextBank.cs" />
+    <Compile Include="Settings\AppSettingAttribute.cs" />
+    <Compile Include="Settings\DirectorySettingsProvider.cs" />
+    <Compile Include="Security\EncryptedAttribute.cs" />
+    <Compile Include="Security\EncryptionSaltPolicy.cs" />
+    <Compile Include="Settings\UserSettings.cs" />
+    <Compile Include="Settings\GlobalSettings.cs" />
+    <Compile Include="Settings\ISettingsProvider.cs" />
+    <Compile Include="Settings\SettingsObject.cs" />
+    <Compile Include="Text\TextTool.cs" />
+    <Compile Include="Threading\BackgroundProcessor.cs" />
+    <Compile Include="Threading\CallQueue.cs" />
+    <Compile Include="Threading\IThreadSafeObject.cs" />
+    <Compile Include="Threading\PCLTimer.cs" />
+    <Compile Include="Threading\Scheduler\ReschedulePolicy.cs" />
+    <Compile Include="Threading\ThroughputOptimizer.cs" />
+    <Compile Include="Threading\Scheduler\ActionJob.cs" />
+    <Compile Include="Threading\Scheduler\BaseJob.cs" />
+    <Compile Include="Threading\Scheduler\BaseJobSchedule.cs" />
+    <Compile Include="Threading\Scheduler\IJob.cs" />
+    <Compile Include="Threading\Scheduler\IJobSchedule.cs" />
+    <Compile Include="Threading\Scheduler\JobBuilder.cs" />
+    <Compile Include="Threading\Scheduler\JobPolicy.cs" />
+    <Compile Include="Threading\Scheduler\JobStatus.cs" />
+    <Compile Include="Threading\Scheduler\OnDayOfMonthScheduler.cs" />
+    <Compile Include="Threading\Scheduler\OnDayOfWeekScheduler.cs" />
+    <Compile Include="Threading\Scheduler\OnIntervalSchedule.cs" />
+    <Compile Include="Threading\Scheduler\ScheduleBuilder.cs" />
+    <Compile Include="Threading\Scheduler\Scheduler.cs" />
+    <Compile Include="Threading\Scheduler\SchedulerPolicy.cs" />
+    <Compile Include="Threading\Scheduler\SchedulerStatus.cs" />
+    <Compile Include="Threading\SyncronizationCallback.cs" />
+    <Compile Include="Threading\ThreadSafeScope.cs" />
+    <Compile Include="Threading\ThreadTool.cs" />
+    <Compile Include="Threading\DelayedAction.cs" />
+    <Compile Include="Threading\Throttle.cs" />
+    <Compile Include="Xml\BinaryContainer.cs" />
+    <Compile Include="Xml\CDataString.cs" />
+    <Compile Include="Xml\IXmlSerializationTag.cs" />
+    <Compile Include="Xml\XmlDeepDeserializer.cs" />
+    <Compile Include="Xml\XmlDeepSerializer.cs" />
+    <Compile Include="Xml\XmlSerializationHelpers.cs" />
+    <Compile Include="Xml\XmlSerializationTag.cs" />
+    <Compile Include="Xml\XmlProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadableRex\HowToUse.txt" />
+    <Content Include="Settings\WriteUp.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="..\..\Sphere10.snk">
+      <Link>Sphere10.snk</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /F /Y $(TargetDir)*.dll ..\..\..\Precompiled\Win\$(ConfigurationName)\$(PlatformName)\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

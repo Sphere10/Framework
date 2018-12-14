@@ -1,0 +1,1199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D85DC277-3302-4826-9F27-BB55ACB4DD99}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Framework.Android</RootNamespace>
+    <AssemblyName>Sphere10.Framework.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;__MOBILE__;__ANDROID__;TPL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;__MOBILE__;__ANDROID__;TPL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Sphere10.Framework\Cache\ActionCache.cs">
+      <Link>Cache\ActionCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\BulkFetchActionCache.cs">
+      <Link>Cache\BulkFetchActionCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\BulkFetchCacheBase.cs">
+      <Link>Cache\BulkFetchCacheBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\CacheBase.cs">
+      <Link>Cache\CacheBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\CachedItem.cs">
+      <Link>Cache\CachedItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\CacheReapPolicy.cs">
+      <Link>Cache\CacheReapPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\ExpirationPolicy.cs">
+      <Link>Cache\ExpirationPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\ICache.cs">
+      <Link>Cache\ICache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\ICacheExtensions.cs">
+      <Link>Cache\ICacheExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Cache\SessionCache.cs">
+      <Link>Cache\SessionCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\CodeBuilder\CodeBuilder.cs">
+      <Link>CodeBuilder\CodeBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\CodeBuilder\ComponentFactory.cs">
+      <Link>CodeBuilder\ComponentFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\ArrayTool.cs">
+      <Link>Collections\ArrayTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\BinaryHeap.cs">
+      <Link>Collections\BinaryHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\BTree.cs">
+      <Link>Collections\BTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\CircularBuffer.cs">
+      <Link>Collections\CircularBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\CollectionDecorator.cs">
+      <Link>Collections\CollectionDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\CollectionGroup.cs">
+      <Link>Collections\CollectionGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\CollectionTool.cs">
+      <Link>Collections\CollectionTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\DictionaryDecorator.cs">
+      <Link>Collections\DictionaryDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\EnumerableContainsSameComparer.cs">
+      <Link>Collections\EnumerableContainsSameComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\EnumerableSequenceEqualComparer.cs">
+      <Link>Collections\EnumerableSequenceEqualComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\EnumeratedItem.cs">
+      <Link>Collections\EnumeratedItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\EnumeratedItemDescription.cs">
+      <Link>Collections\EnumeratedItemDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\FileDictionary.cs">
+      <Link>Collections\FileDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\GraphNode.cs">
+      <Link>Collections\GraphNode.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Grouping.cs">
+      <Link>Collections\Grouping.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\GroupOfAdjacent.cs">
+      <Link>Collections\GroupOfAdjacent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\HierarchyNode.cs">
+      <Link>Collections\HierarchyNode.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\IHeap.cs">
+      <Link>Collections\IHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\IPersistedDictionary.cs">
+      <Link>Collections\IPersistedDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\ISequentialGuidGenerator.cs">
+      <Link>Collections\ISequentialGuidGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\LargeCollection.cs">
+      <Link>Collections\LargeCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\ListDecorator.cs">
+      <Link>Collections\ListDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\ListSet.cs">
+      <Link>Collections\ListSet.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\LookupEx.cs">
+      <Link>Collections\LookupEx.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\MultiKeyDictionary.cs">
+      <Link>Collections\MultiKeyDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\MultiKeyLookup.cs">
+      <Link>Collections\MultiKeyLookup.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\MultiKeyMap.cs">
+      <Link>Collections\MultiKeyMap.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\NotPersistedDictionary.cs">
+      <Link>Collections\NotPersistedDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Observable\IObservableCollection.cs">
+      <Link>Collections\Observable\IObservableCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Observable\ObservableCollectionItem.cs">
+      <Link>Collections\Observable\ObservableCollectionItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Observable\ObservableCollectionItemEventType.cs">
+      <Link>Collections\Observable\ObservableCollectionItemEventType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Observable\ObservableDictionary.cs">
+      <Link>Collections\Observable\ObservableDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Observable\ObservableList.cs">
+      <Link>Collections\Observable\ObservableList.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Observable\ObservationWindow.cs">
+      <Link>Collections\Observable\ObservationWindow.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\ProducerConsumerQueue.cs">
+      <Link>Collections\ProducerConsumerQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\ReadOnlyDictionaryDecorator.cs">
+      <Link>Collections\ReadOnlyDictionaryDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\ReferenceDictionary.cs">
+      <Link>Collections\ReferenceDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SequentialGuidGenerator.cs">
+      <Link>Collections\SequentialGuidGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SerializableDictionarySurrogate.cs">
+      <Link>Collections\SerializableDictionarySurrogate.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SerializableDictionarySurrogate2.cs">
+      <Link>Collections\SerializableDictionarySurrogate2.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SerializableKeyValuePair.cs">
+      <Link>Collections\SerializableKeyValuePair.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SortedCollection.cs">
+      <Link>Collections\SortedCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Sorting\BubbleSort.cs">
+      <Link>Collections\Sorting\BubbleSort.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Sorting\InsertionSort.cs">
+      <Link>Collections\Sorting\InsertionSort.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Sorting\QuickSort.cs">
+      <Link>Collections\Sorting\QuickSort.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Sorting\SelectionSort.cs">
+      <Link>Collections\Sorting\SelectionSort.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Sorting\Sorter.cs">
+      <Link>Collections\Sorting\Sorter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Sorting\SortStrategy.cs">
+      <Link>Collections\Sorting\SortStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Sorting\SortStrategyFactory.cs">
+      <Link>Collections\Sorting\SortStrategyFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\Sorting\SortType.cs">
+      <Link>Collections\Sorting\SortType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SynchronizedDictionary.cs">
+      <Link>Collections\SynchronizedDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SynchronizedHeap.cs">
+      <Link>Collections\SynchronizedHeap.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SynchronizedList.cs">
+      <Link>Collections\SynchronizedList.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SyncronizedCollectionEx.cs">
+      <Link>Collections\SyncronizedCollectionEx.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\SyncronizedQueue.cs">
+      <Link>Collections\SyncronizedQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\TopologicalSorter.cs">
+      <Link>Collections\TopologicalSorter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\TreeTraversalType.cs">
+      <Link>Collections\TreeTraversalType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Collections\ValueReferenceInverseDictionary.cs">
+      <Link>Collections\ValueReferenceInverseDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\BinaryFormatter.cs">
+      <Link>Compatibility\WP80\BinaryFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\CipherMode.cs">
+      <Link>Compatibility\WP80\CipherMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\ElapsedEventArgs.cs">
+      <Link>Compatibility\WP80\ElapsedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\ISynchronizeInvoke.cs">
+      <Link>Compatibility\WP80\ISynchronizeInvoke.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\NonSerializedAttribute.cs">
+      <Link>Compatibility\WP80\NonSerializedAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\ObfuscationAttribute.cs">
+      <Link>Compatibility\WP80\ObfuscationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\PaddingMode.cs">
+      <Link>Compatibility\WP80\PaddingMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\Parallel.cs">
+      <Link>Compatibility\WP80\Parallel.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\SerializableAttribute.cs">
+      <Link>Compatibility\WP80\SerializableAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\Timer.cs">
+      <Link>Compatibility\WP80\Timer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Compatibility\WP80\WindowsPhone8.cs">
+      <Link>Compatibility\WP80\WindowsPhone8.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Conversion\BigEndianBitConverter.cs">
+      <Link>Conversion\BigEndianBitConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Conversion\DoubleConverter.cs">
+      <Link>Conversion\DoubleConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Conversion\EndianBitConverter.cs">
+      <Link>Conversion\EndianBitConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Conversion\Endianness.cs">
+      <Link>Conversion\Endianness.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Conversion\LittleEndianBitConverter.cs">
+      <Link>Conversion\LittleEndianBitConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Crud\CrudAction.cs">
+      <Link>Crud\CrudAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Crud\CrudSortDirection.cs">
+      <Link>Crud\CrudSortDirection.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Crud\ICrudDataSource.cs">
+      <Link>Crud\ICrudDataSource.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Events\EventHandlerEx.cs">
+      <Link>Events\EventHandlerEx.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Exceptions\ApplicationAlreadyRunningException.cs">
+      <Link>Exceptions\ApplicationAlreadyRunningException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Exceptions\ExceptionTool.cs">
+      <Link>Exceptions\ExceptionTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Exceptions\IllegalValueException.cs">
+      <Link>Exceptions\IllegalValueException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Exceptions\InternalErrorException.cs">
+      <Link>Exceptions\InternalErrorException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Exceptions\NotInitializedException.cs">
+      <Link>Exceptions\NotInitializedException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Exceptions\QueueDisposedException.cs">
+      <Link>Exceptions\QueueDisposedException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Exceptions\SoftwareException.cs">
+      <Link>Exceptions\SoftwareException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\ActionExtensions.cs">
+      <Link>Extensions\ActionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\AssemblyExtensions.cs">
+      <Link>Extensions\AssemblyExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\BoolExtensions.cs">
+      <Link>Extensions\BoolExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\ByteArrayExtensions.cs">
+      <Link>Extensions\ByteArrayExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\CustomAttributesProviderExtensions.cs">
+      <Link>Extensions\CustomAttributesProviderExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\DateTimeExtensions.cs">
+      <Link>Extensions\DateTimeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\DictionaryExtensions.cs">
+      <Link>Extensions\DictionaryExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\DirectoryInfoExtensions.cs">
+      <Link>Extensions\DirectoryInfoExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\EnumExtensions.cs">
+      <Link>Extensions\EnumExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\ExceptionExtensions.cs">
+      <Link>Extensions\ExceptionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\FileInfoExtensions.cs">
+      <Link>Extensions\FileInfoExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\GuidExtensions.cs">
+      <Link>Extensions\GuidExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\HashSetExtensions.cs">
+      <Link>Extensions\HashSetExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\ICollectionExtensions.cs">
+      <Link>Extensions\ICollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\IEnumerableExtensions.cs">
+      <Link>Extensions\IEnumerableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\IListExtensions.cs">
+      <Link>Extensions\IListExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\ILookupExtensions.cs">
+      <Link>Extensions\ILookupExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\NullableExtensions.cs">
+      <Link>Extensions\NullableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\NumericExtensions.cs">
+      <Link>Extensions\NumericExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\ObjectExtensions.cs">
+      <Link>Extensions\ObjectExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\ProducerConsumerQueueExtensions.cs">
+      <Link>Extensions\ProducerConsumerQueueExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\RandomExtensions.cs">
+      <Link>Extensions\RandomExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\SemaphoreSlimExtensions.cs">
+      <Link>Extensions\SemaphoreSlimExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\StreamExtensions.cs">
+      <Link>Extensions\StreamExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\StringBuilderExtensions.cs">
+      <Link>Extensions\StringBuilderExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\StringCollectionExtensions.cs">
+      <Link>Extensions\StringCollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\StringExtensions.cs">
+      <Link>Extensions\StringExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\TaskExtensions.cs">
+      <Link>Extensions\TaskExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\TimespanExtensions.cs">
+      <Link>Extensions\TimespanExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\TreeExtensions.cs">
+      <Link>Extensions\TreeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\TypeExtensions.cs">
+      <Link>Extensions\TypeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Extensions\UniversalExtensions.cs">
+      <Link>Extensions\UniversalExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\ConstructorInvoker.cs">
+      <Link>FastReflection\ConstructorInvoker.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\ConstructorInvokerCache.cs">
+      <Link>FastReflection\ConstructorInvokerCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\ConstructorInvokerFactory.cs">
+      <Link>FastReflection\ConstructorInvokerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\FastReflectionCache.cs">
+      <Link>FastReflection\FastReflectionCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\FastReflectionCaches.cs">
+      <Link>FastReflection\FastReflectionCaches.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\FastReflectionExtensions.cs">
+      <Link>FastReflection\FastReflectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\FastReflectionFactories.cs">
+      <Link>FastReflection\FastReflectionFactories.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\FieldAccessor.cs">
+      <Link>FastReflection\FieldAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\FieldAccessorCache.cs">
+      <Link>FastReflection\FieldAccessorCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\FieldAccessorFactory.cs">
+      <Link>FastReflection\FieldAccessorFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\IFastReflectionCache.cs">
+      <Link>FastReflection\IFastReflectionCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\IFastReflectionFactory.cs">
+      <Link>FastReflection\IFastReflectionFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\MethodInvoker.cs">
+      <Link>FastReflection\MethodInvoker.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\MethodInvokerCache.cs">
+      <Link>FastReflection\MethodInvokerCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\MethodInvokerFactory.cs">
+      <Link>FastReflection\MethodInvokerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\PropertyAccessor.cs">
+      <Link>FastReflection\PropertyAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\PropertyAccessorCache.cs">
+      <Link>FastReflection\PropertyAccessorCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FastReflection\PropertyAccessorFactory.cs">
+      <Link>FastReflection\PropertyAccessorFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FileSystem\FileStore.cs">
+      <Link>FileSystem\FileStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FileSystem\FileStoreDisposedPolicy.cs">
+      <Link>FileSystem\FileStoreDisposedPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FileSystem\FileSystemTool.cs">
+      <Link>FileSystem\FileSystemTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FileSystem\PathTool.cs">
+      <Link>FileSystem\PathTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\FileSystem\TempFileStore.cs">
+      <Link>FileSystem\TempFileStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\ApplicationChangedEvent.cs">
+      <Link>Hooks\ApplicationChangedEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\BaseDeviceHook.cs">
+      <Link>Hooks\BaseDeviceHook.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\BaseKeyboardHook.cs">
+      <Link>Hooks\BaseKeyboardHook.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\BaseMouseHook.cs">
+      <Link>Hooks\BaseMouseHook.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\DeviceHookStatus.cs">
+      <Link>Hooks\DeviceHookStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\IActiveApplicationMonitor.cs">
+      <Link>Hooks\IActiveApplicationMonitor.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\IDeviceHook.cs">
+      <Link>Hooks\IDeviceHook.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\IKeyboardHook.cs">
+      <Link>Hooks\IKeyboardHook.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\IMouseHook.cs">
+      <Link>Hooks\IMouseHook.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\Key.cs">
+      <Link>Hooks\Key.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\KeyEvent.cs">
+      <Link>Hooks\KeyEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\KeyState.cs">
+      <Link>Hooks\KeyState.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\MouseButton.cs">
+      <Link>Hooks\MouseButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\MouseButtonState.cs">
+      <Link>Hooks\MouseButtonState.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\MouseClickEvent.cs">
+      <Link>Hooks\MouseClickEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\MouseClickType.cs">
+      <Link>Hooks\MouseClickType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\MouseEvent.cs">
+      <Link>Hooks\MouseEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\MouseMotionType.cs">
+      <Link>Hooks\MouseMotionType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\MouseMoveEvent.cs">
+      <Link>Hooks\MouseMoveEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\MouseWheelEvent.cs">
+      <Link>Hooks\MouseWheelEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\NoOpActiveApplicationMonitor.cs">
+      <Link>Hooks\NoOpActiveApplicationMonitor.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Hooks\ScanCode.cs">
+      <Link>Hooks\ScanCode.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IoC\TinyIoC.cs">
+      <Link>IoC\TinyIoC.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\BackgroundOutputStream.cs">
+      <Link>IO\BackgroundOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\BlockingStream.cs">
+      <Link>IO\BlockingStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\CircularStream.cs">
+      <Link>IO\CircularStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\EndianBinaryReader.cs">
+      <Link>IO\EndianBinaryReader.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\EndianBinaryWriter.cs">
+      <Link>IO\EndianBinaryWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\StreamDecorator.cs">
+      <Link>IO\StreamDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\StreamPipeline.cs">
+      <Link>IO\StreamPipeline.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\StreamProfiler.cs">
+      <Link>IO\StreamProfiler.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\IO\StreamTool.cs">
+      <Link>IO\StreamTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Keyboard\Key.cs">
+      <Link>Keyboard\Key.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Keyboard\KeyEvent.cs">
+      <Link>Keyboard\KeyEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Keyboard\KeyState.cs">
+      <Link>Keyboard\KeyState.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Keyboard\ScanCode.cs">
+      <Link>Keyboard\ScanCode.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Lambda\LambdaTool.cs">
+      <Link>Lambda\LambdaTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\AsyncLogger.cs">
+      <Link>Logging\AsyncLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\ConsoleLogger.cs">
+      <Link>Logging\ConsoleLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\DecoratedLogger.cs">
+      <Link>Logging\DecoratedLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\FileAppendLogger.cs">
+      <Link>Logging\FileAppendLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\ILogger.cs">
+      <Link>Logging\ILogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\Log.cs">
+      <Link>Logging\Log.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\LogOptions.cs">
+      <Link>Logging\LogOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\MultiCastLogger.cs">
+      <Link>Logging\MultiCastLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\NoOpLogger.cs">
+      <Link>Logging\NoOpLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\SystemLog.cs">
+      <Link>Logging\SystemLog.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\TextWriterLogger.cs">
+      <Link>Logging\TextWriterLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Logging\TimestampLogger.cs">
+      <Link>Logging\TimestampLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mail\MailTool.cs">
+      <Link>Mail\MailTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CodeErrorException.cs">
+      <Link>Math\Compiler\CodeErrorException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CodeErrorsException.cs">
+      <Link>Math\Compiler\CodeErrorsException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CodeGen\BasicFunctionGenerator.cs">
+      <Link>Math\Compiler\Codegen\BasicFunctionGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CodeGen\BasicTypeChecker.cs">
+      <Link>Math\Compiler\Codegen\BasicTypeChecker.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CodeGen\CodeGenerationException.cs">
+      <Link>Math\Compiler\Codegen\CodeGenerationException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CodeGen\IDynamicallyCompiledFunction.cs">
+      <Link>Math\Compiler\Codegen\IDynamicallyCompiledFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CodeGen\StandardFunctionResolver.cs">
+      <Link>Math\Compiler\Codegen\StandardFunctionResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CompilerException.cs">
+      <Link>Math\Compiler\CompilerException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\CompilerUtil.cs">
+      <Link>Math\Compiler\CompilerUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\InternalCompilerException.cs">
+      <Link>Math\Compiler\InternalCompilerException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\Associativity.cs">
+      <Link>Math\Compiler\Parser\Associativity.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\BinaryOperatorTree.cs">
+      <Link>Math\Compiler\Parser\BinaryOperatorTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\FactorTree.cs">
+      <Link>Math\Compiler\Parser\FactorTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\FunctionCallTree.cs">
+      <Link>Math\Compiler\Parser\FunctionCallTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\FunctionDeclarationTree.cs">
+      <Link>Math\Compiler\Parser\FunctionDeclarationTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\IfThenElseTree.cs">
+      <Link>Math\Compiler\Parser\IfThenElseTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\IfThenTree.cs">
+      <Link>Math\Compiler\Parser\IfThenTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\Operator.cs">
+      <Link>Math\Compiler\Parser\Operator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\Parser.cs">
+      <Link>Math\Compiler\Parser\Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\ParserException.cs">
+      <Link>Math\Compiler\Parser\ParserException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\SyntaxTree.cs">
+      <Link>Math\Compiler\Parser\SyntaxTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Parser\UnaryOperatorTree.cs">
+      <Link>Math\Compiler\Parser\UnaryOperatorTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Runtime\DefaultFunctionContext.cs">
+      <Link>Math\Compiler\Runtime\DefaultFunctionContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Runtime\DefaultMathContext.cs">
+      <Link>Math\Compiler\Runtime\DefaultMathContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Runtime\DefaultVariableContext.cs">
+      <Link>Math\Compiler\Runtime\DefaultVariableContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Runtime\IFunctionContext.cs">
+      <Link>Math\Compiler\Runtime\IFunctionContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Runtime\IMathContext.cs">
+      <Link>Math\Compiler\Runtime\IMathContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Runtime\IVariableContext.cs">
+      <Link>Math\Compiler\Runtime\IVariableContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Scanner\Scanner.cs">
+      <Link>Math\Compiler\Scanner\Scanner.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Scanner\ScannerErrorState.cs">
+      <Link>Math\Compiler\Scanner\ScannerErrorState.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Scanner\ScannerException.cs">
+      <Link>Math\Compiler\Scanner\ScannerException.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Scanner\ScannerState.cs">
+      <Link>Math\Compiler\Scanner\ScannerState.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Scanner\Token.cs">
+      <Link>Math\Compiler\Scanner\Token.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Compiler\Scanner\TokenType.cs">
+      <Link>Math\Compiler\Scanner\TokenType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\HighOrderFunctions\ArcLengthDerivativeFunction.cs">
+      <Link>Math\HigherOrderFunctions\ArcLengthDerivativeFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\HighOrderFunctions\FunctionDerivative.cs">
+      <Link>Math\HigherOrderFunctions\FunctionDerivative.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\HighOrderFunctions\FunctionIntegral.cs">
+      <Link>Math\HigherOrderFunctions\FunctionIntegral.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\HighOrderFunctions\SpacelikeMinkowskiDerivativeFunction.cs">
+      <Link>Math\HigherOrderFunctions\SpacelikeMinkowskiDerivativeFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\HighOrderFunctions\TimelikeMinkowskiDerivativeFunction.cs">
+      <Link>Math\HigherOrderFunctions\TimelikeMinkowskiDerivativeFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\IFunction.cs">
+      <Link>Math\IFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\MathTool.cs">
+      <Link>Math\MathTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Metric.cs">
+      <Link>Math\Metric.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\ParametricFunction.cs">
+      <Link>Math\ParametricFunction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\StaticRandom.cs">
+      <Link>Math\StaticRandom.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Math\Tool.cs">
+      <Link>Math\Tool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Memory\MemoryMetric.cs">
+      <Link>Memory\MemoryMetric.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Memory\MemoryTool.cs">
+      <Link>Memory\MemoryTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Memory\Page.cs">
+      <Link>Memory\Page.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Memory\PageManager.cs">
+      <Link>Memory\PageManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\ActionEqualityComparer.cs">
+      <Link>Misc\ActionEqualityComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\AlreadyExistsPolicy.cs">
+      <Link>Misc\AlreadyExistsPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\AuthenticationErrorCode.cs">
+      <Link>Misc\AuthenticationErrorCode.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\AuthenticationResult.cs">
+      <Link>Misc\AuthenticationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\CollectionConflictPolicy.cs">
+      <Link>Misc\CollectionConflictPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\ComparableWrapper.cs">
+      <Link>Misc\ComparableWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\DateTimeTool.cs">
+      <Link>Misc\DateTimeTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\DecayGauge.cs">
+      <Link>Misc\DecayGauge.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\DefaultDateAttribute.cs">
+      <Link>Misc\DefaultDateAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\DescriptionAttributeDeprecated.cs">
+      <Link>Misc\DescriptionAttributeDeprecated.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\DesignModeTool.cs">
+      <Link>Misc\DesignModeTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\EnumerableComparer.cs">
+      <Link>Misc\EnumerableComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\EnumTool.cs">
+      <Link>Misc\EnumTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\ErrorMessageAttribute.cs">
+      <Link>Misc\ErrorMessageAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\GST.cs">
+      <Link>Misc\GST.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\ObfuscationAttribute.cs">
+      <Link>Misc\ObfuscationAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\Preconditions.cs">
+      <Link>Misc\Preconditions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\Result.cs">
+      <Link>Misc\Result.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\ShortGuid.cs">
+      <Link>Misc\ShortGuid.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\SingleApplicationInstanceScope.cs">
+      <Link>Misc\SingleApplicationInstanceScope.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\TypeSwitch.cs">
+      <Link>Misc\TypeSwitch.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Misc\UITargetReference.cs">
+      <Link>Misc\UITargetReference.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mouse\MouseButton.cs">
+      <Link>Mouse\MouseButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mouse\MouseButtonState.cs">
+      <Link>Mouse\MouseButtonState.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mouse\MouseClickEvent.cs">
+      <Link>Mouse\MouseClickEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mouse\MouseClickType.cs">
+      <Link>Mouse\MouseClickType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mouse\MouseEvent.cs">
+      <Link>Mouse\MouseEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mouse\MouseMotionType.cs">
+      <Link>Mouse\MouseMotionType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mouse\MouseMoveEvent.cs">
+      <Link>Mouse\MouseMoveEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Mouse\MouseWheelEvent.cs">
+      <Link>Mouse\MouseWheelEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Network\MimeTool.cs">
+      <Link>Network\MimeTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Network\NetworkTool.cs">
+      <Link>Network\NetworkTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Network\UrlTool.cs">
+      <Link>Network\UrlTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\ActionDisposable.cs">
+      <Link>Objects\ActionDisposable.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\DeepObjectCloner.cs">
+      <Link>Objects\DeepObjectCloner.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\DeepObjectComparer.cs">
+      <Link>Objects\DeepObjectComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\Difference.cs">
+      <Link>Objects\Difference.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\Disposable.cs">
+      <Link>Objects\Disposable.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\GenericComparer.cs">
+      <Link>Objects\GenericComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\IDeepObjectComparer.cs">
+      <Link>Objects\IDeepObjectComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\IObjectCloner.cs">
+      <Link>Objects\IObjectCloner.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\ObjectTool.cs">
+      <Link>Objects\ObjectTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\ObjectWithDefaultValues.cs">
+      <Link>Objects\ObjectWithDefaultValues.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\PrimitiveGenericEqualityComparer.cs">
+      <Link>Objects\PrimitiveGenericEqualityComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\Reference.cs">
+      <Link>Objects\Reference.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Objects\ShallowObjectCloner.cs">
+      <Link>Objects\ShallowObjectCloner.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\ReadableRex\Alternation.cs">
+      <Link>ReadableRex\Alternation.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\ReadableRex\LazyQuantifier.cs">
+      <Link>ReadableRex\LazyQuantifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\ReadableRex\Pattern.cs">
+      <Link>ReadableRex\Pattern.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\ReadableRex\Quantifier.cs">
+      <Link>ReadableRex\Quantifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\ReadableRex\Range.cs">
+      <Link>ReadableRex\Range.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Scopes\ActionScope.cs">
+      <Link>Scopes\ActionScope.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Scopes\DisposalScope.cs">
+      <Link>Scopes\DisposalScope.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Scopes\ExecuteOnDisposeScope.cs">
+      <Link>Scopes\ExecuteOnDisposeScope.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Scopes\ScopeContext.cs">
+      <Link>Scopes\ScopeContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Scopes\ScopeTool.cs">
+      <Link>Scopes\ScopeTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Security\CodeAccessSecurityTool.cs">
+      <Link>Security\CodeAccessSecurityTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Security\CryptoTool.cs">
+      <Link>Security\CryptoTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Security\EncryptedAttribute.cs">
+      <Link>Security\EncryptedAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Security\EncryptionSaltPolicy.cs">
+      <Link>Security\EncryptionSaltPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Security\PasswordHash.cs">
+      <Link>Security\PasswordHash.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Security\SupportedHashAlgorithm.cs">
+      <Link>Security\SupportedHashAlgorithm.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\AndroidSettingsProvider.cs">
+      <Link>Settings\AndroidSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\AppSettingAttribute.cs">
+      <Link>Settings\AppSettingAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\BaseSettingsProvider.cs">
+      <Link>Settings\BaseSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\DirectorySettingsProvider.cs">
+      <Link>Settings\DirectorySettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\GlobalSettings.cs">
+      <Link>Settings\GlobalSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\ISettingsProvider.cs">
+      <Link>Settings\ISettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\SettingsObject.cs">
+      <Link>Settings\SettingsObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\UserDefaultObject.cs">
+      <Link>Settings\UserDefaultObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\UserDefaultsSettingsProvider.cs">
+      <Link>Settings\UserDefaultsSettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\UserSettings.cs">
+      <Link>Settings\UserSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Settings\WP8SettingsProvider.cs">
+      <Link>Settings\WP8SettingsProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\ActionTextWriter.cs">
+      <Link>TextWriters\ActionTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\ActionTextWriterDecorator.cs">
+      <Link>TextWriters\ActionTextWriterDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\BaseTextWriter.cs">
+      <Link>TextWriters\BaseTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\ConsoleTextWriter.cs">
+      <Link>TextWriters\ConsoleTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\DebugTextWriter.cs">
+      <Link>TextWriters\DebugTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\FileAppendTextWriter.cs">
+      <Link>TextWriters\FileAppendTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\MultiCastTextWriter.cs">
+      <Link>TextWriters\MultiCastTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\NoOpTextWriter.cs">
+      <Link>TextWriters\NoOpTextWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\TextWriterDecorator.cs">
+      <Link>TextWriters\TextWriterDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\TextWriters\TimeStampTextWriterDecorator.cs">
+      <Link>TextWriters\TimeStampTextWriterDecorator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Text\Base32Converter.cs">
+      <Link>Text\Base32Converter.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Text\FastStringBuilder.cs">
+      <Link>Text\FastStringBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Text\Inflector.cs">
+      <Link>Text\Inflector.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Text\ParagraphBuilder.cs">
+      <Link>Text\ParagraphBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Text\ParseTool.cs">
+      <Link>Text\ParseTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Text\StringTokenizer.cs">
+      <Link>Text\StringTokenizer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Text\TextBank.cs">
+      <Link>Text\TextBank.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Text\TextTool.cs">
+      <Link>Text\TextTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\BackgroundProcessor.cs">
+      <Link>Threading\BackgroundProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\CallQueue.cs">
+      <Link>Threading\CallQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\DelayedAction.cs">
+      <Link>Threading\DelayedAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\IThreadSafeObject.cs">
+      <Link>Threading\IThreadSafeObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\ActionJob.cs">
+      <Link>Threading\Scheduler\ActionJob.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\BaseJob.cs">
+      <Link>Threading\Scheduler\BaseJob.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\BaseJobSchedule.cs">
+      <Link>Threading\Scheduler\BaseJobSchedule.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\IJob.cs">
+      <Link>Threading\Scheduler\IJob.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\IJobSchedule.cs">
+      <Link>Threading\Scheduler\IJobSchedule.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\JobBuilder.cs">
+      <Link>Threading\Scheduler\JobBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\JobPolicy.cs">
+      <Link>Threading\Scheduler\JobPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\JobStatus.cs">
+      <Link>Threading\Scheduler\JobStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\OnDayOfMonthScheduler.cs">
+      <Link>Threading\Scheduler\OnDayOfMonthScheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\OnDayOfWeekScheduler.cs">
+      <Link>Threading\Scheduler\OnDayOfWeekScheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\OnIntervalSchedule.cs">
+      <Link>Threading\Scheduler\OnIntervalSchedule.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\ScheduleBuilder.cs">
+      <Link>Threading\Scheduler\ScheduleBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\Scheduler.cs">
+      <Link>Threading\Scheduler\Scheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\SchedulerPolicy.cs">
+      <Link>Threading\Scheduler\SchedulerPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\SchedulerStatus.cs">
+      <Link>Threading\Scheduler\SchedulerStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Scheduler\SchedulerTool.cs">
+      <Link>Threading\Scheduler\SchedulerTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\SyncronizationCallback.cs">
+      <Link>Threading\SyncronizationCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\ThreadPoolEx.cs">
+      <Link>Threading\ThreadPoolEx.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\ThreadSafeScope.cs">
+      <Link>Threading\ThreadSafeScope.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\ThreadTool.cs">
+      <Link>Threading\ThreadTool.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Threading\Throttle.cs">
+      <Link>Threading\Throttle.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Xml\BinaryContainer.cs">
+      <Link>Xml\BinaryContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Xml\IXmlSerializationTag.cs">
+      <Link>Xml\IXmlSerializationTag.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Xml\XmlDeepDeserializer.cs">
+      <Link>Xml\XmlDeepDeserializer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Xml\XmlDeepSerializer.cs">
+      <Link>Xml\XmlDeepSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Xml\XmlProvider.cs">
+      <Link>Xml\XmlProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Xml\XmlSerializationHelpers.cs">
+      <Link>Xml\XmlSerializationHelpers.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework\Xml\XmlSerializationTag.cs">
+      <Link>Xml\XmlSerializationTag.cs</Link>
+    </Compile>
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="..\Sphere10.Framework\ReadableRex\HowToUse.txt">
+      <Link>ReadableRex\HowToUse.txt</Link>
+    </Content>
+    <Content Include="..\Sphere10.Framework\Settings\WriteUp.txt">
+      <Link>Settings\WriteUp.txt</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /S /F /Y $(TargetDir)\*.dll ..\..\..\Precompiled\Android\$(ConfigurationName)\$(PlatformName)\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

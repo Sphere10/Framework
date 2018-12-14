@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{625D7516-CB63-4F2F-AA85-FAF2679E3FBB}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Framework.Drawing.Android</RootNamespace>
+    <AssemblyName>Sphere10.Framework.Drawing.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;__MOBILE__;__ANDROID__;TPL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;__MOBILE__;__ANDROID__;TPL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Sphere10.Framework.Drawing\DrawingTool.cs">
+      <Link>DrawingTool.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\ByteArrayExtensions.cs">
+      <Link>Extensions\ByteArrayExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\ColorExtensions.cs">
+      <Link>Extensions\ColorExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\GraphicsExtensions.cs">
+      <Link>Extensions\GraphicsExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\IconExtensions.cs">
+      <Link>Extensions\IconExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\ImageExtensions.cs">
+      <Link>Extensions\ImageExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\PointExtensions.cs">
+      <Link>Extensions\PointExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\PointFExtensions.cs">
+      <Link>Extensions\PointFExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\RectangleExtensions.cs">
+      <Link>Extensions\RectangleExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\RectangleFExtensions.cs">
+      <Link>Extensions\RectangleFExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\SizeExtensions.cs">
+      <Link>Extensions\SizeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\sphere10.framework.drawing\extensions\SizeFExtensions.cs">
+      <Link>Extensions\SizeFExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Drawing\GradientFillDirection.cs">
+      <Link>GradientFillDirection.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Drawing\ResizeAlignment.cs">
+      <Link>ResizeAlignment.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Drawing\ResizeMethod.cs">
+      <Link>ResizeMethod.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Drawing\RoundedCorners.cs">
+      <Link>RoundedCorners.cs</Link>
+    </Compile>
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Framework.Android\Sphere10.Framework.Android.csproj">
+      <Project>{d85dc277-3302-4826-9f27-bb55acb4dd99}</Project>
+      <Name>Sphere10.Framework.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /S /F /Y $(TargetDir)\*.dll ..\..\..\Precompiled\Android\$(ConfigurationName)\$(PlatformName)\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

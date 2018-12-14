@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C9A83E9-7D2D-4A59-8C9D-75EADDF42A88}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sphere10.Framework.Web.OSX</RootNamespace>
+    <AssemblyName>Sphere10.Framework.Web.OSX</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\Sphere10.Framework.Web\CsvResult.cs">
+      <Link>CsvResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\CustomRouteAttribute.cs">
+      <Link>CustomRouteAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\DataTypeValidator.cs">
+      <Link>DataTypeValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\HyphenatedRouteHandler.cs">
+      <Link>HyphenatedRouteHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\ImageResult.cs">
+      <Link>ImageResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\MvcTransferResult.cs">
+      <Link>MvcTransferResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\UserMessage.cs">
+      <Link>UserMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\UserMessageType.cs">
+      <Link>UserMessageType.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Extensions\HttpContextBaseExtensions.cs">
+      <Link>Extensions\HttpContextBaseExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Extensions\HttpContextExtensions.cs">
+      <Link>Extensions\HttpContextExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Extensions\HttpRequestExtensions.cs">
+      <Link>Extensions\HttpRequestExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Extensions\PageExtensions.cs">
+      <Link>Extensions\PageExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Extensions\SelectExtensions.cs">
+      <Link>Extensions\SelectExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\PageParameters\PageParameterProcessor.cs">
+      <Link>PageParameters\PageParameterProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\PageParameters\ParameterAttribute.cs">
+      <Link>PageParameters\ParameterAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\CreditCardAttribute.cs">
+      <Link>Validators\CreditCardAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\CuitAttribute.cs">
+      <Link>Validators\CuitAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\DateAttribute.cs">
+      <Link>Validators\DateAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\DigitsAttribute.cs">
+      <Link>Validators\DigitsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\EmailAttribute.cs">
+      <Link>Validators\EmailAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\EqualToAttribute.cs">
+      <Link>Validators\EqualToAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\FileExtensionsAttribute.cs">
+      <Link>Validators\FileExtensionsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\IntegerAttribute.cs">
+      <Link>Validators\IntegerAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\MaxAttribute.cs">
+      <Link>Validators\MaxAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\MinAttribute.cs">
+      <Link>Validators\MinAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\NumericAttribute.cs">
+      <Link>Validators\NumericAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\UrlAttribute.cs">
+      <Link>Validators\UrlAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\Validators\YearAttribute.cs">
+      <Link>Validators\YearAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\jDataTable\jDataTable.cs">
+      <Link>jDataTable\jDataTable.cs</Link>
+    </Compile>
+    <Compile Include="..\Sphere10.Framework.Web\jDataTable\jDataTableParameters.cs">
+      <Link>jDataTable\jDataTableParameters.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Web" />
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Framework\Sphere10.Framework.csproj">
+      <Project>{1CDD0FFB-6E00-42C3-9D77-427AB3451C0F}</Project>
+      <Name>Sphere10.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Framework.Data\Sphere10.Framework.Data.csproj">
+      <Project>{39E7ADF8-C370-4018-BDF3-AC9E8B0ABBED}</Project>
+      <Name>Sphere10.Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Framework.Drawing\Sphere10.Framework.Drawing.csproj">
+      <Project>{DF48D80D-BE17-46A0-A030-4832775F0C5D}</Project>
+      <Name>Sphere10.Framework.Drawing</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
