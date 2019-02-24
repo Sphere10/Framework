@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Herman Schoenfeld</Authors>
+    <Company>Sphere 10 Software</Company>
+    <Description>Web-based components for Sphere 10's Application Framework. The Application Framework provides common application-layer support for mobile, desktop, web and enterprise applications. DataObjects, ComponentRegistry (IoC), DRM support, Interfaces.</Description>
+    <Copyright>Sphere 10 Software Pty Ltd</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/Sphere10/Framework/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Sphere10/Framework</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Sphere10/Framework/master/NugetIcon_64x64.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Sphere10/Framework.git</RepositoryUrl>
+    <PackageReleaseNotes>Initial public release</PackageReleaseNotes>
+    <PackageTags>ComponentRegistry, IoC, Application Support, DRM</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Application\Sphere10.Application.csproj" />
+    <ProjectReference Include="..\Sphere10.Framework.Data\Sphere10.Framework.Data.csproj" />
+    <ProjectReference Include="..\Sphere10.Framework\Sphere10.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.2" />
+  </ItemGroup>
+
+</Project>

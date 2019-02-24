@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D74CAF0-F9B0-4010-91CB-15578916BC1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Application.WinForms</RootNamespace>
+    <AssemblyName>Sphere10.Application.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <DebugSymbols>false</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Sphere10.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockFramework\Components\ActionMenuItem.cs" />
+    <Compile Include="BlockFramework\Components\MenuItem.cs" />
+    <Compile Include="Components\BITSLicenseCommandDownloadEvent.cs" />
+    <Compile Include="Components\SessionEndingHandlerTask.cs" />
+    <Compile Include="Components\StartupFolderAutoRunServicesProvider.cs" />
+    <Compile Include="Components\RegistryAutoRunServicesProvider.cs" />
+    <Compile Include="Components\FormApplicationIconProvider.cs" />
+    <Compile Include="Components\FormApplicationIconProvider.Designer.cs">
+      <DependentUpon>FormApplicationIconProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlStateManager.cs" />
+    <Compile Include="Controls\LiteMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\LiteMainForm.Designer.cs">
+      <DependentUpon>LiteMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CommonControlStateChangeManager.cs" />
+    <Compile Include="Components\CHMHelpProvider.cs" />
+    <Compile Include="Extensions\ApplicationLifecycleExtensions.cs" />
+    <Compile Include="Extensions\ComponentRegistryExtensions.cs" />
+    <Compile Include="Interfaces\IMainForm.cs" />
+    <Compile Include="Interfaces\ISendCommentsDialog.cs" />
+    <Compile Include="Interfaces\IRequestFeatureDialog.cs" />
+    <Compile Include="Interfaces\IReportBugDialog.cs" />
+    <Compile Include="Interfaces\IApplicationDialog.cs" />
+    <Compile Include="Interfaces\INagDialog.cs" />
+    <Compile Include="Interfaces\IAboutBox.cs" />
+    <Compile Include="Interfaces\IWinFormsApplicationServices.cs" />
+    <Compile Include="Components\WinFormsApplicationServices.cs" />
+    <Compile Include="Interfaces\IApplicationIconProvider.cs" />
+    <Compile Include="Interfaces\IControlStateChangeManager.cs" />
+    <Compile Include="BlockFramework\Interfaces\IMainFrame.cs" />
+    <Compile Include="Components\BITSBackgroundLicenseVerifier.cs" />
+    <Compile Include="Controls\ApplicationBanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ApplicationBanner.Designer.cs">
+      <DependentUpon>ApplicationBanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockFramework\Controls\ApplicationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlockFramework\Controls\ApplicationBar.Designer.cs">
+      <DependentUpon>ApplicationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockFramework\Components\ApplicationBlock.cs" />
+    <Compile Include="Controls\ApplicationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockFramework\Controls\ApplicationScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlockFramework\Components\LinkMenuItem.cs" />
+    <Compile Include="BlockFramework\Interfaces\IBlock.cs" />
+    <Compile Include="BlockFramework\Interfaces\IBlockManager.cs" />
+    <Compile Include="BlockFramework\Interfaces\IControlMenuItem.cs" />
+    <Compile Include="BlockFramework\Interfaces\ILinkMenuItem.cs" />
+    <Compile Include="BlockFramework\Interfaces\IMenu.cs" />
+    <Compile Include="BlockFramework\Interfaces\IMenuItem.cs" />
+    <Compile Include="BlockFramework\Interfaces\IScreenMenuItem.cs" />
+    <Compile Include="BlockFramework\Controls\BlockContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockFramework\Controls\BlockContainerForm.Designer.cs">
+      <DependentUpon>BlockContainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockFramework\Components\Menu.cs" />
+    <Compile Include="BlockFramework\Components\ScreenActivationMode.cs" />
+    <Compile Include="BlockFramework\Components\ScreenDisplayMode.cs" />
+    <Compile Include="BlockFramework\Components\ScreenMenuItem.cs" />
+    <Compile Include="Controls\StandardAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\StandardAboutBox.Designer.cs">
+      <DependentUpon>StandardAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BasicContactDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BasicContactDetailsControl.designer.cs">
+      <DependentUpon>BasicContactDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockFramework\Controls\BlockConfigurationScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlockFramework\Controls\BlockConfigurationScreen.Designer.cs">
+      <DependentUpon>BlockConfigurationScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BITSLicenseCommandDownloadJob.cs" />
+    <Compile Include="Controls\StandardNagDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\StandardNagDialog.Designer.cs">
+      <DependentUpon>StandardNagDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductActivationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductActivationForm.Designer.cs">
+      <DependentUpon>ProductActivationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NagMessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NagMessageControl.Designer.cs">
+      <DependentUpon>NagMessageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\StandardReportBugDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\StandardReportBugDialog.designer.cs">
+      <DependentUpon>StandardReportBugDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StandardRequestFeatureDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\StandardRequestFeatureDialog.designer.cs">
+      <DependentUpon>StandardRequestFeatureDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StandardSendCommentsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\StandardSendCommentsDialog.designer.cs">
+      <DependentUpon>StandardSendCommentsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ServerPostBackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ServerPostBackForm.Designer.cs">
+      <DependentUpon>ServerPostBackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WhoAreYouControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WhoAreYouControl.Designer.cs">
+      <DependentUpon>WhoAreYouControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ApplicationBanner.resx">
+      <DependentUpon>ApplicationBanner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StandardAboutBox.resx">
+      <DependentUpon>StandardAboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockFramework\Controls\ApplicationBar.resx">
+      <DependentUpon>ApplicationBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ApplicationControl.resx">
+      <DependentUpon>ApplicationControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockFramework\Controls\ApplicationScreen.resx">
+      <DependentUpon>ApplicationScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockFramework\Controls\BlockContainerForm.resx">
+      <DependentUpon>BlockContainerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BasicContactDetailsControl.resx">
+      <DependentUpon>BasicContactDetailsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockFramework\Controls\BlockConfigurationScreen.resx">
+      <DependentUpon>BlockConfigurationScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LiteMainForm.resx">
+      <DependentUpon>LiteMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StandardNagDialog.resx">
+      <DependentUpon>StandardNagDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProductActivationForm.resx">
+      <DependentUpon>ProductActivationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NagMessageControl.resx">
+      <DependentUpon>NagMessageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StandardReportBugDialog.resx">
+      <DependentUpon>StandardReportBugDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StandardRequestFeatureDialog.resx">
+      <DependentUpon>StandardRequestFeatureDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StandardSendCommentsDialog.resx">
+      <DependentUpon>StandardSendCommentsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ServerPostBackForm.resx">
+      <DependentUpon>ServerPostBackForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WhoAreYouControl.resx">
+      <DependentUpon>WhoAreYouControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Sphere10.snk">
+      <Link>Sphere10.snk</Link>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\sphere10_16x16x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SortUp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowdown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buy_Now_Set.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuyNow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DropDown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Grid.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\GridVirtual.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_16x16x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SortDown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Application\Sphere10.Application.csproj">
+      <Project>{143386e8-8873-42c1-8284-4105213dac94}</Project>
+      <Name>Sphere10.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Framework.Data\Sphere10.Framework.Data.csproj">
+      <Project>{50ce7b59-6c51-413e-adb3-2fa3e8102813}</Project>
+      <Name>Sphere10.Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Framework.Drawing\Sphere10.Framework.Drawing.csproj">
+      <Project>{6601d944-f150-4578-a14e-604b4eec9867}</Project>
+      <Name>Sphere10.Framework.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Framework\Sphere10.Framework.csproj">
+      <Project>{a2192000-1bde-4657-ac90-289cf096c674}</Project>
+      <Name>Sphere10.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Windows.WinForms\Sphere10.Windows.WinForms.csproj">
+      <Project>{1ea1a698-5a35-45c7-8e85-da3cc0d2882e}</Project>
+      <Name>Sphere10.Windows.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sphere10.Windows\Sphere10.Windows.csproj">
+      <Project>{05d56a4b-6e13-4396-8b49-e2c55bc9b508}</Project>
+      <Name>Sphere10.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

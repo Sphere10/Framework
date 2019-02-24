@@ -1,1 +1,0 @@
-# Sphere10.Application.iOS

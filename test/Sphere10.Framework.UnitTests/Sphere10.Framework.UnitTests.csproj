@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B1992CD-A2E8-4E1A-B6EB-666A9E7E8083}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Framework.UnitTests</RootNamespace>
+    <AssemblyName>Sphere10.Framework.UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.6.0\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.109.2\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.109.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.109.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\SessionCacheTests.cs" />
+    <Compile Include="Cache\CacheTests.cs" />
+    <Compile Include="Collections\ByteArrayEqualityComparerTests.cs" />
+    <Compile Include="Collections\ByteArrayComparerTests.cs" />
+    <Compile Include="Collections\AppendIteratorTests.cs" />
+    <Compile Include="Collections\LargeCollectionTests.cs" />
+    <Compile Include="Collections\EnumerableExtensionTests.cs" />
+    <Compile Include="Collections\ProducerConsumerQueueTest.cs" />
+    <Compile Include="DAC\TransactionScopeCompatibilityTests.cs" />
+    <Compile Include="DAC\DACScopeTests.cs" />
+    <Compile Include="DAC\DACTests.cs" />
+    <Compile Include="DAC\Tables.cs" />
+    <Compile Include="DateTime\ApproxEqual.cs" />
+    <Compile Include="DateTime\FormatExTests.cs" />
+    <Compile Include="DBTools\MSSQLToolTest.cs" />
+    <Compile Include="DBTools\SqliteToolTest.cs" />
+    <Compile Include="FileSystem\FileSystemTests.cs" />
+    <Compile Include="FormatEx\FormatExTests.cs" />
+    <Compile Include="LevelDB\LevelDBTests.cs" />
+    <Compile Include="Memory\MemoryMetricTests.cs" />
+    <Compile Include="Misc\UrlIDTests.cs" />
+    <Compile Include="Misc\UrlToolTests.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DAC\SqliteDACTests.cs" />
+    <Compile Include="ScopeContext\ScopeContextTest.cs" />
+    <Compile Include="Collections\MultiKeyDictionaryTest.cs" />
+    <Compile Include="MathCompiler\ParserTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MathCompiler\ScannerTests.cs" />
+    <Compile Include="Strings\StringTests.cs" />
+    <Compile Include="Threading\SchedulerTest.cs" />
+    <Compile Include="Threading\ThroughputOptimizerTests.cs" />
+    <Compile Include="Threading\CallQueueTest.cs" />
+    <Compile Include="Windows\WindowsSecurityTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\SH2 Sedgman Database.db3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Sphere10.Application\Sphere10.Application.csproj">
+      <Project>{143386e8-8873-42c1-8284-4105213dac94}</Project>
+      <Name>Sphere10.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.DotNet\Sphere10.DotNet.csproj">
+      <Project>{7711d1f1-e7f2-4185-81e9-d00cc5268e7a}</Project>
+      <Name>Sphere10.DotNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Data.Firebird\Sphere10.Framework.Data.Firebird.csproj">
+      <Project>{6db6a05c-45ea-4f95-be9c-f49a458cf805}</Project>
+      <Name>Sphere10.Framework.Data.Firebird</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Data.MSSQL\Sphere10.Framework.Data.MSSQL.csproj">
+      <Project>{d02577b8-4f1d-42b9-8802-454ae99d17d6}</Project>
+      <Name>Sphere10.Framework.Data.MSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Data.Sqlite\Sphere10.Framework.Data.Sqlite.csproj">
+      <Project>{1dd01193-9cb6-4ea9-8987-39f454c5dbbb}</Project>
+      <Name>Sphere10.Framework.Data.Sqlite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Data\Sphere10.Framework.Data.csproj">
+      <Project>{50ce7b59-6c51-413e-adb3-2fa3e8102813}</Project>
+      <Name>Sphere10.Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Drawing\Sphere10.Framework.Drawing.csproj">
+      <Project>{6601d944-f150-4578-a14e-604b4eec9867}</Project>
+      <Name>Sphere10.Framework.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.NUnit\Sphere10.Framework.NUnit.csproj">
+      <Project>{c08b47f1-bd56-4bc0-9241-214b67f91470}</Project>
+      <Name>Sphere10.Framework.NUnit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Services\Sphere10.Framework.Services.csproj">
+      <Project>{489005ce-b9b1-475d-a161-358254c7505a}</Project>
+      <Name>Sphere10.Framework.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework\Sphere10.Framework.csproj">
+      <Project>{a2192000-1bde-4657-ac90-289cf096c674}</Project>
+      <Name>Sphere10.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Windows.LevelDB\Sphere10.Windows.LevelDB.csproj">
+      <Project>{c1549308-26f7-49c3-b1aa-8ad986c90db8}</Project>
+      <Name>Sphere10.Windows.LevelDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Windows\Sphere10.Windows.csproj">
+      <Project>{05d56a4b-6e13-4396-8b49-e2c55bc9b508}</Project>
+      <Name>Sphere10.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.11.0\build\NUnit.props'))" />
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

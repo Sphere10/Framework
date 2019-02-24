@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78AEE57E-C78F-47AD-8BCC-8D6896EBD994}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Windows.TestUtil</RootNamespace>
+    <AssemblyName>Sphere10.Windows.TestUtil</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DirectSound, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectSound.4.2.0\lib\net45\SharpDX.DirectSound.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.6.0\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CBACSVConverterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CBACSVConverterForm.Designer.cs">
+      <DependentUpon>CBACSVConverterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentRegistryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComponentRegistryForm.Designer.cs">
+      <DependentUpon>ComponentRegistryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IoCTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IoCTestForm.Designer.cs">
+      <DependentUpon>IoCTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrlIDTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrlIDTestForm.Designer.cs">
+      <DependentUpon>UrlIDTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompressionTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompressionTestForm.Designer.cs">
+      <DependentUpon>CompressionTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionBarTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionBarTestForm.Designer.cs">
+      <DependentUpon>ConnectionBarTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionPanelTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionPanelTestForm.Designer.cs">
+      <DependentUpon>ConnectionPanelTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptedCompressionTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncryptedCompressionTestForm.Designer.cs">
+      <DependentUpon>EncryptedCompressionTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudTestForm.Designer.cs">
+      <DependentUpon>CrudTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomComboBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomComboBoxForm.Designer.cs">
+      <DependentUpon>CustomComboBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomTestDropDownControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomTestDropDownControl.Designer.cs">
+      <DependentUpon>CustomTestDropDownControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DraggableControlsTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DraggableControlsTestForm.Designer.cs">
+      <DependentUpon>DraggableControlsTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageResizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageResizeForm.Designer.cs">
+      <DependentUpon>ImageResizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextAreaTests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextAreaTests.Designer.cs">
+      <DependentUpon>TextAreaTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiscTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiscTestForm.Designer.cs">
+      <DependentUpon>MiscTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObservableCollectionsTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObservableCollectionsTest.Designer.cs">
+      <DependentUpon>ObservableCollectionsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PadLockTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PadLockTestForm.Designer.cs">
+      <DependentUpon>PadLockTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordDialogTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordDialogTestForm.Designer.cs">
+      <DependentUpon>PasswordDialogTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PathSelectorTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PathSelectorTestForm.Designer.cs">
+      <DependentUpon>PathSelectorTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceHolderTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlaceHolderTestForm.Designer.cs">
+      <DependentUpon>PlaceHolderTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecayGaugeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecayGaugeForm.Designer.cs">
+      <DependentUpon>DecayGaugeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumComboForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnumComboForm.Designer.cs">
+      <DependentUpon>EnumComboForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpandoTester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FakeTransparentFormTester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FakeTransparentFormTester.Designer.cs">
+      <DependentUpon>FakeTransparentFormTester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlagsCheckedBoxListTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlagsCheckedBoxListTestForm.Designer.cs">
+      <DependentUpon>FlagsCheckedBoxListTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HooksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HooksForm.Designer.cs">
+      <DependentUpon>HooksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingCircleTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingCircleTestForm.Designer.cs">
+      <DependentUpon>LoadingCircleTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationServicesTester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationServicesTester.Designer.cs">
+      <DependentUpon>ApplicationServicesTester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParagraphBuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParagraphBuilderForm.Designer.cs">
+      <DependentUpon>ParagraphBuilderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppointmentBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentBookForm.Designer.cs">
+      <DependentUpon>AppointmentBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionToolTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionToolTestForm.Designer.cs">
+      <DependentUpon>RegionToolTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleTestForm.Designer.cs">
+      <DependentUpon>ScheduleTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsTest.Designer.cs">
+      <DependentUpon>SettingsTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControlTestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControlTestControl.Designer.cs">
+      <DependentUpon>TabControlTestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControlTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabControlTestForm.Designer.cs">
+      <DependentUpon>TabControlTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestArtificialKeysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestArtificialKeysForm.Designer.cs">
+      <DependentUpon>TestArtificialKeysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestSoundsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestSoundsForm.Designer.cs">
+      <DependentUpon>TestSoundsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationIndicatorTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidationIndicatorTestForm.Designer.cs">
+      <DependentUpon>ValidationIndicatorTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualInheritanceFixerBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualInheritanceFixerBase.Designer.cs">
+      <DependentUpon>VisualInheritanceFixerBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualInheritanceFixerSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualInheritanceFixerSub.Designer.cs">
+      <DependentUpon>VisualInheritanceFixerSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\WizardDialog1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardDialog1.Designer.cs">
+      <DependentUpon>WizardDialog1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CBACSVConverterForm.resx">
+      <DependentUpon>CBACSVConverterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentRegistryForm.resx">
+      <DependentUpon>ComponentRegistryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IoCTestForm.resx">
+      <DependentUpon>IoCTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrlIDTestForm.resx">
+      <DependentUpon>UrlIDTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompressionTestForm.resx">
+      <DependentUpon>CompressionTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionBarTestForm.resx">
+      <DependentUpon>ConnectionBarTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionPanelTestForm.resx">
+      <DependentUpon>ConnectionPanelTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncryptedCompressionTestForm.resx">
+      <DependentUpon>EncryptedCompressionTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudTestForm.resx">
+      <DependentUpon>CrudTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomComboBoxForm.resx">
+      <DependentUpon>CustomComboBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DraggableControlsTestForm.resx">
+      <DependentUpon>DraggableControlsTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageResizeForm.resx">
+      <DependentUpon>ImageResizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextAreaTests.resx">
+      <DependentUpon>TextAreaTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiscTestForm.resx">
+      <DependentUpon>MiscTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObservableCollectionsTest.resx">
+      <DependentUpon>ObservableCollectionsTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PadLockTestForm.resx">
+      <DependentUpon>PadLockTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordDialogTestForm.resx">
+      <DependentUpon>PasswordDialogTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathSelectorTestForm.resx">
+      <DependentUpon>PathSelectorTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaceHolderTestForm.resx">
+      <DependentUpon>PlaceHolderTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecayGaugeForm.resx">
+      <DependentUpon>DecayGaugeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumComboForm.resx">
+      <DependentUpon>EnumComboForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpandoTester.resx">
+      <DependentUpon>ExpandoTester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FakeTransparentFormTester.resx">
+      <DependentUpon>FakeTransparentFormTester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlagsCheckedBoxListTestForm.resx">
+      <DependentUpon>FlagsCheckedBoxListTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HooksForm.resx">
+      <DependentUpon>HooksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingCircleTestForm.resx">
+      <DependentUpon>LoadingCircleTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationServicesTester.resx">
+      <DependentUpon>ApplicationServicesTester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParagraphBuilderForm.resx">
+      <DependentUpon>ParagraphBuilderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AppointmentBookForm.resx">
+      <DependentUpon>AppointmentBookForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionToolTestForm.resx">
+      <DependentUpon>RegionToolTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleTestForm.resx">
+      <DependentUpon>ScheduleTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsTest.resx">
+      <DependentUpon>SettingsTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControlTestControl.resx">
+      <DependentUpon>TabControlTestControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControlTestForm.resx">
+      <DependentUpon>TabControlTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestArtificialKeysForm.resx">
+      <DependentUpon>TestArtificialKeysForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSoundsForm.resx">
+      <DependentUpon>TestSoundsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidationIndicatorTestForm.resx">
+      <DependentUpon>ValidationIndicatorTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualInheritanceFixerBase.resx">
+      <DependentUpon>VisualInheritanceFixerBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualInheritanceFixerSub.resx">
+      <DependentUpon>VisualInheritanceFixerSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardDialog1.resx">
+      <DependentUpon>WizardDialog1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Sphere10.Application\Sphere10.Application.csproj">
+      <Project>{143386e8-8873-42c1-8284-4105213dac94}</Project>
+      <Name>Sphere10.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.DotNet\Sphere10.DotNet.csproj">
+      <Project>{7711d1f1-e7f2-4185-81e9-d00cc5268e7a}</Project>
+      <Name>Sphere10.DotNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Data.Firebird\Sphere10.Framework.Data.Firebird.csproj">
+      <Project>{6db6a05c-45ea-4f95-be9c-f49a458cf805}</Project>
+      <Name>Sphere10.Framework.Data.Firebird</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Data.MSSQL\Sphere10.Framework.Data.MSSQL.csproj">
+      <Project>{d02577b8-4f1d-42b9-8802-454ae99d17d6}</Project>
+      <Name>Sphere10.Framework.Data.MSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Data.Sqlite\Sphere10.Framework.Data.Sqlite.csproj">
+      <Project>{1dd01193-9cb6-4ea9-8987-39f454c5dbbb}</Project>
+      <Name>Sphere10.Framework.Data.Sqlite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Data\Sphere10.Framework.Data.csproj">
+      <Project>{50ce7b59-6c51-413e-adb3-2fa3e8102813}</Project>
+      <Name>Sphere10.Framework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Drawing\Sphere10.Framework.Drawing.csproj">
+      <Project>{6601d944-f150-4578-a14e-604b4eec9867}</Project>
+      <Name>Sphere10.Framework.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Services\Sphere10.Framework.Services.csproj">
+      <Project>{489005ce-b9b1-475d-a161-358254c7505a}</Project>
+      <Name>Sphere10.Framework.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Framework\Sphere10.Framework.csproj">
+      <Project>{a2192000-1bde-4657-ac90-289cf096c674}</Project>
+      <Name>Sphere10.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Windows.LevelDB\Sphere10.Windows.LevelDB.csproj">
+      <Project>{c1549308-26f7-49c3-b1aa-8ad986c90db8}</Project>
+      <Name>Sphere10.Windows.LevelDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.Firebird\Sphere10.Windows.WinForms.Firebird.csproj">
+      <Project>{0aae6912-cde3-4d49-9ae5-63193105537c}</Project>
+      <Name>Sphere10.Windows.WinForms.Firebird</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.MSSQL\Sphere10.Windows.WinForms.MSSQL.csproj">
+      <Project>{97d707e8-38ff-4435-b7a6-7f777d255e3a}</Project>
+      <Name>Sphere10.Windows.WinForms.MSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.Sqlite\Sphere10.Windows.WinForms.Sqlite.csproj">
+      <Project>{bd8f6b59-e0db-4dee-a144-944bbc44fd9d}</Project>
+      <Name>Sphere10.Windows.WinForms.Sqlite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms\Sphere10.Windows.WinForms.csproj">
+      <Project>{1ea1a698-5a35-45c7-8e85-da3cc0d2882e}</Project>
+      <Name>Sphere10.Windows.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sphere10.Windows\Sphere10.Windows.csproj">
+      <Project>{05d56a4b-6e13-4396-8b49-e2c55bc9b508}</Project>
+      <Name>Sphere10.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RightClickUp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LeftClickDown.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LeftClickUp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RightClickDown.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LargeSearchIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

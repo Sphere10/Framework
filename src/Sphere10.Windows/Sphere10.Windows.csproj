@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05D56A4B-6E13-4396-8B49-E2C55BC9B508}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sphere10.Windows</RootNamespace>
+    <AssemblyName>Sphere10.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Sphere10.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BITS\AutoUpdateManager.cs" />
+    <Compile Include="BITS\BitsCredentials.cs" />
+    <Compile Include="BITS\BitsError.cs" />
+    <Compile Include="BITS\BitsFile.cs" />
+    <Compile Include="BITS\BitsFileInfo.cs" />
+    <Compile Include="BITS\BitsFiles.cs" />
+    <Compile Include="BITS\BITSInterop.cs" />
+    <Compile Include="BITS\BitsJob.cs" />
+    <Compile Include="BITS\BitsJobs.cs" />
+    <Compile Include="BITS\BitsManager.cs" />
+    <Compile Include="BITS\BitsNotification.cs" />
+    <Compile Include="BITS\FileProgress.cs" />
+    <Compile Include="BITS\FileRange.cs" />
+    <Compile Include="BITS\JobEx.cs" />
+    <Compile Include="BITS\JobProgress.cs" />
+    <Compile Include="BITS\JobTimes.cs" />
+    <Compile Include="BITS\ProxySettings.cs" />
+    <Compile Include="BITS\Utils.cs" />
+    <Compile Include="BITS\_Enums.cs" />
+    <Compile Include="EventLogLogger.cs" />
+    <Compile Include="Hooks\PollDrivenActiveApplicationMonitor.cs" />
+    <Compile Include="Hooks\WindowsKeyboardHook.cs" />
+    <Compile Include="Hooks\HooksTool.cs" />
+    <Compile Include="Hooks\VirtualKey.cs" />
+    <Compile Include="Hooks\WindowsMouseHook.cs" />
+    <Compile Include="AlwaysOnScope.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\CopyableShare.cs" />
+    <Compile Include="Security\GroupCopier.cs" />
+    <Compile Include="Security\IActionObserver.cs" />
+    <Compile Include="Security\Impersonator.cs" />
+    <Compile Include="Security\NetApiException.cs" />
+    <Compile Include="Security\NTDanglingObject.cs" />
+    <Compile Include="Security\NTFSFileCopier.cs" />
+    <Compile Include="Security\NTHost.cs" />
+    <Compile Include="Security\NTLocalGroup.cs" />
+    <Compile Include="Security\NTLocalObject.cs" />
+    <Compile Include="Security\NTLocalUser.cs" />
+    <Compile Include="Security\NTObject.cs" />
+    <Compile Include="Security\NTRemoteObject.cs" />
+    <Compile Include="Security\NTShare.cs" />
+    <Compile Include="Security\SecurityTool.cs" />
+    <Compile Include="Security\ShareAuditRule.cs" />
+    <Compile Include="Security\ShareCopier.cs" />
+    <Compile Include="Security\ShareSecurity.cs" />
+    <Compile Include="Security\ShareType.cs" />
+    <Compile Include="Security\SidNameResolver.cs" />
+    <Compile Include="Security\SidNameUse.cs" />
+    <Compile Include="Security\SIDRenamer.cs" />
+    <Compile Include="Security\SIDSearcher.cs" />
+    <Compile Include="Security\SidTranslator.cs" />
+    <Compile Include="Security\UserCopier.cs" />
+    <Compile Include="Security\UserFlags.cs" />
+    <Compile Include="Security\UserOperatorPrivileges.cs" />
+    <Compile Include="Security\UserPrivilege.cs" />
+    <Compile Include="Shell\FileIcon.cs" />
+    <Compile Include="Shell\ShellLink.cs" />
+    <Compile Include="Shell\WindowsTool.cs" />
+    <Compile Include="UnicodeNamedFileSystemObjects.cs" />
+    <Compile Include="WinAPI\OLE32.cs" />
+    <Compile Include="WinAPI\WTSAPI32.cs" />
+    <Compile Include="WinAPI\NETAPI32.cs" />
+    <Compile Include="WinAPI\UXTHEME.cs" />
+    <Compile Include="WinAPI\COMCTL32.cs" />
+    <Compile Include="WinAPI\GDI32.cs" />
+    <Compile Include="WinAPI\USER32.cs" />
+    <Compile Include="WinAPI\KERNEL32.cs" />
+    <Compile Include="WinAPI\ADVAPI32.cs" />
+    <Compile Include="WinAPI\COREDLL.cs" />
+    <Compile Include="WinAPI\WinAPI.cs" />
+    <Compile Include="WinTool.cs" />
+    <Compile Include="WindowsException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Sphere10.snk">
+      <Link>Sphere10.snk</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Framework\Sphere10.Framework.csproj">
+      <Project>{A2192000-1BDE-4657-AC90-289CF096C674}</Project>
+      <Name>Sphere10.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /F /Y $(TargetDir)*.dll ..\..\..\Precompiled\Win\$(ConfigurationName)\$(PlatformName)\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
