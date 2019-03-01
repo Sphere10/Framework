@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeAccessSecurityTool.cs" />
     <Compile Include="CSharpBuilder\CodeBuilder.cs" />
     <Compile Include="CSharpBuilder\ComponentFactory.cs" />
     <Compile Include="MathRuntime\CodeErrorException.cs" />

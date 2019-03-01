@@ -96,10 +96,7 @@ namespace Tools {
                 return _isDesignMode;
             }
         }
-
     }
-
-
 }
 
 

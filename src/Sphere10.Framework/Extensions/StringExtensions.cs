@@ -110,12 +110,30 @@ namespace Sphere10.Framework
 			return sb.ToString();
 		}
 
-#if !__WP8__
 		public static byte[] ToAsciiByteArray(this string asciiString) {
 			var encoding = new ASCIIEncoding();
 			return encoding.GetBytes(asciiString);
 		}
-#endif
+
+		public static byte[] ToHexByteArray(this string hex) {
+			if (String.IsNullOrEmpty(hex))
+				return new byte[0];
+
+			var offset = 0;
+			if (hex.StartsWith("0x"))
+				offset = 2;
+
+			var numberChars = (hex.Length - offset) / 2;
+
+			var bytes = new byte[numberChars];
+			using (var stringReader = new StringReader(hex)) {
+				for (var i = 0; i < numberChars; i++) {
+					if (i >= offset)
+						bytes[i - offset] = Convert.ToByte(new string(new char[2] { (char)stringReader.Read(), (char)stringReader.Read() }), 16);
+				}
+			}
+			return bytes;
+		}
 
 		public static IEnumerable<string> GetLines(this string str, bool removeEmptyLines = false) {
 			return str.Split(
@@ -142,26 +160,6 @@ namespace Sphere10.Framework
 				value = value + postFix;
 
 			return value;
-		}
-
-		public static byte[] FromHexStringToByteArray(this String hex) {
-			if (String.IsNullOrEmpty(hex))
-				return new byte[0];
-
-			var offset = 0;
-			if (hex.StartsWith("0x"))
-				offset = 2;
-
-			var numberChars = (hex.Length - offset) / 2;
-
-			var bytes = new byte[numberChars];
-			using (var stringReader = new StringReader(hex)) {
-				for (var i = 0; i < numberChars; i++) {
-					if (i >= offset)
-						bytes[i - offset] = Convert.ToByte(new string(new char[2] { (char)stringReader.Read(), (char)stringReader.Read() }), 16);
-				}
-			}
-			return bytes;
 		}
 
 		public static string FormatWith(this string _string, params object[] _params) {

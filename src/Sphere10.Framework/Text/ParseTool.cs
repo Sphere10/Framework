@@ -50,7 +50,7 @@ namespace Tools {
 		            { typeof(UInt32), s => UInt32.Parse(s) },
 		            { typeof(UInt64), s => UInt64.Parse(s) },
 					{ typeof(String), s => s },					
-					{ typeof(Byte[]), s => s.FromHexStringToByteArray() },
+					{ typeof(Byte[]), s => s.ToHexByteArray() },
 		        };
 
 
@@ -525,7 +525,7 @@ namespace Tools {
         /// <param name="value">The string value to parse.</param>
         /// <returns>ByteArray representation of the string (or null)</returns>
         public static Byte[] SafeParseByteArray(string value) {
-            return value.FromHexStringToByteArray() ?? new Byte[0];
+            return value.ToHexByteArray() ?? new Byte[0];
         }
 
 

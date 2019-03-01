@@ -70,7 +70,17 @@ namespace Sphere10.Framework.WinForms.TestUtil {
             //}
         }
 
-        private void _genOnlyButton_Click(object sender, EventArgs e) {
+		private void _epasaPwdCharsButton_Click(object sender, EventArgs e) {
+			var sb = new StringBuilder();
+			for (var i = 32; i <= 126; i++) 
+				sb.Append($"\"{Encoding.ASCII.GetString(new byte[] {(byte) i})}\" | ");
+
+
+			_standardTextBox.Clear();
+			_standardTextBox.AppendText(sb.ToString());		   
+		}
+
+		private void _genOnlyButton_Click(object sender, EventArgs e) {
             try {
                 _standardTextBox.Clear();
                 var start = DateTime.Now;
@@ -108,5 +118,5 @@ namespace Sphere10.Framework.WinForms.TestUtil {
             }
         }
 
-    }
+	}
 }
