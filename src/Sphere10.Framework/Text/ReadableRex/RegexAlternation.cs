@@ -12,6 +12,7 @@
 //-----------------------------------------------------------------------
 
 using System;
+using System.Text;
 
 namespace Sphere10.Framework {
     public class RegexAlternation {
@@ -24,7 +25,18 @@ namespace Sphere10.Framework {
             return _precedingRegexPattern.RegEx($"({firstOption}|{secondOption})");
         }
 
-        public RegexPattern If(RegexPattern matched, RegexPattern then, RegexPattern otherwise) {
+	    public RegexPattern EitherAny(params RegexPattern[] options) {
+		    if (options.Length == 0)
+			    throw new ArgumentOutOfRangeException(nameof(options), "Must contains at least 2 elements");
+		    _precedingRegexPattern.RegEx("(");
+		    _precedingRegexPattern.RegEx(options[0]);
+		    for (var i = 1; i < options.Length; i++) {
+			    _precedingRegexPattern.RegEx("|").RegEx(options[i]);
+		    }
+		    return _precedingRegexPattern.RegEx(")");
+	    }
+
+		public RegexPattern If(RegexPattern matched, RegexPattern then, RegexPattern otherwise) {
             return _precedingRegexPattern.RegEx($"(?(?={matched}){then}|{otherwise})");
         }
 

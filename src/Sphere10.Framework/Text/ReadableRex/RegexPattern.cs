@@ -38,9 +38,11 @@ namespace Sphere10.Framework {
         /// </summary>
         /// <param name="content"></param>
         /// <returns></returns>
-        public RegexPattern Literal(string content) {
-            const string reservedCharacters = @".$^{[(|)*+?\";
-            foreach (var character in content) {
+        public RegexPattern Literal(string content, bool insideSet = false) {
+            const string reservedCharactersStandard = @".$^{[(|)*+?\";
+	        const string reservedCharactersInsideSet = @".$^{[](|)*+?\";
+	        var reservedCharacters = insideSet ? reservedCharactersInsideSet : reservedCharactersStandard;
+			foreach (var character in content) {
                 if (reservedCharacters.IndexOf(character) < 0) {
                     _content.Append(character);
                 } else {
@@ -92,8 +94,11 @@ namespace Sphere10.Framework {
             return Eval();
         }
 
+	    public RegexPattern Clone() {
+		    return new RegexPattern(ToString());
+	    }
 
-        public RegexPattern NonWord {
+	    public RegexPattern NonWord {
             get {
                 _content.Append(@"\W");
                 return this;

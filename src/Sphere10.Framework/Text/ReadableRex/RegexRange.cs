@@ -16,9 +16,22 @@ using System;
 namespace Sphere10.Framework {
     public class RegexRange {
         public static RegexPattern Of(char from, char to) {
-            return new RegexPattern(from + "-" + to);
+	        return OfMany(Tuple.Create(from, to));
         }
-        public static RegexPattern Of(int from, int to) {
+
+	    public static RegexPattern OfMany(params Tuple<char, char>[] ranges) {
+		    const string reservedCharacters = @".$^{[(|)*+?\";
+		    var rangeText = string.Empty;
+		    foreach (var range in ranges) {
+			    var from = range.Item1;
+			    var to = range.Item2;
+			    rangeText += (reservedCharacters.Contains(@from.ToString()) ? "\\" : string.Empty) + @from + "-" + (reservedCharacters.Contains(to.ToString()) ? "\\" : string.Empty) + to;
+		    }
+			return new RegexPattern(rangeText);
+	    }
+
+
+		public static RegexPattern Of(int from, int to) {
             return new RegexPattern(from + "-" + to);
         }
         public static RegexPattern AnyLetter => new RegexPattern("a-zA-Z");

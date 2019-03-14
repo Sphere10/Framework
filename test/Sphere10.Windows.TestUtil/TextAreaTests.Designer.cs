@@ -42,6 +42,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this._genOnlyButton = new System.Windows.Forms.Button();
 			this._fillLockedAsyncButton = new System.Windows.Forms.Button();
 			this._epasaPwdCharsButton = new System.Windows.Forms.Button();
+			this._epasaRegexButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// _standardTextBox
@@ -50,7 +51,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this._standardTextBox.Multiline = true;
 			this._standardTextBox.Name = "_standardTextBox";
 			this._standardTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this._standardTextBox.Size = new System.Drawing.Size(505, 224);
+			this._standardTextBox.Size = new System.Drawing.Size(609, 224);
 			this._standardTextBox.TabIndex = 0;
 			// 
 			// _fillStandardButton
@@ -103,11 +104,22 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this._epasaPwdCharsButton.UseVisualStyleBackColor = true;
 			this._epasaPwdCharsButton.Click += new System.EventHandler(this._epasaPwdCharsButton_Click);
 			// 
+			// _epasaRegexButton
+			// 
+			this._epasaRegexButton.Location = new System.Drawing.Point(523, 12);
+			this._epasaRegexButton.Name = "_epasaRegexButton";
+			this._epasaRegexButton.Size = new System.Drawing.Size(98, 23);
+			this._epasaRegexButton.TabIndex = 7;
+			this._epasaRegexButton.Text = "EPASA Regex";
+			this._epasaRegexButton.UseVisualStyleBackColor = true;
+			this._epasaRegexButton.Click += new System.EventHandler(this._epasaRegexButton_Click);
+			// 
 			// TextAreaTests
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(935, 277);
+			this.ClientSize = new System.Drawing.Size(633, 277);
+			this.Controls.Add(this._epasaRegexButton);
 			this.Controls.Add(this._epasaPwdCharsButton);
 			this.Controls.Add(this._fillLockedAsyncButton);
 			this.Controls.Add(this._genOnlyButton);
@@ -129,5 +141,6 @@ namespace Sphere10.Framework.WinForms.TestUtil {
         private System.Windows.Forms.Button _genOnlyButton;
         private System.Windows.Forms.Button _fillLockedAsyncButton;
 		private System.Windows.Forms.Button _epasaPwdCharsButton;
+		private System.Windows.Forms.Button _epasaRegexButton;
 	}
 }
