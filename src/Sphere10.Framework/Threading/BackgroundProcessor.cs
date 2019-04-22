@@ -20,13 +20,13 @@ using System.Text;
 namespace Sphere10.Framework {
 	class BackgroundProcessor {
 
-		private readonly SyncronizedCollectionEx<Action> _queue;
+		private readonly SynchronizedCollectionEx<Action> _queue;
 
 		public BackgroundProcessor() : this(new Collection<Action>()) {	
 		}
 
 		public BackgroundProcessor(ICollection<Action> queue) {
-			_queue = new SyncronizedCollectionEx<Action>( queue );
+			_queue = new SynchronizedCollectionEx<Action>( queue );
 		}
 
 

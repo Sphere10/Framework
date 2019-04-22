@@ -23,7 +23,7 @@ namespace Sphere10.Framework {
         public event EventHandlerEx<PageManager<T>, Page<T>> PageLoaded;
         public event EventHandlerEx<PageManager<T>, Page<T>> PageUnloaded;
         private readonly Func<T, int> _sizeEstimator;
-        private readonly SyncronizedList<Page<T>> _pageHeaders;
+        private readonly SynchronizedList<Page<T>> _pageHeaders;
         private readonly ICache<Page<T>, Page<T>> _loadedPages;
 
         private readonly int _pageSize;
@@ -37,7 +37,7 @@ namespace Sphere10.Framework {
         public PageManager(int pageSize, int maxOpenPages, Func<T, int> sizeEstimator) {
             _sizeEstimator = sizeEstimator;
             _pageSize = pageSize;
-            _pageHeaders = new SyncronizedList<Page<T>>();
+            _pageHeaders = new SynchronizedList<Page<T>>();
             _loadedPages = new ActionCache<Page<T>, Page<T>>(
                 p => {
                     if (!p.Loaded) {

@@ -25,7 +25,7 @@ namespace Sphere10.Framework.Scheduler {
 		private readonly ElapsedEventHandler _timerHandler;
 		private readonly Timer _timer;
 		private readonly SynchronizedHeap<TJobSchedule> _timeLine;
-		private readonly SyncronizedCollectionEx<TJobSchedule> _userPausedJobs;
+		private readonly SynchronizedCollectionEx<TJobSchedule> _userPausedJobs;
 
 		public event EventHandlerEx<TJob, JobStatus, JobStatus> JobStatusChanged;
 		public event EventHandlerEx<SchedulerStatus, SchedulerStatus> StatusChanged;
@@ -43,7 +43,7 @@ namespace Sphere10.Framework.Scheduler {
 			_timerHandler = (sender, args) => RunPendingJobs();
 			_timer.Elapsed += _timerHandler;
 			_timeLine = new SynchronizedHeap<TJobSchedule>();
-			_userPausedJobs = new SyncronizedCollectionEx<TJobSchedule>();
+			_userPausedJobs = new SynchronizedCollectionEx<TJobSchedule>();
 			Policy = policy;
 			Log = logger ?? new NoOpLogger();
 		}
@@ -158,7 +158,7 @@ namespace Sphere10.Framework.Scheduler {
 			try {
 				Log.Debug($"Scheduler Rescheduled {job.Name}");
 				_timer.Stop();
-				SyncronizedCollectionEx<TJobSchedule> jobLocation;
+				SynchronizedCollectionEx<TJobSchedule> jobLocation;
 				using (_userPausedJobs.EnterReadScope()) {
 					jobLocation = _userPausedJobs.Any(t => t.Job == job) ? _userPausedJobs : _timeLine;
 				}

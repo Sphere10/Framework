@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sphere10.Windows.TestUtil</RootNamespace>
     <AssemblyName>Sphere10.Windows.TestUtil</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
     </SccProjectName>
@@ -76,14 +76,29 @@
       <HintPath>..\packages\SharpDX.DirectSound.4.2.0\lib\net45\SharpDX.DirectSound.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.5.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.6.0\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
     </Reference>
-    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.4.5.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -110,6 +125,32 @@
     <Compile Include="IoCTestForm.Designer.cs">
       <DependentUpon>IoCTestForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ScreenA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScreenA.Designer.cs">
+      <DependentUpon>ScreenA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScreenB.Designer.cs">
+      <DependentUpon>ScreenB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScreenC.Designer.cs">
+      <DependentUpon>ScreenC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBlock.cs" />
     <Compile Include="UrlIDTestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,11 +292,11 @@
     <Compile Include="LoadingCircleTestForm.Designer.cs">
       <DependentUpon>LoadingCircleTestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="TestLauncherScreen.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="TestLauncherScreen.Designer.cs">
+      <DependentUpon>TestLauncherScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="ApplicationServicesTester.cs">
       <SubType>Form</SubType>
@@ -269,7 +310,6 @@
     <Compile Include="ParagraphBuilderForm.Designer.cs">
       <DependentUpon>ParagraphBuilderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AppointmentBookForm.cs">
       <SubType>Form</SubType>
@@ -352,6 +392,22 @@
     <EmbeddedResource Include="IoCTestForm.resx">
       <DependentUpon>IoCTestForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenA.resx">
+      <DependentUpon>ScreenA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenB.resx">
+      <DependentUpon>ScreenB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenC.resx">
+      <DependentUpon>ScreenC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="UrlIDTestForm.resx">
       <DependentUpon>UrlIDTestForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,8 +477,8 @@
     <EmbeddedResource Include="LoadingCircleTestForm.resx">
       <DependentUpon>LoadingCircleTestForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="TestLauncherScreen.resx">
+      <DependentUpon>TestLauncherScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ApplicationServicesTester.resx">
       <DependentUpon>ApplicationServicesTester.cs</DependentUpon>
@@ -498,13 +554,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Sphere10.Application\Sphere10.Application.csproj">
-      <Project>{143386e8-8873-42c1-8284-4105213dac94}</Project>
-      <Name>Sphere10.Application</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.DotNet\Sphere10.DotNet.csproj">
-      <Project>{7711d1f1-e7f2-4185-81e9-d00cc5268e7a}</Project>
-      <Name>Sphere10.DotNet</Name>
+    <ProjectReference Include="..\..\src\Sphere10.Framework.Application\Sphere10.Framework.Application.csproj">
+      <Project>{2BDA5BC8-3F58-437D-BB00-D7D795FB58DE}</Project>
+      <Name>Sphere10.Framework.Application</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\Sphere10.Framework.Data.Firebird\Sphere10.Framework.Data.Firebird.csproj">
       <Project>{6db6a05c-45ea-4f95-be9c-f49a458cf805}</Project>

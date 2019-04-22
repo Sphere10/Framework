@@ -95,8 +95,114 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\IUpdatable.cs" />
+    <Compile Include="Components\BITSBackgroundLicenseVerifier.cs" />
+    <Compile Include="Components\BITSLicenseCommandDownloadEvent.cs" />
+    <Compile Include="Components\BITSLicenseCommandDownloadJob.cs" />
+    <Compile Include="Components\BlockFramework\ActionMenuItem.cs" />
+    <Compile Include="Components\BlockFramework\ApplicationBlock.cs" />
+    <Compile Include="Components\BlockFramework\LinkMenuItem.cs" />
+    <Compile Include="Components\BlockFramework\Menu.cs" />
+    <Compile Include="Components\BlockFramework\MenuItem.cs" />
+    <Compile Include="Components\BlockFramework\ScreenActivationMode.cs" />
+    <Compile Include="Components\BlockFramework\ScreenDisplayMode.cs" />
+    <Compile Include="Components\BlockFramework\ScreenMenuItem.cs" />
+    <Compile Include="Components\CHMHelpProvider.cs" />
+    <Compile Include="Components\CommonControlStateChangeManager.cs" />
+    <Compile Include="Components\FormApplicationIconProvider.cs" />
+    <Compile Include="Components\FormApplicationIconProvider.Designer.cs">
+      <DependentUpon>FormApplicationIconProvider.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\PlaceHolderExtender.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\RegistryAutoRunServicesProvider.cs" />
+    <Compile Include="Components\SessionEndingHandlerTask.cs" />
+    <Compile Include="Components\StartupFolderAutoRunServicesProvider.cs" />
+    <Compile Include="Components\WinFormsApplicationServices.cs" />
+    <Compile Include="Controls\Application\ApplicationBanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\ApplicationBanner.Designer.cs">
+      <DependentUpon>ApplicationBanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\ApplicationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\ApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\BasicContactDetailsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\BasicContactDetailsControl.designer.cs">
+      <DependentUpon>BasicContactDetailsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\ControlStateManager.cs" />
+    <Compile Include="Controls\Application\LiteMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\LiteMainForm.Designer.cs">
+      <DependentUpon>LiteMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\NagMessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\NagMessageControl.Designer.cs">
+      <DependentUpon>NagMessageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\ProductActivationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\ProductActivationForm.Designer.cs">
+      <DependentUpon>ProductActivationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\ServerPostBackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\ServerPostBackForm.Designer.cs">
+      <DependentUpon>ServerPostBackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\StandardAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\StandardAboutBox.Designer.cs">
+      <DependentUpon>StandardAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\StandardNagDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\StandardNagDialog.Designer.cs">
+      <DependentUpon>StandardNagDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\StandardReportBugDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\StandardReportBugDialog.designer.cs">
+      <DependentUpon>StandardReportBugDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\StandardRequestFeatureDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\StandardRequestFeatureDialog.designer.cs">
+      <DependentUpon>StandardRequestFeatureDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\StandardSendCommentsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\StandardSendCommentsDialog.designer.cs">
+      <DependentUpon>StandardSendCommentsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Application\WhoAreYouControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Application\WhoAreYouControl.Designer.cs">
+      <DependentUpon>WhoAreYouControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\AppointmentBook\CellControllers\FilledCellController.cs" />
     <Compile Include="Controls\AppointmentBook\CellViews\SuperscriptRowHeaderCellView.cs" />
@@ -125,6 +231,27 @@
     </Compile>
     <Compile Include="Controls\AppointmentBook\ViewModels\IAppointmentBookViewModel.cs" />
     <Compile Include="Controls\AppointmentBook\ViewModels\UnallocatedBookViewModel.cs" />
+    <Compile Include="Controls\BlockFramework\ApplicationBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BlockFramework\ApplicationBar.Designer.cs">
+      <DependentUpon>ApplicationBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BlockFramework\ApplicationScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BlockFramework\BlockConfigurationScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BlockFramework\BlockConfigurationScreen.Designer.cs">
+      <DependentUpon>BlockConfigurationScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BlockFramework\BlockContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BlockFramework\BlockContainerForm.Designer.cs">
+      <DependentUpon>BlockContainerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Buttons\PadLockButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -206,6 +333,8 @@
       <DependentUpon>DatabaseConnectionBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\DatabaseControls\IDatabaseConnectionProvider.cs" />
+    <Compile Include="Extensions\ApplicationLifecycleExtensions.cs" />
+    <Compile Include="Extensions\ComponentRegistryExtensions.cs" />
     <Compile Include="Extensions\LabelExtensions.cs" />
     <Compile Include="Extensions\NumericUpDownExtensions.cs" />
     <Compile Include="Extensions\IUpdatableExtensions.cs" />
@@ -241,6 +370,25 @@
       <DependentUpon>QuestionDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\QuestionDialogSession.cs" />
+    <Compile Include="Interfaces\IAboutBox.cs" />
+    <Compile Include="Interfaces\IApplicationDialog.cs" />
+    <Compile Include="Interfaces\IApplicationIconProvider.cs" />
+    <Compile Include="Interfaces\IBlock.cs" />
+    <Compile Include="Interfaces\IBlockManager.cs" />
+    <Compile Include="Interfaces\IControlMenuItem.cs" />
+    <Compile Include="Interfaces\IControlStateChangeManager.cs" />
+    <Compile Include="Interfaces\ILinkMenuItem.cs" />
+    <Compile Include="Interfaces\IMainForm.cs" />
+    <Compile Include="Interfaces\IMainFrame.cs" />
+    <Compile Include="Interfaces\IMenu.cs" />
+    <Compile Include="Interfaces\IMenuItem.cs" />
+    <Compile Include="Interfaces\INagDialog.cs" />
+    <Compile Include="Interfaces\IReportBugDialog.cs" />
+    <Compile Include="Interfaces\IRequestFeatureDialog.cs" />
+    <Compile Include="Interfaces\IScreenMenuItem.cs" />
+    <Compile Include="Interfaces\ISendCommentsDialog.cs" />
+    <Compile Include="Interfaces\IWinFormsApplicationServices.cs" />
+    <Compile Include="ModuleConfiguration.cs" />
     <Compile Include="Panels\PanelEx.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -862,11 +1010,81 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\Application\ApplicationBanner.resx">
+      <DependentUpon>ApplicationBanner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\ApplicationControl.resx">
+      <DependentUpon>ApplicationControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\BasicContactDetailsControl.resx">
+      <DependentUpon>BasicContactDetailsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\LiteMainForm.resx">
+      <DependentUpon>LiteMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\NagMessageControl.resx">
+      <DependentUpon>NagMessageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\ProductActivationForm.resx">
+      <DependentUpon>ProductActivationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\ServerPostBackForm.resx">
+      <DependentUpon>ServerPostBackForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\StandardAboutBox.resx">
+      <DependentUpon>StandardAboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\StandardNagDialog.resx">
+      <DependentUpon>StandardNagDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\StandardReportBugDialog.resx">
+      <DependentUpon>StandardReportBugDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\StandardRequestFeatureDialog.resx">
+      <DependentUpon>StandardRequestFeatureDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\StandardSendCommentsDialog.resx">
+      <DependentUpon>StandardSendCommentsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Application\WhoAreYouControl.resx">
+      <DependentUpon>WhoAreYouControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\AppointmentBook\AppointmentBook.resx">
       <DependentUpon>AppointmentBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\AppointmentBook\UnallocatedBook.resx">
       <DependentUpon>UnallocatedBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BlockFramework\ApplicationBar.resx">
+      <DependentUpon>ApplicationBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BlockFramework\ApplicationScreen.resx">
+      <DependentUpon>ApplicationScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BlockFramework\BlockConfigurationScreen.resx">
+      <DependentUpon>BlockConfigurationScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BlockFramework\BlockContainerForm.resx">
+      <DependentUpon>BlockContainerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Crud\CrudDialog.resx">
       <DependentUpon>CrudDialog.cs</DependentUpon>
@@ -1077,6 +1295,10 @@
     <None Include="Resources\LunaExplorerBarTheme.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Framework.Application\Sphere10.Framework.Application.csproj">
+      <Project>{E9FA1D5D-6BB5-4882-AFC3-817DB512ECFB}</Project>
+      <Name>Sphere10.Framework.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sphere10.Framework.Data\Sphere10.Framework.Data.csproj">
       <Project>{50ce7b59-6c51-413e-adb3-2fa3e8102813}</Project>
       <Name>Sphere10.Framework.Data</Name>
@@ -1095,6 +1317,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sphere10_16x16x32.png" />
+    <None Include="Resources\Shopping cart.png" />
+    <None Include="Resources\Help_16x16x32.ico" />
+    <None Include="Resources\gridvirtual.bmp" />
+    <None Include="Resources\grid.bmp" />
+    <None Include="Resources\Buy_Now_Set.gif" />
     <None Include="Resources\SmallSearchIcon.png" />
     <None Include="Resources\Minus.png" />
     <None Include="Resources\Plus.png" />
@@ -1128,7 +1356,8 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /F /Y $(TargetDir)*.dll ..\..\..\Precompiled\Win\$(ConfigurationName)\$(PlatformName)\</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

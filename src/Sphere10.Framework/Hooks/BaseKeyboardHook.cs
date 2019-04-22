@@ -29,7 +29,7 @@ namespace Sphere10.Framework {
 		protected IActiveApplicationMonitor ActiveApplicationMonitor { get; private set; }
 		public BaseKeyboardHook(IActiveApplicationMonitor activeApplicationMonitor) {
 			ActiveApplicationMonitor = activeApplicationMonitor;
-			InterceptKeys = new SyncronizedList<Key>();
+			InterceptKeys = new SynchronizedList<Key>();
 		}
 
 		protected virtual void ProcessKeyEvent(char asciiChar, Key key, ScanCode scanCode, KeyState keyState, bool shiftPressed, bool ctrlPressed, bool altPressed) {

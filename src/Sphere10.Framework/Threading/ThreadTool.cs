@@ -62,7 +62,7 @@ namespace Tools {
             if (actions.Length == 0)
                 return;
 
-            var errors = new SyncronizedList<Exception>();
+            var errors = new SynchronizedList<Exception>();
             var numberOfActions = actions.Length;
             var waitHandlers = new AutoResetEvent[numberOfActions];
 

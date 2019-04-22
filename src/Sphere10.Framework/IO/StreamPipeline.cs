@@ -46,7 +46,7 @@ namespace Sphere10.Framework {
 			if (output == null) throw new ArgumentNullException("output");
 			if (!output.CanWrite) throw new ArgumentException("output");
 
-			var errors = new SyncronizedList<Exception>();
+			var errors = new SynchronizedList<Exception>();
 			ThreadStart lastStage = null;
 			for (var i = 0; i < _filters.Length; i++) {
 				var stageInput = i == 0 ? input : _blockingStreams[i - 1];

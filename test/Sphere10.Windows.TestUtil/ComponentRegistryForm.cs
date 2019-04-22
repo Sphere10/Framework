@@ -21,8 +21,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Sphere10.Application;
 using Sphere10.Framework;
+using Sphere10.Framework.Application;
 using Sphere10.Framework.Data;
 using Sphere10.Windows.WinForms;
 
@@ -58,7 +58,7 @@ namespace Sphere10.Windows.TestUtil {
         private ComponentRegistryDefinition CreateComponentRegistry() {
             return new ComponentRegistryDefinition {
                 RegistrationsDefinition = new ComponentRegistryDefinition.RegistrationDefinition[] {
-                        new ComponentRegistryDefinition.AssemblyRegistrationDefinition() { Dll = "Sphere10.Application"},
+                        new ComponentRegistryDefinition.AssemblyRegistrationDefinition() { Dll = "Sphere10.Framework.Application"},
                         new ComponentRegistryDefinition.ComponentRegistrationDefinition { Interface = "IBackgroundLicenseVerifier", Implementation = "StandardBackgroundLicenseVerifier"},
                         new ComponentRegistryDefinition.ComponentRegistrationDefinition { Interface = "ISettingsServices", Implementation = "StandardUserSettingsProvider", ResolveKey = "UserSettings", Activation = ActivationType.Singleton },
                         new ComponentRegistryDefinition.ComponentRegistrationDefinition { Interface = "ISettingsServices", Implementation = "StandardSystemSettingsProvider", ResolveKey = "SystemSettings", Activation = ActivationType.Singleton },
@@ -74,7 +74,6 @@ namespace Sphere10.Windows.TestUtil {
                         new ComponentRegistryDefinition.ComponentRegistrationDefinition { Interface = "IProductInformationServices", Implementation = "StandardProductInformationServices", Activation = ActivationType.Singleton },
                         new ComponentRegistryDefinition.ComponentRegistrationDefinition { Interface = "IProductInstancesCounter", Implementation = "StandardProductInstancesCounter" },
                         new ComponentRegistryDefinition.ComponentRegistrationDefinition { Interface = "IProductUsageServices", Implementation = "StandardProductUsageProvider", Activation = ActivationType.Singleton },
-                        new ComponentRegistryDefinition.ComponentRegistrationDefinition { Interface = "ISphere10SoftwareService2", Implementation = "SoftwareService2WebServiceClient" },
                         new ComponentRegistryDefinition.ComponentRegistrationDefinition { Interface = "IWebsiteLauncher", Implementation = "StandardWebsiteLauncher"},
 
                         new ComponentRegistryDefinition.ComponentSetRegistrationDefinition {

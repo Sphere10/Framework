@@ -14,16 +14,23 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using Sphere10.Framework.Application;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sphere10.Windows.WinFormsTester")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Sphere10 Framework Tester")]
+[assembly: AssemblyDescription("Tests Sphere 10 Framework")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Sphere10.Windows.WinFormsTester")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
+[assembly: AssemblyCompany("Sphere 10 Software")]
+[assembly: AssemblyCompanyNumber("ABN 39600596316")]
+[assembly: AssemblyCompanyLink("www.sphere10.com")]
+[assembly: AssemblyProduct("Sphere10.Application.Tester")]
+[assembly: AssemblyProductCode("00000000-0000-0000-0000-000000000000")]
+[assembly: AssemblyProductLink("www.sphere10.com")]
+[assembly: AssemblyCopyright("Copyright © Sphere 10 Software 2008 - {CurrentYear}")]
+[assembly: AssemblyProductPurchaseLink("www.sphere10.com")]
+[assembly: AssemblyDefaultProductKey("K5PS-JA9A-9R9R-2AFS")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

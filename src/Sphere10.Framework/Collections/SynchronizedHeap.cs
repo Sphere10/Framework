@@ -18,7 +18,7 @@ using System.Text;
 using System.Threading;
 
 namespace Sphere10.Framework {
-	public class SynchronizedHeap<T> : SyncronizedCollectionEx<T>, IHeap<T> where T : IComparable<T> {
+	public class SynchronizedHeap<T> : SynchronizedCollectionEx<T>, IHeap<T> where T : IComparable<T> {
 		private readonly IHeap<T> _internalHeap;
 
 		public SynchronizedHeap() : this(new BinaryHeap<T>()) {

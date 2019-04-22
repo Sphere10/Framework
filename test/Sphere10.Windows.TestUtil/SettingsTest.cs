@@ -21,6 +21,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
+using Sphere10.Framework.Application;
 using Sphere10.Framework.Data;
 using Sphere10.Windows.WinForms;
 

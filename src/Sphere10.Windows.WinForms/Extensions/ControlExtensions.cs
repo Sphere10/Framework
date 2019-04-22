@@ -122,7 +122,7 @@ namespace Sphere10.Framework {
 
 		public static void InvokeEx(this Control control, Action action) {
 			if (!control.IsHandleCreated) {
-				Application.OpenForms.Cast<Form>().Reverse().First().InvokeEx(action);
+				System.Windows.Forms.Application.OpenForms.Cast<Form>().Reverse().First().InvokeEx(action);
 			} else {
 				if (control.InvokeRequired)
 					control.Invoke(action);
@@ -135,7 +135,7 @@ namespace Sphere10.Framework {
 			if (control.IsHandleCreated)
 				control.BeginInvoke(action);
 			else {
-				Application.OpenForms.Cast<Form>().Reverse().First().BeginInvoke(action);
+				System.Windows.Forms.Application.OpenForms.Cast<Form>().Reverse().First().BeginInvoke(action);
 			}
 		}
 

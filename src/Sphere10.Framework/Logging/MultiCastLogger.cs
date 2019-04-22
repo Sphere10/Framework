@@ -22,7 +22,7 @@ namespace Sphere10.Framework{
 
 	public class MulticastLogger : ILogger {
 
-		private readonly SyncronizedList<ILogger> _loggers;
+		private readonly SynchronizedList<ILogger> _loggers;
 
 		public MulticastLogger()
 			: this(new List<ILogger>()) {
@@ -48,7 +48,7 @@ namespace Sphere10.Framework{
 		}
 
 		public MulticastLogger(IList<ILogger> loggers) {
-			_loggers = new SyncronizedList<ILogger>();
+			_loggers = new SynchronizedList<ILogger>();
 			_loggers.AddRange(loggers);
 		}
 

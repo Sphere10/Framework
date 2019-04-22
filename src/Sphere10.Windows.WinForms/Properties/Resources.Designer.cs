@@ -81,6 +81,46 @@ namespace Sphere10.Windows.WinForms.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap DefaultToolStripImage {
+            get {
+                object obj = ResourceManager.GetObject("DefaultToolStripImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Grid {
+            get {
+                object obj = ResourceManager.GetObject("Grid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap GridVirtual {
+            get {
+                object obj = ResourceManager.GetObject("GridVirtual", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Help_16x16x32 {
+            get {
+                object obj = ResourceManager.GetObject("Help_16x16x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         public static System.Drawing.Icon IEW_DropDown {
@@ -255,6 +295,16 @@ namespace Sphere10.Windows.WinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Purchase_16x16x32 {
+            get {
+                object obj = ResourceManager.GetObject("Purchase_16x16x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap RArrow {
             get {
                 object obj = ResourceManager.GetObject("RArrow", resourceCulture);
@@ -328,6 +378,16 @@ namespace Sphere10.Windows.WinForms.Properties {
         public static System.Drawing.Bitmap SPECIALGROUPEXPANDHOT {
             get {
                 object obj = ResourceManager.GetObject("SPECIALGROUPEXPANDHOT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Sphere10_16x16x32 {
+            get {
+                object obj = ResourceManager.GetObject("Sphere10_16x16x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

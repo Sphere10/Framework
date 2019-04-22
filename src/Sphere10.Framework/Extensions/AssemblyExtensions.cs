@@ -25,11 +25,13 @@ namespace Sphere10.Framework {
 			"mscorlib",
 			"System,",
 			"System.",
+			"Accessibility,",
+			"netstandard,",
 			"PresentationCore,",
 			"WindowsBase,",
 			"App_global.asax.",
 			"Microsoft.",
-			"SMDiagnostics,"
+			"SMDiagnostics,",
 		};
 
 		public static IEnumerable<Assembly> GetNonFrameworkAssemblies(this AppDomain domain) {

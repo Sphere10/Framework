@@ -27,7 +27,7 @@ namespace Sphere10.Framework {
 	        return new ReadOnlyDictionaryDecorator<K, V>(dictionary);
 	    }
 
-	    public static SynchronizedDictionary<K, V> AsSyncronized<K,V>(this IDictionary<K, V> dictionary) {
+	    public static SynchronizedDictionary<K, V> AsSynchronized<K,V>(this IDictionary<K, V> dictionary) {
 	        return new SynchronizedDictionary<K, V>(dictionary);
 	    } 
 

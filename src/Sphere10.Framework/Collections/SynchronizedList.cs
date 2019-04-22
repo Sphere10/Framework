@@ -25,15 +25,15 @@ namespace Sphere10.Framework {
 	/// race conditions. Beware of it's use. 
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
-	public class SyncronizedList<T> : IList<T>, IThreadSafeObject {
+	public class SynchronizedList<T> : IList<T>, IThreadSafeObject {
 		private readonly ReaderWriterLockSlim _threadLock;
 		private readonly IList<T> _internalList;
 
-		public SyncronizedList()
+		public SynchronizedList()
 			: this(new List<T>()) {
 		}
 
-	    public SyncronizedList(IList<T> internalList) {
+	    public SynchronizedList(IList<T> internalList) {
 	        if (internalList is T[])
 	            throw new ArgumentException("provided internalList was an array", "internalList");
 	        _internalList = internalList;
