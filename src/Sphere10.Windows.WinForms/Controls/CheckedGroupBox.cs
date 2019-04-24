@@ -41,7 +41,7 @@
 	using System.Windows.Forms.VisualStyles;
 
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	/// <summary>
 	/// CheckGroupBox is a GroupBox with an embeded CheckBox.
 	/// </summary>

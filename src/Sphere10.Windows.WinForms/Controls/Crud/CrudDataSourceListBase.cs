@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public abstract class CrudDataSourceListBase<TEntity> : ICrudDataSource<TEntity> {
 		protected readonly IList<TEntity> List;

@@ -29,9 +29,9 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using System.Xml.Serialization;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms.Properties;
+using Sphere10.Framework.Windows.Forms.Properties;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 
 	/// <summary>

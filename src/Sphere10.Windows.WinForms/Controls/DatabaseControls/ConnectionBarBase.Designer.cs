@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	partial class ConnectionBarBase {
 		/// <summary> 
 		/// Required designer variable.
@@ -46,7 +46,7 @@ namespace Sphere10.Windows.WinForms {
             // OptionsButton
             // 
             this.OptionsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.OptionsButton.Image = global::Sphere10.Windows.WinForms.Properties.Resources.NORMALGROUPEXPAND;
+            this.OptionsButton.Image = global::Sphere10.Framework.Windows.Forms.Properties.Resources.NORMALGROUPEXPAND;
             this.OptionsButton.Location = new System.Drawing.Point(463, 15);
             this.OptionsButton.Name = "OptionsButton";
             this.OptionsButton.Size = new System.Drawing.Size(28, 23);

@@ -21,7 +21,7 @@ using System.Globalization;
 using System.Reflection;
 using System.Collections;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	/// <summary>
 	/// A custom TypeConverter used to help convert Padding objects from 
 	/// one Type to another

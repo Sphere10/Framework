@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 using Sphere10.Framework;
 
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
 
     /// <summary>
     /// Encapsulates a Local User from some host machine. A local user can only be a member of local groups.

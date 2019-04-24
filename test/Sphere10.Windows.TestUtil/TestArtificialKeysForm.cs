@@ -22,7 +22,7 @@ using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Data;
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	public partial class TestArtificialKeysForm : Form {
 		public TestArtificialKeysForm() {
 			InitializeComponent();

@@ -16,7 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     internal class UpdateScope : IDisposable {
         private readonly bool _saveToDataSource;
         public UpdateScope(IUpdatable updatable, bool saveToDatasource) {

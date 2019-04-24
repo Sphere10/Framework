@@ -19,7 +19,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.ExplorerBarDesigner {
+namespace Sphere10.ExplorerBarDesigner {
     public partial class ExportForm : Form {
         public ExportForm() {
             InitializeComponent();

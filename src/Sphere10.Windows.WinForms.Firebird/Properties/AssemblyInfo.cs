@@ -18,11 +18,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sphere10.Windows.WinForms.Firebird")]
+[assembly: AssemblyTitle("Sphere10.Framework.Windows.Forms.Firebird")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Sphere10.Windows.WinForms.Firebird")]
+[assembly: AssemblyProduct("Sphere10.Framework.Windows.Forms.Firebird")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

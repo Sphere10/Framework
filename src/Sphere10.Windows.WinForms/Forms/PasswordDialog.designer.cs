@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	partial class PasswordDialog {
 		/// <summary>
 		/// Required designer variable.
@@ -46,7 +46,7 @@ namespace Sphere10.Windows.WinForms {
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this._errorRichTextBox = new System.Windows.Forms.RichTextBox();
-			this.pictureBoxEx1 = new Sphere10.Windows.WinForms.PictureBoxEx();
+			this.pictureBoxEx1 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxEx1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -166,7 +166,7 @@ namespace Sphere10.Windows.WinForms {
 			this.pictureBoxEx1.Name = "pictureBoxEx1";
 			this.pictureBoxEx1.Size = new System.Drawing.Size(32, 32);
 			this.pictureBoxEx1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBoxEx1.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.Shield;
+			this.pictureBoxEx1.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.Shield;
 			this.pictureBoxEx1.TabIndex = 0;
 			this.pictureBoxEx1.TabStop = false;
 			// 

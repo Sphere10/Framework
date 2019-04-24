@@ -16,12 +16,12 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
-using Sphere10.Framework.WinForms;
+using Sphere10.Framework.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 
 	/// <summary>
 	/// Test Licenses

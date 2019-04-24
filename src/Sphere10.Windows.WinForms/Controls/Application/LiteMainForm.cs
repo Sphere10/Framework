@@ -24,9 +24,9 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public partial class LiteMainForm : ApplicationForm, IApplicationIconProvider, IUserInterfaceServices, IUserNotificationServices, IMainForm {
 		private volatile INagDialog _nagDialogInstance;

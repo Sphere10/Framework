@@ -20,7 +20,7 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public partial class ExceptionDialog : Form {
 
 		public ExceptionDialog() : this(string.Empty, new Exception()) {
@@ -59,8 +59,8 @@ namespace Sphere10.Windows.WinForms {
 		}
 
 		public static void Show(IWin32Window owner, string title, Exception error) {
-		    if (Application.OpenForms.Count > 0) {
-		        Application.OpenForms[0].InvokeEx(() => {
+		    if (System.Windows.Forms.Application.OpenForms.Count > 0) {
+			    System.Windows.Forms.Application.OpenForms[0].InvokeEx(() => {
 		            var form = new ExceptionDialog(title, error);
 		            form.ShowDialog(owner);
 		        });

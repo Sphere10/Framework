@@ -17,7 +17,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     /// <summary>
     /// Taken from http://www.codeproject.com/KB/cpp/bitmapbutton.aspx.
     /// The button state images are taken from the Image property. The state

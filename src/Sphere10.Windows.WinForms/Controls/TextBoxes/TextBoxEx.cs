@@ -19,7 +19,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	[ToolboxBitmap(typeof(TextBox))]
 	public class TextBoxEx : TextBox {
@@ -45,7 +45,7 @@ namespace Sphere10.Windows.WinForms {
 
 		private void InitializeComponent() {
 			this.components = new System.ComponentModel.Container();
-			this._placeHolderTextExtender = new Sphere10.Windows.WinForms.PlaceHolderTextExtender(this.components);
+			this._placeHolderTextExtender = new Sphere10.Framework.Windows.Forms.PlaceHolderTextExtender(this.components);
 			this.SuspendLayout();
 			// 
 			// TextBoxEx

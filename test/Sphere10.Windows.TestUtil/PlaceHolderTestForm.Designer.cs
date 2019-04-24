@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class PlaceHolderTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -43,12 +43,12 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.searchTextBox2 = new Sphere10.Windows.WinForms.SearchTextBox();
-			this.moneyBox1 = new Sphere10.Windows.WinForms.MoneyBox();
-			this.textBoxEx1 = new Sphere10.Windows.WinForms.TextBoxEx();
-			this.searchTextBox1 = new Sphere10.Windows.WinForms.SearchTextBox();
-			this.cueTextExtender1 = new Sphere10.Windows.WinForms.PlaceHolderTextExtender(this.components);
-			this.comboBoxEx1 = new Sphere10.Windows.WinForms.ComboBoxEx();
+			this.searchTextBox2 = new Sphere10.Framework.Windows.Forms.SearchTextBox();
+			this.moneyBox1 = new Sphere10.Framework.Windows.Forms.MoneyBox();
+			this.textBoxEx1 = new Sphere10.Framework.Windows.Forms.TextBoxEx();
+			this.searchTextBox1 = new Sphere10.Framework.Windows.Forms.SearchTextBox();
+			this.cueTextExtender1 = new Sphere10.Framework.Windows.Forms.PlaceHolderTextExtender(this.components);
+			this.comboBoxEx1 = new Sphere10.Framework.Windows.Forms.ComboBoxEx();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -188,16 +188,16 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.ComboBox comboBox1;
-		private Sphere10.Windows.WinForms.PlaceHolderTextExtender cueTextExtender1;
+		private Sphere10.Framework.Windows.Forms.PlaceHolderTextExtender cueTextExtender1;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.RichTextBox richTextBox1;
 		private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-		private Sphere10.Windows.WinForms.SearchTextBox searchTextBox1;
+		private Sphere10.Framework.Windows.Forms.SearchTextBox searchTextBox1;
 		private System.Windows.Forms.GroupBox groupBox2;
-		private Sphere10.Windows.WinForms.SearchTextBox searchTextBox2;
-		private Sphere10.Windows.WinForms.MoneyBox moneyBox1;
-		private Sphere10.Windows.WinForms.TextBoxEx textBoxEx1;
-		private Sphere10.Windows.WinForms.ComboBoxEx comboBoxEx1;
+		private Sphere10.Framework.Windows.Forms.SearchTextBox searchTextBox2;
+		private Sphere10.Framework.Windows.Forms.MoneyBox moneyBox1;
+		private Sphere10.Framework.Windows.Forms.TextBoxEx textBoxEx1;
+		private Sphere10.Framework.Windows.Forms.ComboBoxEx comboBoxEx1;
 
 	}
 }

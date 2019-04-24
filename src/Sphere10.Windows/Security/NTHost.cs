@@ -22,7 +22,7 @@ using System.Text;
 using Sphere10.Framework;
 
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
 
     /// <summary>
     /// Encapsulates a remote host.

@@ -17,9 +17,9 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Sphere10.Framework.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
     public partial class ScreenB : ApplicationScreen {
         public ScreenB() {
             InitializeComponent();

@@ -8,7 +8,7 @@
     <ProjectGuid>{E0CD802D-75FC-4E99-B65C-84E6C558BF46}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sphere10.Framework.Web.AspNet</RootNamespace>
+    <RootNamespace>Sphere10.Framework.Web</RootNamespace>
     <AssemblyName>Sphere10.Framework.Web.AspNet</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -96,6 +96,9 @@
     <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\test\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\GetPasa.com\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
@@ -117,6 +120,7 @@
     <Compile Include="ApplicationVariableInstanceHolder.cs" />
     <Compile Include="ComponentRegistryMvcDependencyResolver.cs" />
     <Compile Include="ComponentRegistryWebApiDependencyResolver.cs" />
+    <Compile Include="Extensions\ApplicationLifecycleExtensions.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\ModelStateDictionaryExtensions.cs" />
     <Compile Include="Extensions\UrlExtensions.cs" />

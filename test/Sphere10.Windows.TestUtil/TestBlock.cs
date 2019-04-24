@@ -14,9 +14,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Sphere10.Framework.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil
+namespace Sphere10.FrameworkTester
 {
     public class TestBlock : ApplicationBlock
     {

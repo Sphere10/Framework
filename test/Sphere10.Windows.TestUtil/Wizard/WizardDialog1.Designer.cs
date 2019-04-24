@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.TestUtil.Wizard {
+namespace Sphere10.FrameworkTester.Wizard {
     partial class WizardDialog1 {
         /// <summary> 
         /// Required designer variable.

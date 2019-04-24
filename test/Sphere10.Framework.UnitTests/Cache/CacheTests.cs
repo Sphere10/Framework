@@ -16,7 +16,7 @@ using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using Sphere10.Windows;
+using Sphere10.Framework.Windows;
 
 namespace Sphere10.Framework.UnitTests {
 

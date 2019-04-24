@@ -18,7 +18,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public static class LabelExtensions {
 		public const int MaxLabelText = 50000;
 		public static bool CanTextFit(this Label label, string text) {

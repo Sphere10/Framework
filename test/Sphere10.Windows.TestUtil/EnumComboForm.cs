@@ -20,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	public partial class EnumComboForm : Form {
 		public EnumComboForm() {
 			InitializeComponent();

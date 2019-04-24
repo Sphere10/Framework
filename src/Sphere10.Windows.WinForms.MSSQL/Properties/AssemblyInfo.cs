@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sphere10.Windows.WinForms.MSSQL")]
+[assembly: AssemblyTitle("Sphere10.Framework.Windows.Forms.MSSQL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Sphere10.Windows.WinForms.MSSQL")]
+[assembly: AssemblyProduct("Sphere10.Framework.Windows.Forms.MSSQL")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

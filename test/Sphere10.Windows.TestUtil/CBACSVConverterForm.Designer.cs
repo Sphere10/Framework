@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil
+namespace Sphere10.Framework.Windows.Forms.TestUtil
 {
     partial class CBACSVConverterForm
     {

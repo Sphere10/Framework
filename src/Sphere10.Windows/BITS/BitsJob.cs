@@ -15,7 +15,7 @@ using System;
 using System.Collections;
 using System.Runtime.InteropServices;
 
-namespace Sphere10.Windows.BITS
+namespace Sphere10.Framework.Windows.BITS
 {
     public class BitsJob: IDisposable
     {

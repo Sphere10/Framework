@@ -17,10 +17,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Runtime.InteropServices;
-using Sphere10.Windows;
+using Sphere10.Framework.Windows;
 
 
-namespace Sphere10.Windows.WinForms.WinForms
+namespace Sphere10.Framework.Windows.Forms.WinForms
 {
 	class LayeredWindow : Form
 	{

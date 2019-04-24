@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.WinForms.Sqlite {
+namespace Sphere10.Framework.Windows.Forms.Sqlite {
 	partial class SqliteConnectionBar {
 		/// <summary> 
 		/// Required designer variable.
@@ -37,11 +37,11 @@ namespace Sphere10.Windows.WinForms.Sqlite {
 		/// </summary>
 		private void InitializeComponent() {
             this.label2 = new System.Windows.Forms.Label();
-            this._fileSelectorControl = new Sphere10.Windows.WinForms.PathSelectorControl();
+            this._fileSelectorControl = new Sphere10.Framework.Windows.Forms.PathSelectorControl();
             this._passwordTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this._syncComboBox = new Sphere10.Windows.WinForms.EnumComboBox();
-            this._journalComboBox = new Sphere10.Windows.WinForms.EnumComboBox();
+            this._syncComboBox = new Sphere10.Framework.Windows.Forms.EnumComboBox();
+            this._journalComboBox = new Sphere10.Framework.Windows.Forms.EnumComboBox();
             this._journalLabel = new System.Windows.Forms.Label();
             this._syncLabel = new System.Windows.Forms.Label();
             this._tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
@@ -69,7 +69,7 @@ namespace Sphere10.Windows.WinForms.Sqlite {
             this._fileSelectorControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this._fileSelectorControl.Location = new System.Drawing.Point(0, 15);
             this._fileSelectorControl.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this._fileSelectorControl.Mode = Sphere10.Windows.WinForms.PathSelectionMode.File;
+            this._fileSelectorControl.Mode = Sphere10.Framework.Windows.Forms.PathSelectionMode.File;
             this._fileSelectorControl.Name = "_fileSelectorControl";
             this._fileSelectorControl.Path = "";
             this._fileSelectorControl.PlaceHolderText = "";

@@ -21,7 +21,7 @@ using System.Windows.Forms.VisualStyles;
 //Get the latest version of SplitButton at: http://wyday.com/splitbutton/
 
 
-namespace Sphere10.Windows.WinForms
+namespace Sphere10.Framework.Windows.Forms
 {
     public class SplitButton : Button
     {
@@ -326,7 +326,7 @@ namespace Sphere10.Windows.WinForms
             Rectangle bounds = ClientRectangle;
 
             // draw the button background as according to the current state.
-            if (State != PushButtonState.Pressed && IsDefault && !Application.RenderWithVisualStyles)
+            if (State != PushButtonState.Pressed && IsDefault && !System.Windows.Forms.Application.RenderWithVisualStyles)
             {
                 Rectangle backgroundBounds = bounds;
                 backgroundBounds.Inflate(-1, -1);
@@ -350,7 +350,7 @@ namespace Sphere10.Windows.WinForms
                               bounds.Width - dropDownRectangle.Width - internalBorder,
                               bounds.Height - (internalBorder * 2) + 2);
 
-            bool drawSplitLine = (State == PushButtonState.Hot || State == PushButtonState.Pressed || !Application.RenderWithVisualStyles);
+            bool drawSplitLine = (State == PushButtonState.Hot || State == PushButtonState.Pressed || !System.Windows.Forms.Application.RenderWithVisualStyles);
 
 
             if (RightToLeft == RightToLeft.Yes)
@@ -516,7 +516,7 @@ namespace Sphere10.Windows.WinForms
                     textRectangle = OverlayObjectRect(ref content_rect, ref text_size, TextAlign); // Rectangle.Inflate(content_rect, -4, -4);
 
                     //Offset on Windows 98 style when button is pressed
-                    if (_state == PushButtonState.Pressed && !Application.RenderWithVisualStyles)
+                    if (_state == PushButtonState.Pressed && !System.Windows.Forms.Application.RenderWithVisualStyles)
                         textRectangle.Offset(1, 1);
 
                     // Image is dependent on ImageAlign

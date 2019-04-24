@@ -21,7 +21,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	public partial class FakeTransparentFormTester : Form {
 		public FakeTransparentFormTester() {
 			SnappingBackground = true;

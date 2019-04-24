@@ -22,11 +22,11 @@ using System.IO;
 using System.Drawing.Drawing2D;
 using System.Diagnostics;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms;
-using Sphere10.Windows.ExplorerBarDesigner.Properties;
+using Sphere10.Framework.Windows.Forms;
+using Sphere10.ExplorerBarDesigner.Properties;
 
 
-namespace Sphere10.Windows.ExplorerBarDesigner {
+namespace Sphere10.ExplorerBarDesigner {
 
 
     
@@ -213,7 +213,7 @@ namespace Sphere10.Windows.ExplorerBarDesigner {
             this.ExpandoNormalBackImage = defaultImage;
             this.ExpandoNormalBorder = Border.Empty;
             this.ExpandoNormalBorderColor = defaultColor;
-            this.ExpandoNormalPadding = Sphere10.Windows.WinForms.PaddingEx.Empty;
+            this.ExpandoNormalPadding = Sphere10.Framework.Windows.Forms.PaddingEx.Empty;
             this.ExpandoSpecialBackColor = Color.Black;
             this.ExpandoSpecialBackImage = defaultImage;
             this.ExpandoSpecialBorder = Border.Empty;

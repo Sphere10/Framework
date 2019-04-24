@@ -22,7 +22,7 @@ using System.Security.AccessControl;
 using System.IO;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
     public class SecurityTool {
         public static readonly IActionObserver DefaultActionObserver = new NullActionObserver();
 

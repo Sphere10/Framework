@@ -20,7 +20,7 @@ using System.Windows.Forms;
 using Sphere10.Framework.Application;
 using Sphere10.Framework;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public partial class StandardAboutBox : ApplicationForm, IAboutBox {
 

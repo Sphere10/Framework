@@ -22,9 +22,9 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	public partial class ValidationIndicatorTestForm : Form {
 		private TextWriter _outputTextWriter;
 

@@ -20,9 +20,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public partial class CrudEntityEditorDialog : Form {
 		private ICrudDataSource<object> _dataSource;
 		private ICrudEntityEditor<object> _crudEntityEditor;

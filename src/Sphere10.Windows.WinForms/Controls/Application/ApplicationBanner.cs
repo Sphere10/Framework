@@ -22,7 +22,7 @@ using Sphere10.Framework;
 
 
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public partial class ApplicationBanner : ApplicationControl {
 		private string _companyName;
 		private string _version;

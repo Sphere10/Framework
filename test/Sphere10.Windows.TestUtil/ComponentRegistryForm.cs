@@ -24,9 +24,9 @@ using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 using Sphere10.Framework.Data;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
     public partial class ComponentRegistryForm : Form {
         private readonly ILogger _outputTextLogger;
         public ComponentRegistryForm() {

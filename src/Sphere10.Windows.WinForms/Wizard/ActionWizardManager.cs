@@ -20,7 +20,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public class ActionWizardManager<T> : WizardManagerBase<T> {
         private readonly Func<T, Task<Result>> _finishFunc;
         private readonly Func<T, Result> _cancelFunc;

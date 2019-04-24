@@ -17,7 +17,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Sphere10.Windows.LevelDB
+namespace Sphere10.Framework.Windows.LevelDB
 {
     public class LevelDBException : Exception
     {

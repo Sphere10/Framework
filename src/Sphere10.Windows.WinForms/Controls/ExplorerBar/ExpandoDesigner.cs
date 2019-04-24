@@ -18,7 +18,7 @@ using System.Text;
 using System.Windows.Forms.Design;
 using System.Collections;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	
 	

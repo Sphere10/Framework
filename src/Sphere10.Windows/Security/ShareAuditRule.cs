@@ -17,7 +17,7 @@ using System.Text;
 using System.Security.AccessControl;
 using System.Security.Principal;
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
 
     public sealed class ShareAccessRule : AccessRule {
         // Methods

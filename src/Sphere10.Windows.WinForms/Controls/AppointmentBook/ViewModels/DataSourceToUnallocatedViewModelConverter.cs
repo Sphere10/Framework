@@ -18,7 +18,7 @@ using System.Linq;
 using System.Text;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms.AppointmentBook {
+namespace Sphere10.Framework.Windows.Forms.AppointmentBook {
 	public class DataSourceToUnallocatedViewModelConverter : DataSourceToViewModelConverter {
 		public override AppointmentBookViewModel Convert(IAppointmentBookDataSource dataSource, DateTime timePeriodStart, TimePeriodType timeView, AppointmentBookViewModelFilter columnFilter) {
 			DateTime startTime;

@@ -18,7 +18,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows {
+namespace Sphere10.Framework.Windows {
     public class AlwaysOnScope : IDisposable {
         private readonly uint _priorState ;
         public AlwaysOnScope(bool system,  bool display) {

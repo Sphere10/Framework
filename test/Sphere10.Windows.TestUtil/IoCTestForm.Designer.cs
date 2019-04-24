@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	partial class IoCTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -37,7 +37,7 @@ namespace Sphere10.Windows.TestUtil {
 		/// </summary>
 		private void InitializeComponent() {
 			this._testButton = new System.Windows.Forms.Button();
-			this._outputTextBox = new Sphere10.Windows.WinForms.TextBoxEx();
+			this._outputTextBox = new Sphere10.Framework.Windows.Forms.TextBoxEx();
 			this.SuspendLayout();
 			// 
 			// _testButton
@@ -78,6 +78,6 @@ namespace Sphere10.Windows.TestUtil {
 		#endregion
 
 		private System.Windows.Forms.Button _testButton;
-		private WinForms.TextBoxEx _outputTextBox;
+		private Sphere10.Framework.Windows.Forms.TextBoxEx _outputTextBox;
 	}
 }

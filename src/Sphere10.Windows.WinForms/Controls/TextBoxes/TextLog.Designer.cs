@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.WinForms.TextBoxes {
+namespace Sphere10.Framework.Windows.Forms.TextBoxes {
     partial class TextLog {
         /// <summary> 
         /// Required designer variable.
@@ -36,7 +36,7 @@ namespace Sphere10.Windows.WinForms.TextBoxes {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this._textBox = new Sphere10.Windows.WinForms.TextBoxEx();
+            this._textBox = new Sphere10.Framework.Windows.Forms.TextBoxEx();
             this.SuspendLayout();
             // 
             // _textBox

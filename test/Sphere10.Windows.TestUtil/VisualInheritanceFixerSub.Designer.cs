@@ -11,10 +11,10 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	partial class VisualInheritanceFixerSub {
 		/// <summary>
 		/// Required designer variable.
@@ -40,7 +40,7 @@ namespace Sphere10.Windows.TestUtil {
 		/// </summary>
 		private void InitializeComponent() {
 			this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.mergeableMenuStrip2 = new Sphere10.Windows.WinForms.MergeableMenuStrip();
+			this.mergeableMenuStrip2 = new Sphere10.Framework.Windows.Forms.MergeableMenuStrip();
 			this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 			this.aAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,9 +50,9 @@ namespace Sphere10.Windows.TestUtil {
 			this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
 			this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.bToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-			this.mergeableStatusStrip1 = new Sphere10.Windows.WinForms.MergeableStatusStrip();
+			this.mergeableStatusStrip1 = new Sphere10.Framework.Windows.Forms.MergeableStatusStrip();
 			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-			this.mergeableToolStrip1 = new Sphere10.Windows.WinForms.MergeableToolStrip();
+			this.mergeableToolStrip1 = new Sphere10.Framework.Windows.Forms.MergeableToolStrip();
 			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
 			this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();

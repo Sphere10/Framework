@@ -16,7 +16,7 @@ using System.Collections.Generic;
 using System.Text;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 
     public enum ScreenDisplayMode

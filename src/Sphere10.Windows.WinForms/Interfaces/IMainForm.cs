@@ -19,7 +19,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public interface IMainForm : IApplicationIconProvider, IUserInterfaceServices, IUserNotificationServices {
 	}

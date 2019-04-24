@@ -7,8 +7,8 @@
     <ProjectGuid>{97D707E8-38FF-4435-B7A6-7F777D255E3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sphere10.Windows.WinForms.MSSQL</RootNamespace>
-    <AssemblyName>Sphere10.Windows.WinForms.MSSQL</AssemblyName>
+    <RootNamespace>Sphere10.Framework.Windows.Forms.MSSQL</RootNamespace>
+    <AssemblyName>Sphere10.Framework.Windows.Forms.MSSQL</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -89,9 +89,9 @@
       <Project>{a2192000-1bde-4657-ac90-289cf096c674}</Project>
       <Name>Sphere10.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sphere10.Windows.WinForms\Sphere10.Windows.WinForms.csproj">
+    <ProjectReference Include="..\Sphere10.Windows.WinForms\Sphere10.Framework.Windows.Forms.csproj">
       <Project>{1EA1A698-5A35-45C7-8E85-DA3CC0D2882E}</Project>
-      <Name>Sphere10.Windows.WinForms</Name>
+      <Name>Sphere10.Framework.Windows.Forms</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

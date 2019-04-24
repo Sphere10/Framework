@@ -22,15 +22,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Data;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public partial class DatabaseConnectionPanel : ConnectionPanelBase, IDatabaseConnectionProvider {
-		private const string MSSQLConnectionPanelTypeName = "Sphere10.Windows.WinForms.MSSQL.MSSQLConnectionPanel, Sphere10.Windows.WinForms.MSSQL";
-		private const string SqliteConnectionPanelTypeName = "Sphere10.Windows.WinForms.Sqlite.SqliteConnectionPanel, Sphere10.Windows.WinForms.Sqlite";
-		private const string FirebirdConnectionPanelTypeName = "Sphere10.Windows.WinForms.Firebird.FirebirdConnectionPanel, Sphere10.Windows.WinForms.Firebird";
-		private const string FirebirdFileConnectionPanelTypeName = "Sphere10.Windows.WinForms.Firdbird.FirebirdEmbeddedConnectionPanel, Sphere10.Windows.WinForms.Firebird";
+		private const string MSSQLConnectionPanelTypeName = "Sphere10.Framework.Windows.Forms.MSSQL.MSSQLConnectionPanel, Sphere10.Framework.Windows.Forms.MSSQL";
+		private const string SqliteConnectionPanelTypeName = "Sphere10.Framework.Windows.Forms.Sqlite.SqliteConnectionPanel, Sphere10.Framework.Windows.Forms.Sqlite";
+		private const string FirebirdConnectionPanelTypeName = "Sphere10.Framework.Windows.Forms.Firebird.FirebirdConnectionPanel, Sphere10.Framework.Windows.Forms.Firebird";
+		private const string FirebirdFileConnectionPanelTypeName = "Sphere10.Framework.Windows.Forms.Firdbird.FirebirdEmbeddedConnectionPanel, Sphere10.Framework.Windows.Forms.Firebird";
 
 		public event EventHandlerEx<DatabaseConnectionPanel, DBMSType> DBMSTypeChanged;
 

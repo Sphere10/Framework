@@ -11,9 +11,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
     partial class ImageResizeForm {
         /// <summary>
         /// Required designer variable.
@@ -38,44 +38,44 @@ namespace Sphere10.Windows.TestUtil {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this._pathSelectorControl = new Sphere10.Windows.WinForms.PathSelectorControl();
+            this._pathSelectorControl = new Sphere10.Framework.Windows.Forms.PathSelectorControl();
             this._panel = new System.Windows.Forms.Panel();
-            this._pictureBoxEx49 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx39 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx29 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx19 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx48 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx47 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx46 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx45 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx38 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx37 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx36 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx35 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx28 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx27 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx26 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx25 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx18 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx17 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx16 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx15 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx44 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx43 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx42 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx41 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx34 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx33 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx32 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx31 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx24 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx23 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx22 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx21 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx14 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx13 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx12 = new Sphere10.Windows.WinForms.PictureBoxEx();
-            this._pictureBoxEx11 = new Sphere10.Windows.WinForms.PictureBoxEx();
+            this._pictureBoxEx49 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx39 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx29 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx19 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx48 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx47 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx46 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx45 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx38 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx37 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx36 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx35 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx28 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx27 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx26 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx25 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx18 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx17 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx16 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx15 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx44 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx43 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx42 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx41 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx34 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx33 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx32 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx31 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx24 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx23 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx22 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx21 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx14 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx13 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx12 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
+            this._pictureBoxEx11 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
             this._widthNumeric = new System.Windows.Forms.NumericUpDown();
             this._heightNumeric = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
@@ -125,7 +125,7 @@ namespace Sphere10.Windows.TestUtil {
             // 
             this._pathSelectorControl.Dock = System.Windows.Forms.DockStyle.Top;
             this._pathSelectorControl.Location = new System.Drawing.Point(0, 0);
-            this._pathSelectorControl.Mode = Sphere10.Windows.WinForms.PathSelectionMode.OpenFile;
+            this._pathSelectorControl.Mode = Sphere10.Framework.Windows.Forms.PathSelectionMode.OpenFile;
             this._pathSelectorControl.Name = "_pathSelectorControl";
             this._pathSelectorControl.Path = "";
             this._pathSelectorControl.PlaceHolderText = "Select image";
@@ -186,7 +186,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx49.Location = new System.Drawing.Point(1679, 649);
             this._pictureBoxEx49.Name = "_pictureBoxEx49";
             this._pictureBoxEx49.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx49.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx49.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx49.TabIndex = 53;
             this._pictureBoxEx49.TabStop = false;
             // 
@@ -196,7 +196,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx39.Location = new System.Drawing.Point(1679, 443);
             this._pictureBoxEx39.Name = "_pictureBoxEx39";
             this._pictureBoxEx39.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx39.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx39.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx39.TabIndex = 52;
             this._pictureBoxEx39.TabStop = false;
             // 
@@ -206,7 +206,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx29.Location = new System.Drawing.Point(1679, 237);
             this._pictureBoxEx29.Name = "_pictureBoxEx29";
             this._pictureBoxEx29.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx29.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx29.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx29.TabIndex = 51;
             this._pictureBoxEx29.TabStop = false;
             // 
@@ -216,7 +216,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx19.Location = new System.Drawing.Point(1679, 31);
             this._pictureBoxEx19.Name = "_pictureBoxEx19";
             this._pictureBoxEx19.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx19.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx19.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx19.TabIndex = 50;
             this._pictureBoxEx19.TabStop = false;
             // 
@@ -226,7 +226,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx48.Location = new System.Drawing.Point(1473, 649);
             this._pictureBoxEx48.Name = "_pictureBoxEx48";
             this._pictureBoxEx48.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx48.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx48.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx48.TabIndex = 49;
             this._pictureBoxEx48.TabStop = false;
             // 
@@ -236,7 +236,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx47.Location = new System.Drawing.Point(1265, 649);
             this._pictureBoxEx47.Name = "_pictureBoxEx47";
             this._pictureBoxEx47.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx47.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx47.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx47.TabIndex = 48;
             this._pictureBoxEx47.TabStop = false;
             // 
@@ -246,7 +246,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx46.Location = new System.Drawing.Point(1059, 649);
             this._pictureBoxEx46.Name = "_pictureBoxEx46";
             this._pictureBoxEx46.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx46.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx46.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx46.TabIndex = 47;
             this._pictureBoxEx46.TabStop = false;
             // 
@@ -256,7 +256,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx45.Location = new System.Drawing.Point(851, 649);
             this._pictureBoxEx45.Name = "_pictureBoxEx45";
             this._pictureBoxEx45.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx45.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx45.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx45.TabIndex = 46;
             this._pictureBoxEx45.TabStop = false;
             // 
@@ -266,7 +266,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx38.Location = new System.Drawing.Point(1473, 443);
             this._pictureBoxEx38.Name = "_pictureBoxEx38";
             this._pictureBoxEx38.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx38.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx38.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx38.TabIndex = 45;
             this._pictureBoxEx38.TabStop = false;
             // 
@@ -276,7 +276,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx37.Location = new System.Drawing.Point(1265, 443);
             this._pictureBoxEx37.Name = "_pictureBoxEx37";
             this._pictureBoxEx37.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx37.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx37.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx37.TabIndex = 44;
             this._pictureBoxEx37.TabStop = false;
             // 
@@ -286,7 +286,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx36.Location = new System.Drawing.Point(1059, 443);
             this._pictureBoxEx36.Name = "_pictureBoxEx36";
             this._pictureBoxEx36.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx36.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx36.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx36.TabIndex = 43;
             this._pictureBoxEx36.TabStop = false;
             // 
@@ -296,7 +296,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx35.Location = new System.Drawing.Point(851, 443);
             this._pictureBoxEx35.Name = "_pictureBoxEx35";
             this._pictureBoxEx35.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx35.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx35.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx35.TabIndex = 42;
             this._pictureBoxEx35.TabStop = false;
             // 
@@ -306,7 +306,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx28.Location = new System.Drawing.Point(1473, 237);
             this._pictureBoxEx28.Name = "_pictureBoxEx28";
             this._pictureBoxEx28.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx28.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx28.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx28.TabIndex = 41;
             this._pictureBoxEx28.TabStop = false;
             // 
@@ -316,7 +316,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx27.Location = new System.Drawing.Point(1265, 237);
             this._pictureBoxEx27.Name = "_pictureBoxEx27";
             this._pictureBoxEx27.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx27.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx27.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx27.TabIndex = 40;
             this._pictureBoxEx27.TabStop = false;
             // 
@@ -326,7 +326,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx26.Location = new System.Drawing.Point(1059, 237);
             this._pictureBoxEx26.Name = "_pictureBoxEx26";
             this._pictureBoxEx26.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx26.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx26.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx26.TabIndex = 39;
             this._pictureBoxEx26.TabStop = false;
             // 
@@ -336,7 +336,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx25.Location = new System.Drawing.Point(851, 237);
             this._pictureBoxEx25.Name = "_pictureBoxEx25";
             this._pictureBoxEx25.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx25.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx25.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx25.TabIndex = 38;
             this._pictureBoxEx25.TabStop = false;
             // 
@@ -346,7 +346,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx18.Location = new System.Drawing.Point(1473, 31);
             this._pictureBoxEx18.Name = "_pictureBoxEx18";
             this._pictureBoxEx18.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx18.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx18.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx18.TabIndex = 37;
             this._pictureBoxEx18.TabStop = false;
             // 
@@ -356,7 +356,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx17.Location = new System.Drawing.Point(1265, 31);
             this._pictureBoxEx17.Name = "_pictureBoxEx17";
             this._pictureBoxEx17.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx17.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx17.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx17.TabIndex = 36;
             this._pictureBoxEx17.TabStop = false;
             // 
@@ -366,7 +366,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx16.Location = new System.Drawing.Point(1059, 31);
             this._pictureBoxEx16.Name = "_pictureBoxEx16";
             this._pictureBoxEx16.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx16.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx16.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx16.TabIndex = 35;
             this._pictureBoxEx16.TabStop = false;
             // 
@@ -376,7 +376,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx15.Location = new System.Drawing.Point(851, 31);
             this._pictureBoxEx15.Name = "_pictureBoxEx15";
             this._pictureBoxEx15.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx15.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx15.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx15.TabIndex = 34;
             this._pictureBoxEx15.TabStop = false;
             // 
@@ -386,7 +386,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx44.Location = new System.Drawing.Point(645, 649);
             this._pictureBoxEx44.Name = "_pictureBoxEx44";
             this._pictureBoxEx44.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx44.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx44.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx44.TabIndex = 33;
             this._pictureBoxEx44.TabStop = false;
             // 
@@ -396,7 +396,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx43.Location = new System.Drawing.Point(437, 649);
             this._pictureBoxEx43.Name = "_pictureBoxEx43";
             this._pictureBoxEx43.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx43.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx43.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx43.TabIndex = 32;
             this._pictureBoxEx43.TabStop = false;
             // 
@@ -406,7 +406,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx42.Location = new System.Drawing.Point(231, 649);
             this._pictureBoxEx42.Name = "_pictureBoxEx42";
             this._pictureBoxEx42.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx42.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx42.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx42.TabIndex = 31;
             this._pictureBoxEx42.TabStop = false;
             // 
@@ -416,7 +416,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx41.Location = new System.Drawing.Point(23, 649);
             this._pictureBoxEx41.Name = "_pictureBoxEx41";
             this._pictureBoxEx41.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx41.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx41.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx41.TabIndex = 30;
             this._pictureBoxEx41.TabStop = false;
             // 
@@ -426,7 +426,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx34.Location = new System.Drawing.Point(645, 443);
             this._pictureBoxEx34.Name = "_pictureBoxEx34";
             this._pictureBoxEx34.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx34.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx34.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx34.TabIndex = 29;
             this._pictureBoxEx34.TabStop = false;
             // 
@@ -436,7 +436,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx33.Location = new System.Drawing.Point(437, 443);
             this._pictureBoxEx33.Name = "_pictureBoxEx33";
             this._pictureBoxEx33.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx33.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx33.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx33.TabIndex = 28;
             this._pictureBoxEx33.TabStop = false;
             // 
@@ -446,7 +446,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx32.Location = new System.Drawing.Point(231, 443);
             this._pictureBoxEx32.Name = "_pictureBoxEx32";
             this._pictureBoxEx32.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx32.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx32.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx32.TabIndex = 27;
             this._pictureBoxEx32.TabStop = false;
             // 
@@ -456,7 +456,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx31.Location = new System.Drawing.Point(23, 443);
             this._pictureBoxEx31.Name = "_pictureBoxEx31";
             this._pictureBoxEx31.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx31.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx31.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx31.TabIndex = 26;
             this._pictureBoxEx31.TabStop = false;
             // 
@@ -466,7 +466,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx24.Location = new System.Drawing.Point(645, 237);
             this._pictureBoxEx24.Name = "_pictureBoxEx24";
             this._pictureBoxEx24.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx24.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx24.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx24.TabIndex = 25;
             this._pictureBoxEx24.TabStop = false;
             // 
@@ -476,7 +476,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx23.Location = new System.Drawing.Point(437, 237);
             this._pictureBoxEx23.Name = "_pictureBoxEx23";
             this._pictureBoxEx23.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx23.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx23.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx23.TabIndex = 24;
             this._pictureBoxEx23.TabStop = false;
             // 
@@ -486,7 +486,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx22.Location = new System.Drawing.Point(231, 237);
             this._pictureBoxEx22.Name = "_pictureBoxEx22";
             this._pictureBoxEx22.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx22.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx22.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx22.TabIndex = 23;
             this._pictureBoxEx22.TabStop = false;
             // 
@@ -496,7 +496,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx21.Location = new System.Drawing.Point(23, 237);
             this._pictureBoxEx21.Name = "_pictureBoxEx21";
             this._pictureBoxEx21.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx21.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx21.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx21.TabIndex = 22;
             this._pictureBoxEx21.TabStop = false;
             // 
@@ -506,7 +506,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx14.Location = new System.Drawing.Point(645, 31);
             this._pictureBoxEx14.Name = "_pictureBoxEx14";
             this._pictureBoxEx14.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx14.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx14.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx14.TabIndex = 21;
             this._pictureBoxEx14.TabStop = false;
             // 
@@ -516,7 +516,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx13.Location = new System.Drawing.Point(437, 31);
             this._pictureBoxEx13.Name = "_pictureBoxEx13";
             this._pictureBoxEx13.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx13.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx13.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx13.TabIndex = 20;
             this._pictureBoxEx13.TabStop = false;
             // 
@@ -526,7 +526,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx12.Location = new System.Drawing.Point(231, 31);
             this._pictureBoxEx12.Name = "_pictureBoxEx12";
             this._pictureBoxEx12.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx12.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx12.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx12.TabIndex = 19;
             this._pictureBoxEx12.TabStop = false;
             // 
@@ -536,7 +536,7 @@ namespace Sphere10.Windows.TestUtil {
             this._pictureBoxEx11.Location = new System.Drawing.Point(23, 31);
             this._pictureBoxEx11.Name = "_pictureBoxEx11";
             this._pictureBoxEx11.Size = new System.Drawing.Size(200, 200);
-            this._pictureBoxEx11.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.None;
+            this._pictureBoxEx11.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.None;
             this._pictureBoxEx11.TabIndex = 18;
             this._pictureBoxEx11.TabStop = false;
             // 

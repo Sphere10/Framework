@@ -16,7 +16,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public class ActionMenuItem : MenuItem, ILinkMenuItem
     {
 		public ActionMenuItem(Action onClick)

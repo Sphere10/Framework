@@ -18,11 +18,11 @@ using System.ComponentModel;
 
 using System.Windows.Forms;
 using System.Globalization;
-using Sphere10.Framework.WinForms.Controls;
+using Sphere10.Framework.Windows.Forms.Controls;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	/// <summary>
 	/// A base class for all controls in the application. Provides access to application services and 

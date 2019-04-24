@@ -15,7 +15,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Sphere10.Windows.BITS {
+namespace Sphere10.Framework.Windows.BITS {
 
     class Utils {
         internal static string GetName(string SID) {

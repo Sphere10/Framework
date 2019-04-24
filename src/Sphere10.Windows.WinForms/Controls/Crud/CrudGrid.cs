@@ -28,9 +28,9 @@ using SourceGrid;
 using SourceGrid.Cells;
 using Sphere10.Framework;
 using Sphere10.Framework.Threading;
-using Sphere10.Windows.WinForms.WinForms;
+using Sphere10.Framework.Windows.Forms.WinForms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public partial class CrudGrid : UserControl, ICrudGrid {
 
 		#region Constants

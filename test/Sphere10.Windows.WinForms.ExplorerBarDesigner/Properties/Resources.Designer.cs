@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sphere10.Windows.ExplorerBarDesigner.Properties {
+namespace Sphere10.ExplorerBarDesigner.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Sphere10.Windows.ExplorerBarDesigner.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sphere10.Windows.ExplorerBarDesigner.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sphere10.ExplorerBarDesigner.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -17,7 +17,7 @@ using System.Linq;
 using Sphere10.Framework;
 using Sphere10.Framework.Data;
 
-namespace Sphere10.Windows.WinForms.MSSQL {
+namespace Sphere10.Framework.Windows.Forms.MSSQL {
 	public partial class MSSQLConnectionPanel : ConnectionPanelBase {
 		public MSSQLConnectionPanel() {
 			InitializeComponent();

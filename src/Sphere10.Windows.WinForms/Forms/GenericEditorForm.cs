@@ -19,7 +19,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public partial class GenericEditorForm : Form {
         public GenericEditorForm() : this(null, false) {
             

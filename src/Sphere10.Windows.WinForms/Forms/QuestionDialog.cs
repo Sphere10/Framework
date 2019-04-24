@@ -19,7 +19,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public partial class QuestionDialog : DialogEx {
 
 		public QuestionDialog() : this(SystemIconType.None, string.Empty, string.Empty, "OK") {

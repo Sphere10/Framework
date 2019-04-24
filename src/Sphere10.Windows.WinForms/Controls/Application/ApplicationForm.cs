@@ -24,10 +24,10 @@ using System.Reflection;
 using System.Threading;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public class ApplicationForm : FormEx {
 

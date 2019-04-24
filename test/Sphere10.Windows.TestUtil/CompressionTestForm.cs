@@ -22,9 +22,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	public partial class CompressionTestForm : Form {
 		private TextBoxWriter _output;
 		public CompressionTestForm() {

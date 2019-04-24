@@ -15,7 +15,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using Sphere10.Framework;
-using Sphere10.Windows;
+using Sphere10.Framework.Windows;
 
 
 namespace Tools {

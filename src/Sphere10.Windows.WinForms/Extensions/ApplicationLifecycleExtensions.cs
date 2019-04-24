@@ -20,7 +20,7 @@ using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public static class ApplicationLifecycleExtensions {
 
         public static void StartWinFormsApplication(this ApplicationLifecycle applicationLifecycle) {

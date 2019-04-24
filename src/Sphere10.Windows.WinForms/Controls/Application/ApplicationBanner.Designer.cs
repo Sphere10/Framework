@@ -11,9 +11,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     partial class ApplicationBanner {
         /// <summary> 
         /// Required designer variable.
@@ -38,7 +38,7 @@ namespace Sphere10.Framework.WinForms {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-			this._gradientPanel = new Sphere10.Windows.WinForms.GradientPanel();
+			this._gradientPanel = new Sphere10.Framework.Windows.Forms.GradientPanel();
 			this._versionLabel = new System.Windows.Forms.Label();
 			this._iconPanel = new System.Windows.Forms.Panel();
 			this._companyNameLabel = new System.Windows.Forms.Label();

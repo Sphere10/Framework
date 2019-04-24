@@ -21,7 +21,7 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Framework.WinForms.TestUtil
+namespace Sphere10.Framework.Windows.Forms.TestUtil
 {
     public partial class CBACSVConverterForm : Form
     {

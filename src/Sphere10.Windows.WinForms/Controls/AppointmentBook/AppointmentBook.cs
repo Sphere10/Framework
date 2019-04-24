@@ -25,7 +25,7 @@ using System.Windows.Forms;
 using SourceGrid;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms.AppointmentBook {
+namespace Sphere10.Framework.Windows.Forms.AppointmentBook {
 
 	[ToolboxItem(true)]
 	public class AppointmentBook : BaseAppointmentBook {

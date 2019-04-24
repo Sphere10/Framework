@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class FlagsCheckedBoxListTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -37,7 +37,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 		/// </summary>
 		private void InitializeComponent() {
 			this._outputTextBox = new System.Windows.Forms.TextBox();
-			this._flagsCheckedListBox = new Sphere10.Windows.WinForms.FlagsCheckedListBox();
+			this._flagsCheckedListBox = new Sphere10.Framework.Windows.Forms.FlagsCheckedListBox();
 			this.SuspendLayout();
 			// 
 			// _outputTextBox
@@ -78,7 +78,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 
 		#endregion
 
-		private Sphere10.Windows.WinForms.FlagsCheckedListBox _flagsCheckedListBox;
+		private Sphere10.Framework.Windows.Forms.FlagsCheckedListBox _flagsCheckedListBox;
 		private System.Windows.Forms.TextBox _outputTextBox;
 	}
 }

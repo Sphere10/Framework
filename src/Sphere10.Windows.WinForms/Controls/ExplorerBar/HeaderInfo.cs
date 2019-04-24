@@ -17,12 +17,12 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 using System.ComponentModel;
-using Sphere10.Windows.WinForms.Properties;
+using Sphere10.Framework.Windows.Forms.Properties;
 using System.Runtime.Serialization;
 using System.Security.Permissions;
 using System.Xml.Serialization;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	/// <summary>
 	/// A class that contains system defined settings for an Expando's 
 	/// header section

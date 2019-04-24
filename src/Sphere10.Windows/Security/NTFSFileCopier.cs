@@ -25,7 +25,7 @@ using System.Security.Permissions;
 using System.Linq;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
 
     public class NTFSFileCopier  {
         private bool _cleanDestination;

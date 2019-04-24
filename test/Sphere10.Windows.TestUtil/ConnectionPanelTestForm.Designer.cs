@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class ConnectionPanelTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -36,9 +36,9 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-            this._databaseConnectionPanel = new Sphere10.Windows.WinForms.DatabaseConnectionPanel();
+            this._databaseConnectionPanel = new Sphere10.Framework.Windows.Forms.DatabaseConnectionPanel();
             this._testConnectionButton = new System.Windows.Forms.Button();
-            this._loadingCircle = new Sphere10.Windows.WinForms.LoadingCircle();
+            this._loadingCircle = new Sphere10.Framework.Windows.Forms.LoadingCircle();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -117,9 +117,9 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 
 		#endregion
 
-		private Sphere10.Windows.WinForms.DatabaseConnectionPanel _databaseConnectionPanel;
+		private Sphere10.Framework.Windows.Forms.DatabaseConnectionPanel _databaseConnectionPanel;
 		private System.Windows.Forms.Button _testConnectionButton;
-		private Sphere10.Windows.WinForms.LoadingCircle _loadingCircle;
+		private Sphere10.Framework.Windows.Forms.LoadingCircle _loadingCircle;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 	}

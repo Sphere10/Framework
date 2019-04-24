@@ -24,7 +24,7 @@ using System.Reflection;
 using Sphere10.Framework;
 
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	#region TaskPaneInfoSurrogate
 
 	/// <summary>

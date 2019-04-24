@@ -19,7 +19,7 @@ using System.Text;
 using System.Runtime.InteropServices;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows {
+namespace Sphere10.Framework.Windows {
 	public static class HooksTool {
 
 		internal const int MaxExceptionsBeforeAbort = 20;

@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.ExplorerBarDesigner {
+namespace Sphere10.ExplorerBarDesigner {
     partial class ExportForm {
         /// <summary>
         /// Required designer variable.

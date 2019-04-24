@@ -15,7 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
     
     public interface IActionObserver {
 

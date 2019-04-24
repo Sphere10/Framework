@@ -22,15 +22,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Data;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public partial class DatabaseConnectionBar : ConnectionBarBase, IDatabaseConnectionProvider {
-		private const string MSSQLConnectionBarTypeName = "Sphere10.Windows.WinForms.MSSQL.MSSQLConnectionBar, Sphere10.Windows.WinForms.MSSQL";
-		private const string SqliteConnectionBarTypeName = "Sphere10.Windows.WinForms.Sqlite.SqliteConnectionBar, Sphere10.Windows.WinForms.Sqlite";
-		private const string FirebirdConnectionBarTypeName = "Sphere10.Windows.WinForms.Firebird.FirebirdConnectionBar, Sphere10.Windows.WinForms.Firebird";
-		private const string FirebirdFileConnectionBarTypeName = "Sphere10.Windows.WinForms.Firebird.FirebirdEmbeddedConnectionBar, Sphere10.Windows.WinForms.Firebird";
+		private const string MSSQLConnectionBarTypeName = "Sphere10.Framework.Windows.Forms.MSSQL.MSSQLConnectionBar, Sphere10.Framework.Windows.Forms.MSSQL";
+		private const string SqliteConnectionBarTypeName = "Sphere10.Framework.Windows.Forms.Sqlite.SqliteConnectionBar, Sphere10.Framework.Windows.Forms.Sqlite";
+		private const string FirebirdConnectionBarTypeName = "Sphere10.Framework.Windows.Forms.Firebird.FirebirdConnectionBar, Sphere10.Framework.Windows.Forms.Firebird";
+		private const string FirebirdFileConnectionBarTypeName = "Sphere10.Framework.Windows.Forms.Firebird.FirebirdEmbeddedConnectionBar, Sphere10.Framework.Windows.Forms.Firebird";
 
 		public DatabaseConnectionBar() {
 			InitializeComponent();

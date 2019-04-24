@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms
+namespace Sphere10.Framework.Windows.Forms
 {
     partial class BlockMainForm
     {
@@ -40,7 +40,7 @@ namespace Sphere10.Framework.WinForms
         private void InitializeComponent() {
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlockMainForm));
 			this._splitContainer = new System.Windows.Forms.SplitContainer();
-			this._applicationBar = new Sphere10.Framework.WinForms.ApplicationBar();
+			this._applicationBar = new Sphere10.Framework.Windows.Forms.ApplicationBar();
 			this._splitter = new System.Windows.Forms.Splitter();
 			this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
 			this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -74,7 +74,7 @@ namespace Sphere10.Framework.WinForms
 			this._applicationBar.ButtonHeight = 32;
 			this._applicationBar.Name = "_applicationBar";
 			this._applicationBar.SelectedItem = null;
-			this._applicationBar.ButtonPressed += new Sphere10.Framework.WinForms.ButtonPressedHandler(this._applicationBar_ButtonPressed);
+			this._applicationBar.ButtonPressed += new Sphere10.Framework.Windows.Forms.ButtonPressedHandler(this._applicationBar_ButtonPressed);
 			// 
 			// _splitter
 			// 
@@ -138,7 +138,7 @@ namespace Sphere10.Framework.WinForms
         private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
 		private System.Windows.Forms.ToolStripContentPanel ContentPanel;
         private System.Windows.Forms.Splitter _splitter;
-        private Sphere10.Framework.WinForms.ApplicationBar _applicationBar;
+        private Sphere10.Framework.Windows.Forms.ApplicationBar _applicationBar;
 		private System.Windows.Forms.SplitContainer _splitContainer;
 
 

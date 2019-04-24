@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class LoadingCircleTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -40,7 +40,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
             this._panel = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.loadingCircle1 = new Sphere10.Windows.WinForms.LoadingCircle();
+            this.loadingCircle1 = new Sphere10.Framework.Windows.Forms.LoadingCircle();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this._panel.SuspendLayout();
@@ -100,7 +100,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
             this.loadingCircle1.RotationSpeed = 100;
             this.loadingCircle1.Size = new System.Drawing.Size(34, 30);
             this.loadingCircle1.SpokeThickness = 2;
-            this.loadingCircle1.StylePreset = Sphere10.Windows.WinForms.LoadingCircle.StylePresets.MacOSX;
+            this.loadingCircle1.StylePreset = Sphere10.Framework.Windows.Forms.LoadingCircle.StylePresets.MacOSX;
             this.loadingCircle1.TabIndex = 0;
             this.loadingCircle1.Text = "loadingCircle1";
             this.loadingCircle1.Visible = false;
@@ -148,7 +148,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Panel _panel;
 		private System.Windows.Forms.Panel panel1;
-		private Sphere10.Windows.WinForms.LoadingCircle loadingCircle1;
+		private Sphere10.Framework.Windows.Forms.LoadingCircle loadingCircle1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.DataGridView dataGridView2;

@@ -18,8 +18,8 @@ using NUnit.Framework;
 using System.Security.Principal;
 using System.IO;
 using System.Diagnostics;
-using Sphere10.Windows;
-using Sphere10.Windows.Security;
+using Sphere10.Framework.Windows;
+using Sphere10.Framework.Windows.Security;
 
 
 namespace Sphere10.Framework.UnitTests {

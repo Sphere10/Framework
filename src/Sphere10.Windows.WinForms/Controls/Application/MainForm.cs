@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public partial class MainForm : LiteMainForm {
 

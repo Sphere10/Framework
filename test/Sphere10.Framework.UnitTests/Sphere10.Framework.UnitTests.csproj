@@ -167,13 +167,13 @@
       <Project>{a2192000-1bde-4657-ac90-289cf096c674}</Project>
       <Name>Sphere10.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows.LevelDB\Sphere10.Windows.LevelDB.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows.LevelDB\Sphere10.Framework.Windows.LevelDB.csproj">
       <Project>{c1549308-26f7-49c3-b1aa-8ad986c90db8}</Project>
-      <Name>Sphere10.Windows.LevelDB</Name>
+      <Name>Sphere10.Framework.Windows.LevelDB</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows\Sphere10.Windows.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows\Sphere10.Framework.Windows.csproj">
       <Project>{05d56a4b-6e13-4396-8b49-e2c55bc9b508}</Project>
-      <Name>Sphere10.Windows</Name>
+      <Name>Sphere10.Framework.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

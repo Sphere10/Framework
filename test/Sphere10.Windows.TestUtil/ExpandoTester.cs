@@ -19,9 +19,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	public partial class ExpandoTester : Form {
 		private TaskPane taskPane1;
 		private Expando expando1;

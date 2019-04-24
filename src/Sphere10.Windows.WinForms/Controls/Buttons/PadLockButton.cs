@@ -19,9 +19,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms.Properties;
+using Sphere10.Framework.Windows.Forms.Properties;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	
 	public class PadLockButton : Button {
 		private PadLockState _lockState;

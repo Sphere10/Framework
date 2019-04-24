@@ -22,7 +22,7 @@ using System.IO;
 using System.Security.AccessControl;
 using Microsoft.Win32;
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
 
 
     public class SIDSearcher {

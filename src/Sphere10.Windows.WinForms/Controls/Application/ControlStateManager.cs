@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms.Controls {
+namespace Sphere10.Framework.Windows.Forms.Controls {
     public class ControlStateManager {
         private readonly HashSet<Type> _controlStateManagers;
         private int _lastKnownComponentRegistryState;

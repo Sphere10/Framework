@@ -18,7 +18,7 @@ using System.Security.Principal;
 using System.Runtime.InteropServices;
 
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
 
 
 

@@ -20,10 +20,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms;
-using Sphere10.Windows.WinForms.AppointmentBook;
+using Sphere10.Framework.Windows.Forms;
+using Sphere10.Framework.Windows.Forms.AppointmentBook;
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	public partial class AppointmentBookForm : Form {
 		static readonly string[] Subjects = new string[] { "Subject 1", "Subject 2", "Subject 3", "Subject 4", "Subject 5", "Subject 6", "Subject 7", "Subject 8", "Subject 9", "Subject 10" };
 		static readonly string[] Streets = new string[] { "Alpha", "Beta", "Gamma", "Delta", "Omega", "Phi", "Psi", "Andromeda", "Milky Way", "Ursur Minor" };

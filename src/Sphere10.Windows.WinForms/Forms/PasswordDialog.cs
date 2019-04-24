@@ -21,7 +21,7 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public partial class PasswordDialog : Form {
 		public const int MaxTextLength = 5000;

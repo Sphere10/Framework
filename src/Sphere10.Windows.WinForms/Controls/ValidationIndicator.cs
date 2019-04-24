@@ -23,7 +23,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public partial class ValidationIndicator : UserControl {
         private ValidationState _validationState;
@@ -85,7 +85,7 @@ namespace Sphere10.Windows.WinForms {
                         }
                         if (_toolTip != null)
                             _toolTip.ToolTipTitle = "Error";
-                        SetBackgroundImage(Sphere10.Windows.WinForms.Properties.Resources.Cross);
+                        SetBackgroundImage(Sphere10.Framework.Windows.Forms.Properties.Resources.Cross);
                         break;
                     case ValidationState.Valid:
                         if (_loadingCircle != null) {
@@ -94,7 +94,7 @@ namespace Sphere10.Windows.WinForms {
                         }
                         if (_toolTip != null)
                             _toolTip.ToolTipTitle = "Success";
-                        SetBackgroundImage(Sphere10.Windows.WinForms.Properties.Resources.Tick);
+                        SetBackgroundImage(Sphere10.Framework.Windows.Forms.Properties.Resources.Tick);
                         break;
                     case ValidationState.Validating:
                         SetBackgroundImage(null);

@@ -20,7 +20,7 @@ using System.Globalization;
 using System.Reflection;
 using System.ComponentModel.Design.Serialization;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	
 
 	/// <summary>

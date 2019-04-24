@@ -7,8 +7,8 @@
     <ProjectGuid>{C1549308-26F7-49C3-B1AA-8AD986C90DB8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sphere10.Windows.LevelDB</RootNamespace>
-    <AssemblyName>Sphere10.Windows.LevelDB</AssemblyName>
+    <RootNamespace>Sphere10.Framework.Windows.LevelDB</RootNamespace>
+    <AssemblyName>Sphere10.Framework.Windows.LevelDB</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

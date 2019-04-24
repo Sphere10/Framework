@@ -19,10 +19,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public delegate void ButtonPressedHandler(ApplicationBar source, ApplicationBar.Item button);
 

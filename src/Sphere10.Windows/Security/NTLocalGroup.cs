@@ -20,7 +20,7 @@ using System.Linq;
 
 
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
 	/// <summary>
 	/// Encapsulates a Local Group from some host machine. A local group can have local user, domain user, and
 	/// domain groups as members

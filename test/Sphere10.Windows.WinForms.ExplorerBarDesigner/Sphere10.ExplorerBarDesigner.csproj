@@ -8,8 +8,8 @@
     <ProjectGuid>{6EE1E080-0D30-433C-A5CC-5180E75D04FA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sphere10.Windows.ExplorerBarDesigner</RootNamespace>
-    <AssemblyName>Sphere10.Windows.ExplorerBarDesigner</AssemblyName>
+    <RootNamespace>Sphere10.ExplorerBarDesigner</RootNamespace>
+    <AssemblyName>Sphere10.ExplorerBarDesigner</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -166,9 +166,9 @@
       <Project>{A2192000-1BDE-4657-AC90-289CF096C674}</Project>
       <Name>Sphere10.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms\Sphere10.Windows.WinForms.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms\Sphere10.Framework.Windows.Forms.csproj">
       <Project>{1EA1A698-5A35-45C7-8E85-DA3CC0D2882E}</Project>
-      <Name>Sphere10.Windows.WinForms</Name>
+      <Name>Sphere10.Framework.Windows.Forms</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

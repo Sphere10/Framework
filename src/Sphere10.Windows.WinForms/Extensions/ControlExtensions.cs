@@ -19,7 +19,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
 namespace Sphere10.Framework {
 

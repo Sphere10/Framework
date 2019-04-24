@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class EnumComboForm {
 		/// <summary>
 		/// Required designer variable.
@@ -36,7 +36,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			this._enumComboBox = new Sphere10.Windows.WinForms.EnumComboBox();
+			this._enumComboBox = new Sphere10.Framework.Windows.Forms.EnumComboBox();
 			this._setNullButton = new System.Windows.Forms.Button();
 			this._setEnumVal1Button = new System.Windows.Forms.Button();
 			this._setEnumValue2Button = new System.Windows.Forms.Button();
@@ -114,7 +114,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 
 		#endregion
 
-		private Sphere10.Windows.WinForms.EnumComboBox _enumComboBox;
+		private Sphere10.Framework.Windows.Forms.EnumComboBox _enumComboBox;
 		private System.Windows.Forms.Button _setNullButton;
 		private System.Windows.Forms.Button _setEnumVal1Button;
 		private System.Windows.Forms.Button _setEnumValue2Button;

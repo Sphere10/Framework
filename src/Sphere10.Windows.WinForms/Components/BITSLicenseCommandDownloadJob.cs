@@ -19,9 +19,9 @@ using System.IO;
 using System.Reflection;
 using Sphere10.Framework.Application;
 using Sphere10.Framework;
-using Sphere10.Windows.BITS;
+using Sphere10.Framework.Windows.BITS;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public class BITSLicenseCommandDownloadJob : JobEx {
 

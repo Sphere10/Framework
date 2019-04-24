@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class PadLockTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -39,8 +39,8 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PadLockTestForm));
 			this._outputTextBox = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.padLockButton2 = new Sphere10.Windows.WinForms.PadLockButton();
-			this.padLockButton1 = new Sphere10.Windows.WinForms.PadLockButton();
+			this.padLockButton2 = new Sphere10.Framework.Windows.Forms.PadLockButton();
+			this.padLockButton1 = new Sphere10.Framework.Windows.Forms.PadLockButton();
 			this.SuspendLayout();
 			// 
 			// _outputTextBox
@@ -86,7 +86,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this.padLockButton1.Size = new System.Drawing.Size(20, 20);
 			this.padLockButton1.TabIndex = 6;
 			this.padLockButton1.UseVisualStyleBackColor = true;
-			this.padLockButton1.PadLockStateChanged += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.PadLockButton, Sphere10.Windows.WinForms.PadLockButton.PadLockState>(this.padLockButton1_PadLockStateChanged);
+			this.padLockButton1.PadLockStateChanged += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.PadLockButton, Sphere10.Framework.Windows.Forms.PadLockButton.PadLockState>(this.padLockButton1_PadLockStateChanged);
 			// 
 			// PadLockTestForm
 			// 
@@ -109,8 +109,8 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 
 		private System.Windows.Forms.TextBox _outputTextBox;
 		private System.Windows.Forms.TextBox textBox2;
-		private Sphere10.Windows.WinForms.PadLockButton padLockButton1;
-		private Sphere10.Windows.WinForms.PadLockButton padLockButton2;
+		private Sphere10.Framework.Windows.Forms.PadLockButton padLockButton1;
+		private Sphere10.Framework.Windows.Forms.PadLockButton padLockButton2;
 
 
 	}

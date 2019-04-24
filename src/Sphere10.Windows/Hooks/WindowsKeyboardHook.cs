@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 using Sphere10.Framework;
 
 
-namespace Sphere10.Windows {
+namespace Sphere10.Framework.Windows {
 
 	public sealed class WindowsKeyboardHook : BaseKeyboardHook, IComponent {
 		public new event EventHandler  Disposed;

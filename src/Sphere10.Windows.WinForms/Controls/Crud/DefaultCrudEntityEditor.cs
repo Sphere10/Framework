@@ -21,7 +21,7 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public partial class DefaultCrudEntityEditor : UserControl, ICrudEntityEditor<object> {
 		private object _entity;
 		private object _backupEntity;

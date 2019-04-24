@@ -14,7 +14,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	public partial class CustomComboBoxForm : Form {
 		public CustomComboBoxForm() {
 			InitializeComponent();

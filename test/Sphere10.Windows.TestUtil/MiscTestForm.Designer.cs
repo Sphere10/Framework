@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class MiscTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -40,14 +40,14 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this.button1 = new System.Windows.Forms.Button();
 			this._clipTestButton = new System.Windows.Forms.Button();
 			this._scopedContextTestButton = new System.Windows.Forms.Button();
-			this._clipTestTextBox = new Sphere10.Windows.WinForms.TextBoxEx();
-			this.listMerger1 = new Sphere10.Windows.WinForms.ListMerger();
+			this._clipTestTextBox = new Sphere10.Framework.Windows.Forms.TextBoxEx();
+			this.listMerger1 = new Sphere10.Framework.Windows.Forms.ListMerger();
 			this._compressTestButton = new System.Windows.Forms.Button();
 			this._pathTemplatesButton = new System.Windows.Forms.Button();
 			this._sqliteTestButton = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this._sqlServerTest = new System.Windows.Forms.Button();
-			this.progressBarEx1 = new Sphere10.Windows.WinForms.ProgressBarEx();
+			this.progressBarEx1 = new Sphere10.Framework.Windows.Forms.ProgressBarEx();
 			this.button3 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
@@ -171,7 +171,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			// progressBarEx1
 			// 
 			this.progressBarEx1.CustomText = "sadfasdfasdf";
-			this.progressBarEx1.DisplayStyle = Sphere10.Windows.WinForms.ProgressBarDisplayText.CustomText;
+			this.progressBarEx1.DisplayStyle = Sphere10.Framework.Windows.Forms.ProgressBarDisplayText.CustomText;
 			this.progressBarEx1.Location = new System.Drawing.Point(67, 177);
 			this.progressBarEx1.Name = "progressBarEx1";
 			this.progressBarEx1.Size = new System.Drawing.Size(186, 23);
@@ -216,9 +216,9 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 		#endregion
 
 		private System.Windows.Forms.ComboBox comboBox1;
-		private Sphere10.Windows.WinForms.ListMerger listMerger1;
+		private Sphere10.Framework.Windows.Forms.ListMerger listMerger1;
 		private System.Windows.Forms.Button button1;
-        private Sphere10.Windows.WinForms.TextBoxEx _clipTestTextBox;
+        private Sphere10.Framework.Windows.Forms.TextBoxEx _clipTestTextBox;
         private System.Windows.Forms.Button _clipTestButton;
         private System.Windows.Forms.Button _scopedContextTestButton;
         private System.Windows.Forms.Button _compressTestButton;
@@ -226,7 +226,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
         private System.Windows.Forms.Button _sqliteTestButton;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button _sqlServerTest;
-        private Windows.WinForms.ProgressBarEx progressBarEx1;
+        private Sphere10.Framework.Windows.Forms.ProgressBarEx progressBarEx1;
 		private System.Windows.Forms.Button button3;
 	}
 }

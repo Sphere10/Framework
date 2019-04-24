@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms.AppointmentBook {
+namespace Sphere10.Framework.Windows.Forms.AppointmentBook {
 	
 	public abstract class BaseAppointmentBookViewModel {
 		private TimePeriodType _timeView;

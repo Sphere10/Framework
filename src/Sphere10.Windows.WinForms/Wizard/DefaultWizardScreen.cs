@@ -20,7 +20,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public class DefaultWizardScreen  : WizardScreen<IDictionary<string, object>> { 
     }
 

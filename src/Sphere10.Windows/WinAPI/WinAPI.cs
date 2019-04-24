@@ -23,7 +23,7 @@ using System.Security;
 using System.Reflection;
 
 
-namespace Sphere10.Windows {
+namespace Sphere10.Framework.Windows {
 
     [Obfuscation(Exclude = true, StripAfterObfuscation = true)]
 	public static partial class WinAPI {

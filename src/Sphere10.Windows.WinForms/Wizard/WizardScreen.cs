@@ -22,7 +22,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public class                                                                                                                          WizardScreen<T> : UserControlEx, IWizardScreen<T> {
         public IWizardManager<T> Wizard { get; internal set; }
 

@@ -18,7 +18,7 @@ using System.Text;
 using Sphere10.Framework.Application;
 using System.Drawing;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public interface IMainFrame : IUserInterfaceServices, IBlockManager, IUserNotificationServices, IApplicationIconProvider {
 

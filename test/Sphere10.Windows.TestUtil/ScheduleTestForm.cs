@@ -21,9 +21,9 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Scheduler;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
     public partial class ScheduleTestForm : Form {
         public ScheduleTestForm() {
             InitializeComponent();

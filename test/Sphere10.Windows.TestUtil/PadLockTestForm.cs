@@ -20,10 +20,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	public partial class PadLockTestForm : Form {
 		private readonly TextWriter _outputTextWriter;
 		public PadLockTestForm() {

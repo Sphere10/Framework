@@ -18,7 +18,7 @@ using System.Text;
 using System.ComponentModel;
 using System.Reflection;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	/// <summary>
 	/// Specifies the amount of space arouund an object along each side

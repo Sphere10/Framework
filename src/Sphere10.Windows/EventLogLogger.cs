@@ -19,7 +19,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows {
+namespace Sphere10.Framework.Windows {
     public class EventLogLogger : ILogger {
         private System.Diagnostics.EventLog _eventLog;
         private readonly string _source;

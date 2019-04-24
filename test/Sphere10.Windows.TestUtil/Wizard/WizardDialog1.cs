@@ -20,10 +20,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.TestUtil.Wizard {
+namespace Sphere10.FrameworkTester.Wizard {
     public partial class WizardDialog1 : DefaultWizardScreen {
         public WizardDialog1() {
             InitializeComponent();

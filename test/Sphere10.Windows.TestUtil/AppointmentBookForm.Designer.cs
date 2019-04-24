@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class AppointmentBookForm {
 		/// <summary>
 		/// Required designer variable.
@@ -38,10 +38,10 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 		private void InitializeComponent() {
 			this._populateButton = new System.Windows.Forms.Button();
 			this._outputTextBox = new System.Windows.Forms.TextBox();
-			this._columnFilterComboBox = new Sphere10.Windows.WinForms.EnumComboBox();
-			this.UnallocatedBook = new Sphere10.Windows.WinForms.AppointmentBook.UnallocatedBook();
-			this.AppointmentBook = new Sphere10.Windows.WinForms.AppointmentBook.AppointmentBook();
-			this._timeViewSelector = new Sphere10.Windows.WinForms.EnumComboBox();
+			this._columnFilterComboBox = new Sphere10.Framework.Windows.Forms.EnumComboBox();
+			this.UnallocatedBook = new Sphere10.Framework.Windows.Forms.AppointmentBook.UnallocatedBook();
+			this.AppointmentBook = new Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentBook();
+			this._timeViewSelector = new Sphere10.Framework.Windows.Forms.EnumComboBox();
 			this.SuspendLayout();
 			// 
 			// _populateButton
@@ -87,7 +87,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
             | System.Windows.Forms.AnchorStyles.Left)));
 			this.UnallocatedBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.UnallocatedBook.CanResize = false;
-			this.UnallocatedBook.ColumnFilter = Sphere10.Windows.WinForms.AppointmentBook.AppointmentBookViewModelFilter.All;
+			this.UnallocatedBook.ColumnFilter = Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentBookViewModelFilter.All;
 			this.UnallocatedBook.DataSource = null;
 			this.UnallocatedBook.DistanceMovedToInitiateDragging = 12F;
 			this.UnallocatedBook.HasColHeaders = true;
@@ -100,14 +100,14 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this.UnallocatedBook.Size = new System.Drawing.Size(120, 515);
 			this.UnallocatedBook.TabIndex = 4;
 			this.UnallocatedBook.ViewModel = null;
-			this.UnallocatedBook.AppointmentSelected += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentEvent>(this._unallocatedBook_AppointmentSelected);
-			this.UnallocatedBook.AppointmentDoubleClicked += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentEvent>(this.UnallocatedBook_AppointmentDoubleClicked);
-			this.UnallocatedBook.AppointmentDeselected += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentEvent>(this._unallocatedBook_AppointmentDeselected);
-			this.UnallocatedBook.AppointmentDragStarting += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDragStartingEvent>(this._unallocatedBook_AppointmentDragStarting);
-			this.UnallocatedBook.AppointmentDragging += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDraggingEvent>(this._unallocatedBook_AppointmentDragging);
-			this.UnallocatedBook.AppointmentDragged += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDraggedEvent>(this._unallocatedBook_AppointmentDrag);
-			this.UnallocatedBook.AppointmentDropStarting += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDropStartingEvent>(this._unallocatedBook_AppointmentDropStarting);
-			this.UnallocatedBook.AppointmentDrop += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDropEvent>(this._unallocatedBook_AppointmentDrop);
+			this.UnallocatedBook.AppointmentSelected += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentEvent>(this._unallocatedBook_AppointmentSelected);
+			this.UnallocatedBook.AppointmentDoubleClicked += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentEvent>(this.UnallocatedBook_AppointmentDoubleClicked);
+			this.UnallocatedBook.AppointmentDeselected += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentEvent>(this._unallocatedBook_AppointmentDeselected);
+			this.UnallocatedBook.AppointmentDragStarting += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDragStartingEvent>(this._unallocatedBook_AppointmentDragStarting);
+			this.UnallocatedBook.AppointmentDragging += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDraggingEvent>(this._unallocatedBook_AppointmentDragging);
+			this.UnallocatedBook.AppointmentDragged += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDraggedEvent>(this._unallocatedBook_AppointmentDrag);
+			this.UnallocatedBook.AppointmentDropStarting += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDropStartingEvent>(this._unallocatedBook_AppointmentDropStarting);
+			this.UnallocatedBook.AppointmentDrop += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDropEvent>(this._unallocatedBook_AppointmentDrop);
 			// 
 			// AppointmentBook
 			// 
@@ -117,7 +117,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.AppointmentBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.AppointmentBook.CanResize = true;
-			this.AppointmentBook.ColumnFilter = Sphere10.Windows.WinForms.AppointmentBook.AppointmentBookViewModelFilter.All;
+			this.AppointmentBook.ColumnFilter = Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentBookViewModelFilter.All;
 			this.AppointmentBook.DataSource = null;
 			this.AppointmentBook.DistanceMovedToInitiateDragging = 12F;
 			this.AppointmentBook.HasColHeaders = true;
@@ -130,18 +130,18 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this.AppointmentBook.Size = new System.Drawing.Size(797, 515);
 			this.AppointmentBook.TabIndex = 3;
 			this.AppointmentBook.ViewModel = null;
-			this.AppointmentBook.AppointmentBookFreeRegionSelected += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentBookFreeRegionSelected>(this._appointmentBook_AppointmentBookFreeRegionSelected);
-			this.AppointmentBook.AppointmentSelected += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentEvent>(this._appointmentBook_AppointmentSelected);
-			this.AppointmentBook.AppointmentDoubleClicked += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentEvent>(this.AppointmentBook_AppointmentDoubleClicked);
-			this.AppointmentBook.AppointmentDeselected += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentEvent>(this._appointmentBook_AppointmentDeselected);
-			this.AppointmentBook.AppointmentResizingStarted += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentEvent>(this._appointmentBook_AppointmentResizingStarted);
-			this.AppointmentBook.AppointmentResizing += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentResizingEvent>(this._appointmentBook_AppointmentResizing);
-			this.AppointmentBook.AppointmentResizingFinished += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentResizingFinishedEvent>(this._appointmentBook_AppointmentResizingFinished);
-			this.AppointmentBook.AppointmentDragStarting += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDragStartingEvent>(this._appointmentBook_AppointmentDragStarting);
-			this.AppointmentBook.AppointmentDragging += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDraggingEvent>(this._appointmentBook_AppointmentDragging);
-			this.AppointmentBook.AppointmentDragged += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDraggedEvent>(this._appointmentBook_AppointmentDrag);
-			this.AppointmentBook.AppointmentDropStarting += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDropStartingEvent>(this._appointmentBook_AppointmentDropStarting);
-			this.AppointmentBook.AppointmentDrop += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.AppointmentBook.AppointmentDropEvent>(this._appointmentBook_AppointmentDrop);
+			this.AppointmentBook.AppointmentBookFreeRegionSelected += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentBookFreeRegionSelected>(this._appointmentBook_AppointmentBookFreeRegionSelected);
+			this.AppointmentBook.AppointmentSelected += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentEvent>(this._appointmentBook_AppointmentSelected);
+			this.AppointmentBook.AppointmentDoubleClicked += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentEvent>(this.AppointmentBook_AppointmentDoubleClicked);
+			this.AppointmentBook.AppointmentDeselected += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentEvent>(this._appointmentBook_AppointmentDeselected);
+			this.AppointmentBook.AppointmentResizingStarted += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentEvent>(this._appointmentBook_AppointmentResizingStarted);
+			this.AppointmentBook.AppointmentResizing += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentResizingEvent>(this._appointmentBook_AppointmentResizing);
+			this.AppointmentBook.AppointmentResizingFinished += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentResizingFinishedEvent>(this._appointmentBook_AppointmentResizingFinished);
+			this.AppointmentBook.AppointmentDragStarting += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDragStartingEvent>(this._appointmentBook_AppointmentDragStarting);
+			this.AppointmentBook.AppointmentDragging += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDraggingEvent>(this._appointmentBook_AppointmentDragging);
+			this.AppointmentBook.AppointmentDragged += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDraggedEvent>(this._appointmentBook_AppointmentDrag);
+			this.AppointmentBook.AppointmentDropStarting += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDropStartingEvent>(this._appointmentBook_AppointmentDropStarting);
+			this.AppointmentBook.AppointmentDrop += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentDropEvent>(this._appointmentBook_AppointmentDrop);
 			// 
 			// _timeViewSelector
 			// 
@@ -179,11 +179,11 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 		#endregion
 
 		private System.Windows.Forms.Button _populateButton;
-		private Sphere10.Windows.WinForms.EnumComboBox _timeViewSelector;
-		private Sphere10.Windows.WinForms.AppointmentBook.AppointmentBook AppointmentBook;
-		private Sphere10.Windows.WinForms.AppointmentBook.UnallocatedBook UnallocatedBook;
+		private Sphere10.Framework.Windows.Forms.EnumComboBox _timeViewSelector;
+		private Sphere10.Framework.Windows.Forms.AppointmentBook.AppointmentBook AppointmentBook;
+		private Sphere10.Framework.Windows.Forms.AppointmentBook.UnallocatedBook UnallocatedBook;
 		private System.Windows.Forms.TextBox _outputTextBox;
-		private Sphere10.Windows.WinForms.EnumComboBox _columnFilterComboBox;
+		private Sphere10.Framework.Windows.Forms.EnumComboBox _columnFilterComboBox;
 
 
 	}

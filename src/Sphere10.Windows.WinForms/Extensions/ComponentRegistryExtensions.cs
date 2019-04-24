@@ -16,11 +16,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Sphere10.Framework.WinForms.Controls;
+using Sphere10.Framework.Windows.Forms.Controls;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public static class ComponentRegistryExtensions {
         
         internal static readonly IDictionary<Type, int> BlockPositions;

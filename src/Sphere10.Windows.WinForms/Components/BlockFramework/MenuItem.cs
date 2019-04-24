@@ -17,7 +17,7 @@ using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public class MenuItem : IMenuItem 
     {

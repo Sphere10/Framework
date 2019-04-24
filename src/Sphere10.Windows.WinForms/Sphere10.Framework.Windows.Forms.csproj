@@ -8,8 +8,8 @@
     <ProjectGuid>{1EA1A698-5A35-45C7-8E85-DA3CC0D2882E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sphere10.Windows.WinForms</RootNamespace>
-    <AssemblyName>Sphere10.Windows.WinForms</AssemblyName>
+    <RootNamespace>Sphere10.Framework.Windows.Forms</RootNamespace>
+    <AssemblyName>Sphere10.Framework.Windows.Forms</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -1311,9 +1311,9 @@
       <Project>{a2192000-1bde-4657-ac90-289cf096c674}</Project>
       <Name>Sphere10.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sphere10.Windows\Sphere10.Windows.csproj">
+    <ProjectReference Include="..\Sphere10.Windows\Sphere10.Framework.Windows.csproj">
       <Project>{05D56A4B-6E13-4396-8B49-E2C55BC9B508}</Project>
-      <Name>Sphere10.Windows</Name>
+      <Name>Sphere10.Framework.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

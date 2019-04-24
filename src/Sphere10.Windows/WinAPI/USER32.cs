@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows {
+namespace Sphere10.Framework.Windows {
     public static partial class WinAPI {
 
         public static class USER32 {

@@ -18,7 +18,7 @@ using FirebirdSql.Data.FirebirdClient;
 using Sphere10.Framework.Data;
 
 
-namespace Sphere10.Windows.WinForms.Firebird {
+namespace Sphere10.Framework.Windows.Forms.Firebird {
 	public partial class FirebirdEmbeddedConnectionPanel : ConnectionPanelBase, IDatabaseConnectionProvider {
 		public FirebirdEmbeddedConnectionPanel() {
 			InitializeComponent();

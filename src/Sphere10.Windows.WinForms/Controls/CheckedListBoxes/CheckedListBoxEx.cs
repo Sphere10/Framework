@@ -20,7 +20,7 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public class CheckedListBoxEx : CheckedListBox {
 
 		[Description("Occurs AFTER the checked state of an item changes.")]

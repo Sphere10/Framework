@@ -18,7 +18,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing;
-using Sphere10.Windows;
+using Sphere10.Framework.Windows;
 
 
 namespace Sphere10.Framework {

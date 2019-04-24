@@ -22,7 +22,7 @@ using System.Drawing.Drawing2D;
 using Sphere10.Framework;
 
 
-namespace Sphere10.Windows.WinForms
+namespace Sphere10.Framework.Windows.Forms
 {
 	public partial class RoundedPanel : Panel
 	{

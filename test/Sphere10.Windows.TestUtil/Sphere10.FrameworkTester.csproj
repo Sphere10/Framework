@@ -8,8 +8,8 @@
     <ProjectGuid>{78AEE57E-C78F-47AD-8BCC-8D6896EBD994}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sphere10.Windows.TestUtil</RootNamespace>
-    <AssemblyName>Sphere10.Windows.TestUtil</AssemblyName>
+    <RootNamespace>Sphere10.FrameworkTester</RootNamespace>
+    <AssemblyName>Sphere10.FrameworkTester</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>
@@ -586,29 +586,29 @@
       <Project>{a2192000-1bde-4657-ac90-289cf096c674}</Project>
       <Name>Sphere10.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows.LevelDB\Sphere10.Windows.LevelDB.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows.LevelDB\Sphere10.Framework.Windows.LevelDB.csproj">
       <Project>{c1549308-26f7-49c3-b1aa-8ad986c90db8}</Project>
-      <Name>Sphere10.Windows.LevelDB</Name>
+      <Name>Sphere10.Framework.Windows.LevelDB</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.Firebird\Sphere10.Windows.WinForms.Firebird.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.Firebird\Sphere10.Framework.WinForms.Firebird.csproj">
       <Project>{0aae6912-cde3-4d49-9ae5-63193105537c}</Project>
-      <Name>Sphere10.Windows.WinForms.Firebird</Name>
+      <Name>Sphere10.Framework.WinForms.Firebird</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.MSSQL\Sphere10.Windows.WinForms.MSSQL.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.MSSQL\Sphere10.Framework.WinForms.MSSQL.csproj">
       <Project>{97d707e8-38ff-4435-b7a6-7f777d255e3a}</Project>
-      <Name>Sphere10.Windows.WinForms.MSSQL</Name>
+      <Name>Sphere10.Framework.WinForms.MSSQL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.Sqlite\Sphere10.Windows.WinForms.Sqlite.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms.Sqlite\Sphere10.Framework.WinForms.Sqlite.csproj">
       <Project>{bd8f6b59-e0db-4dee-a144-944bbc44fd9d}</Project>
-      <Name>Sphere10.Windows.WinForms.Sqlite</Name>
+      <Name>Sphere10.Framework.WinForms.Sqlite</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms\Sphere10.Windows.WinForms.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows.WinForms\Sphere10.Framework.Windows.Forms.csproj">
       <Project>{1ea1a698-5a35-45c7-8e85-da3cc0d2882e}</Project>
-      <Name>Sphere10.Windows.WinForms</Name>
+      <Name>Sphere10.Framework.Windows.Forms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\Sphere10.Windows\Sphere10.Windows.csproj">
+    <ProjectReference Include="..\..\src\Sphere10.Windows\Sphere10.Framework.Windows.csproj">
       <Project>{05d56a4b-6e13-4396-8b49-e2c55bc9b508}</Project>
-      <Name>Sphere10.Windows</Name>
+      <Name>Sphere10.Framework.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

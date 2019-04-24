@@ -11,9 +11,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
     partial class ObservableCollectionsTest {
         /// <summary>
         /// Required designer variable.
@@ -38,7 +38,7 @@ namespace Sphere10.Windows.TestUtil {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.textBoxEx1 = new Sphere10.Windows.WinForms.TextBoxEx();
+            this.textBoxEx1 = new Sphere10.Framework.Windows.Forms.TextBoxEx();
             this._dictionaryTestButton = new System.Windows.Forms.Button();
             this._listTestButton = new System.Windows.Forms.Button();
             this.SuspendLayout();

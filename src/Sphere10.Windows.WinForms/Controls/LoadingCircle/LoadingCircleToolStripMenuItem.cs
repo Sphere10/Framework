@@ -42,7 +42,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 
-namespace Sphere10.Windows.WinForms
+namespace Sphere10.Framework.Windows.Forms
 {
     [ToolStripItemDesignerAvailability(ToolStripItemDesignerAvailability.All)]
     public class LoadingCircleToolStripMenuItem : ToolStripControlHost
@@ -58,9 +58,9 @@ namespace Sphere10.Windows.WinForms
         /// <value>The loading circle control.</value>
         [RefreshProperties(RefreshProperties.All),
         DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public Windows.WinForms.LoadingCircle LoadingCircleControl
+        public Sphere10.Framework.Windows.Forms.LoadingCircle LoadingCircleControl
         {
-            get { return Control as Windows.WinForms.LoadingCircle; }
+            get { return Control as Sphere10.Framework.Windows.Forms.LoadingCircle; }
         }
 
         // Constructor ========================================================
@@ -68,7 +68,7 @@ namespace Sphere10.Windows.WinForms
         /// Initializes a new instance of the <see cref="LoadingCircleToolStripMenuItem"/> class.
         /// </summary>
         public LoadingCircleToolStripMenuItem()
-            : base(new Windows.WinForms.LoadingCircle())
+            : base(new Sphere10.Framework.Windows.Forms.LoadingCircle())
         {
         }
 

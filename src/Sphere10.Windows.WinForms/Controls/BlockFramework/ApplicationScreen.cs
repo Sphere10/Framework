@@ -17,10 +17,12 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.ComponentModel;
+using System.Linq;
 using Sphere10.Framework.Application;
+using Sphere10.Framework.Windows.Forms;
 
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     /// <summary>
     /// Application UIs can be presented as a screen. It is a proxy ApplicationServiceProvider
@@ -29,14 +31,15 @@ namespace Sphere10.Framework.WinForms {
     /// NOTE: The ApplicationServiceProvider property, which defines the underlying provider all
     /// such  calls are routed to, is guaranteed to be set post-construction.
     /// </summary>
-    public class ApplicationScreen : ApplicationControl, IHelpableObject {
-        private List<ToolStripItem> _menuStripItems;
+    public class ApplicationScreen : ApplicationControl, IUpdatable, IHelpableObject {
+	    public event EventHandler StateChanged;
+		private List<ToolStripItem> _menuStripItems;
+
         public ApplicationScreen()
             : this(null) {
         }
 
         public ApplicationScreen(IApplicationBlock applicationBlock) {
-			Dirty = false;
             ApplicationBlock = applicationBlock;
 			Url = FileName = null;
 			Type = HelpType.None;
@@ -58,10 +61,28 @@ namespace Sphere10.Framework.WinForms {
         [Browsable(false)]
         public IApplicationBlock ApplicationBlock { get; set; }
 
+	    [Category("Behavior")]
+	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+	    [DefaultValue(true)]
+	    public bool AutoDetectChildStateChanges { get; set; }
+
+	    [Category("Behavior")]
+	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+	    [DefaultValue(true)]
+	    public bool AutoSave { get; set; }
 
 
-        [Browsable(false)]
-        public bool Dirty { get; set; }
+	    [Browsable(false)]
+	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+	    public bool Updating { get; set; }
+
+	    [Browsable(false)]
+	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+	    public bool Loaded { get; internal set; }
+
+
+		//[Browsable(false)]
+  //      public bool Dirty { get; set; }
         
         /// <summary>
         /// The menu items associated with this screen.
@@ -79,24 +100,68 @@ namespace Sphere10.Framework.WinForms {
         [Browsable(true), Category("Behavior"), Description("The toolbar associated with this screen.")]
         public ToolStrip ToolBar { get; set; }
 
-        public virtual void SetLocalizedText() {
+
+	    public HelpType Type {
+		    get;
+		    private set;
+	    }
+
+	    public string FileName {
+		    get;
+		    private set;
+	    }
+
+	    public string Url {
+		    get;
+		    private set;
+	    }
+
+	    public int? PageNumber {
+		    get;
+		    private set;
+	    }
+
+	    public int? HelpTopicID {
+		    get;
+		    private set;
+	    }
+
+	    public int? HelpTopicAlias {
+		    get;
+		    private set;
+	    }
+
+		public virtual void SetLocalizedText() {
             SetLocalizedTextInApplicationControls(this.Controls);
         }
 
-        public virtual void OnCreateScreen() {
+	    internal virtual void OnCreateScreen() {
         }
 
-        public virtual void OnShowScreen() {
+	    internal virtual void OnShowScreen() {
         }
 
-        public virtual void OnHideScreen(ref bool cancelHide) {
+	    internal virtual void OnHideScreen(ref bool cancelHide) {
         }
 
-        public virtual void OnDestroyScreen() {
-        }
+	    internal virtual void OnDestroyScreen() {
+	    }
 
-        public virtual void RefreshScreenWithConfiguration() {
-        }
+	    internal virtual void OnStateChanged() {
+	    }
+
+		internal virtual void PopulatePrimingData() {
+	    }
+
+		internal virtual void SaveState() {
+	    }
+
+	    internal virtual void SaveUserInputToDataSource() {
+	    }
+
+	    internal virtual void RefreshUserInterfaceWithDataSource() {
+	    }
+
 
         protected void RegisterMenuItem(ToolStripItem item) {
             _menuStripItems.Add(item);
@@ -115,45 +180,21 @@ namespace Sphere10.Framework.WinForms {
             }
         }
 
-        private void InitializeComponent() {
-            this.SuspendLayout();
-            // 
-            // ApplicationScreen
-            // 
-            this.Name = "ApplicationScreen";
-            this.ResumeLayout(false);
-
-        }
-
-		public HelpType Type {
-			get;
-			private set;
+	    public void NotifyStateChangedEvent(bool saveToDataSource = false) {
+			if (!Updating) {
+				if (AutoDetectChildStateChanges) {
+					OnStateChanged();
+					StateChanged?.Invoke(this, new EventArgs());
+				}
+				if (saveToDataSource) {
+					SaveUserInputToDataSource();
+					if (AutoSave) {
+						SaveState();
+					}
+				}
+			}
 		}
-
-		public string FileName {
-			get;
-			private set;
-		}
-
-		public string Url {
-			get;
-			private set;
-		}
-
-		public int? PageNumber {
-			get;
-			private set;
-		}
-
-		public int? HelpTopicID {
-			get;
-			private set;
-		}
-
-		public int? HelpTopicAlias {
-			get;
-			private set;
-		}
+	
 	}
 }
 

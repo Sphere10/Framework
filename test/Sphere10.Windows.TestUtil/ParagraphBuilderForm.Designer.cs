@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	partial class ParagraphBuilderForm {
 		/// <summary>
 		/// Required designer variable.

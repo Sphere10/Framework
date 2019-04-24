@@ -18,7 +18,7 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public class TextBoxWriter : BaseTextWriter {
 		private readonly TextBox _textBox;
 	

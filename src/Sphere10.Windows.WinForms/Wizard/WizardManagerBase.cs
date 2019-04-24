@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public abstract class WizardManagerBase<T> : Disposable, IWizardManager<T> {
         public event EventHandlerEx Finished;
         private Form _owner;

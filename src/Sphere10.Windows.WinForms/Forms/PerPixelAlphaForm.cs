@@ -19,9 +19,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Imaging;
-using Sphere10.Windows;
+using Sphere10.Framework.Windows;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 
 	/// <para>Your PerPixel form should inherit this class</para>

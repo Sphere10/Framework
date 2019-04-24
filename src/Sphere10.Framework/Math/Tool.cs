@@ -19,7 +19,7 @@ using System.Text.RegularExpressions;
 using System.Globalization;
 using System.Threading;
 
-namespace Sphere10.Common {
+namespace Sphere10.Framework {
 	public partial class Tool {
 
 		public const float EPSILON = 0.0001f;

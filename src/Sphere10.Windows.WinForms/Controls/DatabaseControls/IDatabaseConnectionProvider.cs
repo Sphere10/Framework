@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 using Sphere10.Framework.Data;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public interface IDatabaseConnectionProvider {
 		IDAC GetDAC();

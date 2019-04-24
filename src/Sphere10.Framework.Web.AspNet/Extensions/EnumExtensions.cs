@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 
-namespace Sphere10.Framework {
+namespace Sphere10.Framework.Web {
 	public static class EnumExtensions {
 
         public static SelectList ToSelectList<TEnum>(this TEnum enumObj)

@@ -34,7 +34,7 @@ using System.Runtime.InteropServices;
 using System.Security.Permissions;
 
 
-namespace Sphere10.Windows.BITS
+namespace Sphere10.Framework.Windows.BITS
 {
 	// InteropBits.cs
 	// COM Interop C# classes for accessing BITS API.

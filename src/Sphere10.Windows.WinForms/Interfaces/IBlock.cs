@@ -18,7 +18,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 #warning Add Option Dialogs
 #warning Add 8x8 special icon (outlook bar bottom)

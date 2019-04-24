@@ -19,7 +19,7 @@ using System.Threading;
 using System.Net.NetworkInformation;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public class BITSBackgroundLicenseVerifier : StandardBackgroundLicenseVerifier {
 
 		public BITSBackgroundLicenseVerifier(IProductInformationServices productInformationServices, IWebsiteLauncher websiteLauncher, ILicenseServices licenseServices, ILicenseEnforcer licenseEnforcer)

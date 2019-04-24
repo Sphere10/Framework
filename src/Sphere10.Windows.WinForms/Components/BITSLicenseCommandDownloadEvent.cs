@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public class BITSLicenseCommandDownloadEvent : EventArgs {
 		public ProductLicenseCommand Command { get; set; }
 	}

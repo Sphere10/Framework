@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.WinForms.AppointmentBook {
+namespace Sphere10.Framework.Windows.Forms.AppointmentBook {
 	partial class BaseAppointmentBook {
 		/// <summary>
 		/// Required designer variable.

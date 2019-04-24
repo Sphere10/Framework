@@ -22,9 +22,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms.WinForms;
+using Sphere10.Framework.Windows.Forms.WinForms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public partial class LogonDialog : Form {
 		public const int MaxTextLength = 5000;

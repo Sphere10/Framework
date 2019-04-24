@@ -21,7 +21,7 @@ using System.Text;
 using System.Windows.Forms;
 using SourceGrid;
 
-namespace Sphere10.Windows.WinForms.AppointmentBook {
+namespace Sphere10.Framework.Windows.Forms.AppointmentBook {
 
 	[ToolboxItem(true)]
 	public class UnallocatedBook : AppointmentBook {

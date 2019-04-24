@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     partial class StandardRequestFeatureDialog {
         /// <summary>
@@ -38,14 +38,14 @@ namespace Sphere10.Framework.WinForms {
         /// </summary>
         private void InitializeComponent() {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this._basicContactDetailsControl = new Sphere10.Framework.WinForms.BasicContactDetailsControl();
+			this._basicContactDetailsControl = new Sphere10.Framework.Windows.Forms.BasicContactDetailsControl();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this._featureTextBox = new System.Windows.Forms.TextBox();
             this._cancelButton = new System.Windows.Forms.Button();
             this._sendButton = new System.Windows.Forms.Button();
-			this.applicationBanner1 = new Sphere10.Framework.WinForms.ApplicationBanner();
+			this.applicationBanner1 = new Sphere10.Framework.Windows.Forms.ApplicationBanner();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this._whoAreYouControl = new Sphere10.Framework.WinForms.WhoAreYouControl();
+			this._whoAreYouControl = new Sphere10.Framework.Windows.Forms.WhoAreYouControl();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -182,7 +182,7 @@ namespace Sphere10.Framework.WinForms {
         private BasicContactDetailsControl _basicContactDetailsControl;
         private ApplicationBanner applicationBanner1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private Sphere10.Framework.WinForms.WhoAreYouControl _whoAreYouControl;
+        private Sphere10.Framework.Windows.Forms.WhoAreYouControl _whoAreYouControl;
     }
 }
 

@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms{
+namespace Sphere10.Framework.Windows.Forms{
 	public interface IStateChangeObserver {
 		bool IsBeingObserved(object source);
 		bool CanObserve(object source);

@@ -16,7 +16,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 
 
-namespace Sphere10.Windows.ExplorerBarDesigner {
+namespace Sphere10.ExplorerBarDesigner {
 
     static class Program {
         /// <summary>

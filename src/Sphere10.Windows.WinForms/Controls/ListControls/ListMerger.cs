@@ -21,7 +21,7 @@ using System.Windows.Forms;
 using System.Linq;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public delegate void ItemSelectedHandler(ListMerger source, ListMergerSide side, object selectedItem);
     public delegate void ItemsMovedHandler(ListMerger source, ListMergerSide from, ListMergerSide to, ListMergeMode action, IEnumerable<object> item);

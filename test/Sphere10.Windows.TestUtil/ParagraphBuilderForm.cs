@@ -21,7 +21,7 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	public partial class ParagraphBuilderForm : Form {
 		public ParagraphBuilderForm() {
 			InitializeComponent();

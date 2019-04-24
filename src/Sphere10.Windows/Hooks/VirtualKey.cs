@@ -13,7 +13,7 @@
 
 using System;
 
-namespace Sphere10.Windows {
+namespace Sphere10.Framework.Windows {
 	[Flags]
 	public enum VirtualKey {
         Modifiers = -65536,

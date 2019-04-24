@@ -21,7 +21,7 @@ using System.Security.Permissions;
 using System.Reflection;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	/// <summary>
 	/// A class that is serialized instead of a TaskItemInfo (as 

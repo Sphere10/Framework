@@ -18,7 +18,7 @@ using System.Drawing;
 using System.Data;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms.WinForms {
+namespace Sphere10.Framework.Windows.Forms.WinForms {
 	/// <summary>
 	/// Summary description for TransparentPanel.
 	/// </summary>

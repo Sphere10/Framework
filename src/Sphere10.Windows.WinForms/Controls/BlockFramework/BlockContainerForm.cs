@@ -23,9 +23,9 @@ using System.Reflection;
 using System.Threading;
 using System.Runtime.InteropServices;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 #warning Add icons
 #warning Add menus
@@ -437,7 +437,7 @@ namespace Sphere10.Framework.WinForms {
 								if (linkItem.ShowOnToolStrip) {
 									ToolStripButton button = new ToolStripButton(
 										string.Empty,
-										item.Image16x16 != null ? item.Image16x16 : Sphere10.Windows.WinForms.Properties.Resources.DefaultToolStripImage,
+										item.Image16x16 != null ? item.Image16x16 : Sphere10.Framework.Windows.Forms.Properties.Resources.DefaultToolStripImage,
 										ToolStripItemActivate
 									 );
 									button.ToolTipText = linkItem.Text;
@@ -493,7 +493,7 @@ namespace Sphere10.Framework.WinForms {
 
 			ToolStripItem contextHelpButton = ToolStrip.Items.Add(
 				string.Empty,
-				Sphere10.Windows.WinForms.Properties.Resources.Help_16x16x32,
+				Sphere10.Framework.Windows.Forms.Properties.Resources.Help_16x16x32,
 				ContextHelp_Click
 			);
 			contextHelpButton.ToolTipText = "Get help for currently opened screen";
@@ -568,8 +568,12 @@ namespace Sphere10.Framework.WinForms {
 					LongRunningScreens.Add(screenType, screen);
 				}
 				screen.OnCreateScreen();
-				// set the localized text
-				screen.SetLocalizedText();
+				using (screen.EnterUpdateScope()) {					
+					screen.PopulatePrimingData();
+					screen.RefreshUserInterfaceWithDataSource();
+					screen.SetLocalizedText();
+					screen.Loaded = true;
+				}								
 			}
 
 

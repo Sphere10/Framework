@@ -19,7 +19,7 @@ using System.ComponentModel;
 using System.Globalization;
 
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 
 	/// <summary>

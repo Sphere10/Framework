@@ -18,7 +18,7 @@ using System.Text;
 using System.ComponentModel;
 using System.Globalization;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	/// <summary>
 	/// A custom TypeConverter used to help convert TaskItemInfo from 
 	/// one Type to another

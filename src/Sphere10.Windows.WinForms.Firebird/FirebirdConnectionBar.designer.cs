@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.WinForms.Firebird {
+namespace Sphere10.Framework.Windows.Forms.Firebird {
 	partial class FirebirdConnectionBar {
 		/// <summary> 
 		/// Required designer variable.

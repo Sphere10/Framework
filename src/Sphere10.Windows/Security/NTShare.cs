@@ -18,7 +18,7 @@ using System.Security.AccessControl;
 using System.Runtime.InteropServices;
 using System.IO;
 
-namespace Sphere10.Windows.Security {
+namespace Sphere10.Framework.Windows.Security {
 
     public class NTShare  : NTLocalObject {
         //_securityDescriptor; 

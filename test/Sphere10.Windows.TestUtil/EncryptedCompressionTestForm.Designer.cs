@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class EncryptedCompressionTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -38,8 +38,8 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 		private void InitializeComponent() {
 			this._testButton = new System.Windows.Forms.Button();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.fileSelectorControl1 = new Sphere10.Windows.WinForms.PathSelectorControl();
-			this._passwordTextBox = new Sphere10.Windows.WinForms.TextBoxEx();
+			this.fileSelectorControl1 = new Sphere10.Framework.Windows.Forms.PathSelectorControl();
+			this._passwordTextBox = new Sphere10.Framework.Windows.Forms.TextBoxEx();
 			this.SuspendLayout();
 			// 
 			// _testButton
@@ -70,7 +70,7 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this.fileSelectorControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.fileSelectorControl1.Location = new System.Drawing.Point(12, 12);
-			this.fileSelectorControl1.Mode = Sphere10.Windows.WinForms.PathSelectionMode.OpenFile;
+			this.fileSelectorControl1.Mode = Sphere10.Framework.Windows.Forms.PathSelectionMode.OpenFile;
 			this.fileSelectorControl1.Name = "fileSelectorControl1";
 			this.fileSelectorControl1.Size = new System.Drawing.Size(392, 20);
 			this.fileSelectorControl1.TabIndex = 0;
@@ -101,10 +101,10 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 
 		#endregion
 
-		private Sphere10.Windows.WinForms.PathSelectorControl fileSelectorControl1;
+		private Sphere10.Framework.Windows.Forms.PathSelectorControl fileSelectorControl1;
 		private System.Windows.Forms.Button _testButton;
 		private System.Windows.Forms.TextBox textBox1;
-		private Sphere10.Windows.WinForms.TextBoxEx _passwordTextBox;
+		private Sphere10.Framework.Windows.Forms.TextBoxEx _passwordTextBox;
 
 	}
 }

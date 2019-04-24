@@ -11,9 +11,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	partial class CrudTestForm {
 		/// <summary>
 		/// Required designer variable.
@@ -49,9 +49,9 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			this._refreshGrid = new System.Windows.Forms.Button();
 			this._autoSizeCheckBox = new System.Windows.Forms.CheckBox();
 			this._autoSelectOnCreateCheckBox = new System.Windows.Forms.CheckBox();
-			this._crudComboBox = new Sphere10.Windows.WinForms.Crud.CrudComboBox();
-			this._flagsCheckedListBox = new Sphere10.Windows.WinForms.FlagsCheckedListBox();
-			this._crudGrid = new Sphere10.Windows.WinForms.CrudGrid();
+			this._crudComboBox = new Sphere10.Framework.Windows.Forms.Crud.CrudComboBox();
+			this._flagsCheckedListBox = new Sphere10.Framework.Windows.Forms.FlagsCheckedListBox();
+			this._crudGrid = new Sphere10.Framework.Windows.Forms.CrudGrid();
 			this._allowCellEditingCheckBox = new System.Windows.Forms.CheckBox();
 			this._refreshEntireGridOnUpdateCheckBox = new System.Windows.Forms.CheckBox();
 			this._refreshEntireGridOnDeleteCheckBox = new System.Windows.Forms.CheckBox();
@@ -178,14 +178,14 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 			// 
 			this._crudComboBox.AllowResizeDropDown = true;
 			this._crudComboBox.ControlSize = new System.Drawing.Size(524, 306);
-			this._crudComboBox.DropDownSizeMode = Sphere10.Windows.WinForms.CustomComboBox.SizeMode.UseInitialControlSize;
+			this._crudComboBox.DropDownSizeMode = Sphere10.Framework.Windows.Forms.CustomComboBox.SizeMode.UseInitialControlSize;
 			this._crudComboBox.DropSize = new System.Drawing.Size(121, 106);
 			this._crudComboBox.Location = new System.Drawing.Point(17, 538);
 			this._crudComboBox.Name = "_crudComboBox";
 			this._crudComboBox.PlaceHolderText = "Select Entity";
 			this._crudComboBox.Size = new System.Drawing.Size(126, 21);
 			this._crudComboBox.TabIndex = 5;
-			this._crudComboBox.EntitySelectionChanged += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.Crud.CrudComboBox, object>(this._crudComboBox_EntitySelectionChanged);
+			this._crudComboBox.EntitySelectionChanged += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.Crud.CrudComboBox, object>(this._crudComboBox_EntitySelectionChanged);
 			// 
 			// _flagsCheckedListBox
 			// 
@@ -205,18 +205,18 @@ namespace Sphere10.Framework.WinForms.TestUtil {
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this._crudGrid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this._crudGrid.Capabilities = ((Sphere10.Windows.WinForms.CrudCapabilities)((Sphere10.Windows.WinForms.CrudCapabilities.CanCreate | Sphere10.Windows.WinForms.CrudCapabilities.CanRead)));
+			this._crudGrid.Capabilities = ((Sphere10.Framework.Windows.Forms.CrudCapabilities)((Sphere10.Framework.Windows.Forms.CrudCapabilities.CanCreate | Sphere10.Framework.Windows.Forms.CrudCapabilities.CanRead)));
 			this._crudGrid.Location = new System.Drawing.Point(185, 12);
 			this._crudGrid.MinimumSize = new System.Drawing.Size(319, 87);
 			this._crudGrid.Name = "_crudGrid";
 			this._crudGrid.RightClickForContextMenu = false;
 			this._crudGrid.Size = new System.Drawing.Size(751, 548);
 			this._crudGrid.TabIndex = 0;
-			this._crudGrid.EntitySelected += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.CrudGrid, object>(this._crudGrid_EntitySelected);
-			this._crudGrid.EntityDeselected += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.CrudGrid, object>(this._crudGrid_EntityDeselected);
-			this._crudGrid.EntityCreated += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.CrudGrid, object>(this._crudGrid_EntityCreated);
-			this._crudGrid.EntityUpdated += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.CrudGrid, object>(this._crudGrid_EntityUpdated);
-			this._crudGrid.EntityDeleted += new Sphere10.Framework.EventHandlerEx<Sphere10.Windows.WinForms.CrudGrid, object>(this._crudGrid_EntityDeleted);
+			this._crudGrid.EntitySelected += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.CrudGrid, object>(this._crudGrid_EntitySelected);
+			this._crudGrid.EntityDeselected += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.CrudGrid, object>(this._crudGrid_EntityDeselected);
+			this._crudGrid.EntityCreated += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.CrudGrid, object>(this._crudGrid_EntityCreated);
+			this._crudGrid.EntityUpdated += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.CrudGrid, object>(this._crudGrid_EntityUpdated);
+			this._crudGrid.EntityDeleted += new Sphere10.Framework.EventHandlerEx<Sphere10.Framework.Windows.Forms.CrudGrid, object>(this._crudGrid_EntityDeleted);
 			// 
 			// _allowCellEditingCheckBox
 			// 
@@ -282,12 +282,12 @@ namespace Sphere10.Framework.WinForms.TestUtil {
 
 		#endregion
 
-		private Sphere10.Windows.WinForms.CrudGrid _crudGrid;
-		private Sphere10.Windows.WinForms.FlagsCheckedListBox _flagsCheckedListBox;
+		private Sphere10.Framework.Windows.Forms.CrudGrid _crudGrid;
+		private Sphere10.Framework.Windows.Forms.FlagsCheckedListBox _flagsCheckedListBox;
 		private System.Windows.Forms.TextBox _outputTextBox;
 		private System.Windows.Forms.CheckBox _generateDeleteErrorCheckBox;
 		private System.Windows.Forms.Button _crudDialogButton;
-		private Sphere10.Windows.WinForms.Crud.CrudComboBox _crudComboBox;
+		private Sphere10.Framework.Windows.Forms.Crud.CrudComboBox _crudComboBox;
 		private System.Windows.Forms.CheckBox _generateCreateErrorCheckBox;
 		private System.Windows.Forms.CheckBox _generateUpdateErrorCheckBox;
 		private System.Windows.Forms.Button _selectFirstEntityButton;

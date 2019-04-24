@@ -19,7 +19,7 @@ using Sphere10.Framework.Application;
 using System.Drawing;
 using Sphere10.Framework;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public class WinFormsApplicationServices : ApplicationServices, IWinFormsApplicationServices{
 	    private IApplicationIconProvider ApplicationIconProvider { get { return ComponentRegistry.Instance.Resolve<IApplicationIconProvider>(); } }

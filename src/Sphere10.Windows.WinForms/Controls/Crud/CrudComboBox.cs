@@ -19,7 +19,7 @@ using System.Linq;
 using System.Text;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms.Crud {
+namespace Sphere10.Framework.Windows.Forms.Crud {
 	public class CrudComboBox : CustomComboBox {
 		private readonly CrudGrid _crudGrid;
 

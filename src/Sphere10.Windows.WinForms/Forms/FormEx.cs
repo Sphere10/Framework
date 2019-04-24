@@ -19,7 +19,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public class FormEx : Form, IStateChangeObserver, IUpdatable {
 		public event EventHandler StateChanged;

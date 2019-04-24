@@ -22,7 +22,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms.TextBoxes {
+namespace Sphere10.Framework.Windows.Forms.TextBoxes {
     public partial class TextLog : UserControl {
         private readonly ProducerConsumerQueue<char> _appendQueue; 
         private readonly LargeCollection<char> _data;

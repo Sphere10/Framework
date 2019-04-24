@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
     partial class ComponentRegistryForm {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,7 @@ namespace Sphere10.Windows.TestUtil {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-			this._outputTextBox = new Sphere10.Windows.WinForms.TextBoxEx();
+			this._outputTextBox = new Sphere10.Framework.Windows.Forms.TextBoxEx();
 			this._serializeButton = new System.Windows.Forms.Button();
 			this._deserializeButton = new System.Windows.Forms.Button();
 			this._registerButton = new System.Windows.Forms.Button();
@@ -113,7 +113,7 @@ namespace Sphere10.Windows.TestUtil {
 
         #endregion
 
-        private WinForms.TextBoxEx _outputTextBox;
+        private Sphere10.Framework.Windows.Forms.TextBoxEx _outputTextBox;
         private System.Windows.Forms.Button _serializeButton;
         private System.Windows.Forms.Button _deserializeButton;
         private System.Windows.Forms.Button _registerButton;

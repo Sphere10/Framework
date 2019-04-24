@@ -21,7 +21,7 @@ using SourceGrid;
 using SourceGrid.Cells.Editors;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	internal class UpdateEntityOnValueChangedController : SourceGrid.Cells.Controllers.ControllerBase {
 		private readonly CrudGrid _grid;
 		private readonly ICrudDataSource<object> _dataSource;

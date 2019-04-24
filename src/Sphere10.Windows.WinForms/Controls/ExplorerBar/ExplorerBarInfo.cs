@@ -54,9 +54,9 @@ using System.Xml.Serialization;
 using System.Collections;
 using System.Collections.Generic;
 using Sphere10.Framework;
-using Sphere10.Windows.WinForms.Properties;
+using Sphere10.Framework.Windows.Forms.Properties;
 
-namespace Sphere10.Windows.WinForms
+namespace Sphere10.Framework.Windows.Forms
 {
 	
 	/// <summary>

@@ -15,10 +15,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Http;
 using Sphere10.Framework;
-using Sphere10.Application;
+using Sphere10.Framework.Application;
 
-namespace Sphere10.Application.Web {
+namespace Sphere10.Framework.Web {
     public static class ApplicationLifecycleExtensions {
 
         public static void StartAspNetApplication(this ApplicationLifecycle applicationLifecycle) {
@@ -28,7 +29,7 @@ namespace Sphere10.Application.Web {
 
             //// Set Web API dep resolver
             System.Web.Http.GlobalConfiguration.Configuration.DependencyResolver = new ComponentRegistryWebApiDependencyResolver(ComponentRegistry.Instance);
-        }
+		}
 
         public static void EndAspNetApplication(this ApplicationLifecycle applicationLifecycle, out bool abort, out string abortReason) {
             applicationLifecycle.EndFramework(out abort, out abortReason);

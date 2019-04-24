@@ -21,7 +21,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	[ToolboxBitmap(typeof(SearchTextBox), "SmallSearchIcon")]
 	public class SearchTextBox : TextBoxEx {

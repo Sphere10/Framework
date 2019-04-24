@@ -21,13 +21,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
-using Sphere10.Framework.WinForms;
-using Sphere10.Framework.WinForms.TestUtil;
-using Sphere10.Windows.TestUtil.Wizard;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
+using Sphere10.Framework.Windows.Forms.TestUtil;
+using Sphere10.FrameworkTester.Wizard;
+using Sphere10.Framework.Windows.Forms;
 
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	public partial class TestLauncherScreen : ApplicationScreen {
 		public TestLauncherScreen() {
 			InitializeComponent();

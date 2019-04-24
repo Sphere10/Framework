@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
 	public abstract class CrudEntityEditorAdapter :  ICrudEntityEditor<object> {
 		public abstract void SetAdaptee(object @object);

@@ -25,10 +25,10 @@ using SharpDX;
 using SharpDX.DirectSound;
 using SharpDX.Multimedia;
 using Sphere10.Framework;
-using Sphere10.Windows.TestUtil.Properties;
+using Sphere10.FrameworkTester.Properties;
 
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	public partial class TestSoundsForm : Form {
 		public TestSoundsForm() {
 			InitializeComponent();

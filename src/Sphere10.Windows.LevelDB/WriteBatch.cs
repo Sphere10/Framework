@@ -16,7 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Sphere10.Windows.LevelDB
+namespace Sphere10.Framework.Windows.LevelDB
 {
     /// <summary>
     /// WriteBatch holds a collection of updates to apply atomically to a DB.

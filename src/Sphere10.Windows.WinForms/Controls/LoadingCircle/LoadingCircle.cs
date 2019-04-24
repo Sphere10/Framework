@@ -45,7 +45,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Sphere10.Framework;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public partial class LoadingCircle : Control {
         // Constants =========================================================
         private const double NumberOfDegreesInCircle = 360;

@@ -20,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	public partial class TextEditorForm : Form {
 		public TextEditorForm() {
 			InitializeComponent();

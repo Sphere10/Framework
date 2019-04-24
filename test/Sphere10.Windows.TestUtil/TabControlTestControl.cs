@@ -20,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil
+namespace Sphere10.FrameworkTester
 {
     public partial class TabControlTestControl : UserControl
     {

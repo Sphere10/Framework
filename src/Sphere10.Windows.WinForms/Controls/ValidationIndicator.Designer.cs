@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	partial class ValidationIndicator {
 		/// <summary> 
 		/// Required designer variable.
@@ -37,7 +37,7 @@ namespace Sphere10.Windows.WinForms {
 		/// </summary>
 		private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            this._loadingCircle = new Sphere10.Windows.WinForms.LoadingCircle();
+            this._loadingCircle = new Sphere10.Framework.Windows.Forms.LoadingCircle();
             this._toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
@@ -64,7 +64,7 @@ namespace Sphere10.Windows.WinForms {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Sphere10.Windows.WinForms.Properties.Resources.Tick;
+            this.BackgroundImage = global::Sphere10.Framework.Windows.Forms.Properties.Resources.Tick;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this._loadingCircle);
             this.DoubleBuffered = true;

@@ -20,10 +20,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
-using Sphere10.Windows;
+using Sphere10.Framework.Windows;
 
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 	public partial class DecayGaugeForm : Form {
 		private IMouseHook _mouseHook;
 		private IKeyboardHook _keyboardHook;

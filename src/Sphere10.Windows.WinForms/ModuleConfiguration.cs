@@ -17,12 +17,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Sphere10.Framework.WinForms.Controls;
+using Sphere10.Framework.Windows.Forms.Controls;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
-using Sphere10.Windows;
+using Sphere10.Framework.Windows;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
     public class ModuleConfiguration : IModuleConfiguration {
         public void RegisterComponents(ComponentRegistry registry) {
 
@@ -113,9 +113,9 @@ namespace Sphere10.Framework.WinForms {
 //<ComponentRegistry>
 //    <!-- Assemblies to pre-load -->
 //    <Assembly dll = "Sphere10.Framework.Application.dll" />
-//    < Assembly dll="Sphere10.Framework.WinForms.dll" />
-//    <Assembly dll = "Sphere10.Windows.WinForms.dll" />
-//    < Assembly dll="Sphere10.Windows.WinForms.Sqlite.dll" />
+//    < Assembly dll="Sphere10.Framework.Windows.Forms.dll" />
+//    <Assembly dll = "Sphere10.Framework.Windows.Forms.dll" />
+//    < Assembly dll="Sphere10.Framework.Windows.Forms.Sqlite.dll" />
 //    <Assembly dll = "BlockchainSQL.DataAccess.NHibernate" />
 
 //    <!--Sphere 10 Framework Components -->
@@ -148,7 +148,7 @@ namespace Sphere10.Framework.WinForms {
 //    <Component interface="IBackgroundLicenseVerifier"   implementation="BITSBackgroundLicenseVerifier" />
 //    <Component interface="IAutoRunServices"             implementation="StartupFolderAutoRunServicesProvider" />
 //    <ComponentSet interface="IControlStateChangeManager">
-//      <Component implementation = "CommonControlsControlStateChangeManager"   resolveKey="Sphere10.Framework.WinForms.ApplicationControl" />
+//      <Component implementation = "CommonControlsControlStateChangeManager"   resolveKey="Sphere10.Framework.Windows.Forms.ApplicationControl" />
 //      <Component implementation = "CommonControlsControlStateChangeManager"   resolveKey="System.Windows.Forms.NumericUpDown" />
 //      <Component implementation = "CommonControlsControlStateChangeManager"   resolveKey="System.Windows.Forms.TextBox" />
 //      <Component implementation = "CommonControlsControlStateChangeManager"   resolveKey="System.Windows.Forms.ComboBox" />

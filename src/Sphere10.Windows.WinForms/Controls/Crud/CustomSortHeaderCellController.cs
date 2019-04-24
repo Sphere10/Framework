@@ -19,7 +19,7 @@ using System.Text;
 using System.Windows.Forms;
 using SourceGrid;
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	internal class CustomSortHeaderCellController : SourceGrid.Cells.Controllers.ControllerBase {
 		private readonly CrudGrid _crudGrid;
 

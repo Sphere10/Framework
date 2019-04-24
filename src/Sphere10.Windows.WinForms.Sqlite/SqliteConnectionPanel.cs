@@ -20,7 +20,7 @@ using Sphere10.Framework;
 using Sphere10.Framework.Data;
 
 
-namespace Sphere10.Windows.WinForms.Sqlite {
+namespace Sphere10.Framework.Windows.Forms.Sqlite {
 	public partial class SqliteConnectionPanel : ConnectionPanelBase, IDatabaseConnectionProvider {
 		public SqliteConnectionPanel() {
 			InitializeComponent();

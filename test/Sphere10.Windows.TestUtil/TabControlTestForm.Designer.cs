@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.TestUtil
+namespace Sphere10.FrameworkTester
 {
     partial class TabControlTestForm
     {
@@ -48,7 +48,7 @@ namespace Sphere10.Windows.TestUtil
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabControlTestControl1 = new Sphere10.Windows.TestUtil.TabControlTestControl();
+            this.tabControlTestControl1 = new Sphere10.FrameworkTester.TabControlTestControl();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();

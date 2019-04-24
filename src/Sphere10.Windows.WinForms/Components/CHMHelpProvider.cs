@@ -22,7 +22,7 @@ using System.Drawing;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 
     public class CHMHelpProvider : IHelpServices {
         private static readonly object SyncObject;

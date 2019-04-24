@@ -24,11 +24,11 @@ using System.Transactions;
 using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Data;
-using Sphere10.Windows;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows;
+using Sphere10.Framework.Windows.Forms;
 using Tuple = System.Tuple;
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	public partial class TextAreaTests : Form {
 		public TextAreaTests() {
 			InitializeComponent();

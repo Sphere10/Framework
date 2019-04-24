@@ -21,9 +21,9 @@ using System.Text;
 using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Data;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Framework.WinForms.TestUtil {
+namespace Sphere10.Framework.Windows.Forms.TestUtil {
 	public partial class ConnectionBarTestForm : FormEx {
         public ConnectionBarTestForm() {
 			InitializeComponent();

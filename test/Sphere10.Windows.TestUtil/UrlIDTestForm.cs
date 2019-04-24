@@ -22,9 +22,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sphere10.Framework;
 using Sphere10.Framework.Misc;
-using Sphere10.Windows.WinForms;
+using Sphere10.Framework.Windows.Forms;
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
     public partial class UrlIDTestForm : Form {
         public UrlIDTestForm() {
             InitializeComponent();

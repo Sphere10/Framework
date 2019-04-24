@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
     partial class PathSelectorTestForm {
         /// <summary>
         /// Required designer variable.
@@ -36,17 +36,17 @@ namespace Sphere10.Windows.TestUtil {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.pathSelectorControl4 = new Sphere10.Windows.WinForms.PathSelectorControl();
-            this.pathSelectorControl3 = new Sphere10.Windows.WinForms.PathSelectorControl();
-            this.pathSelectorControl2 = new Sphere10.Windows.WinForms.PathSelectorControl();
-            this.pathSelectorControl1 = new Sphere10.Windows.WinForms.PathSelectorControl();
+            this.pathSelectorControl4 = new Sphere10.Framework.Windows.Forms.PathSelectorControl();
+            this.pathSelectorControl3 = new Sphere10.Framework.Windows.Forms.PathSelectorControl();
+            this.pathSelectorControl2 = new Sphere10.Framework.Windows.Forms.PathSelectorControl();
+            this.pathSelectorControl1 = new Sphere10.Framework.Windows.Forms.PathSelectorControl();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // pathSelectorControl4
             // 
             this.pathSelectorControl4.Location = new System.Drawing.Point(12, 104);
-            this.pathSelectorControl4.Mode = Sphere10.Windows.WinForms.PathSelectionMode.Folder;
+            this.pathSelectorControl4.Mode = Sphere10.Framework.Windows.Forms.PathSelectionMode.Folder;
             this.pathSelectorControl4.Name = "pathSelectorControl4";
             this.pathSelectorControl4.Path = "";
             this.pathSelectorControl4.PlaceHolderText = "Folder";
@@ -57,7 +57,7 @@ namespace Sphere10.Windows.TestUtil {
             // pathSelectorControl3
             // 
             this.pathSelectorControl3.Location = new System.Drawing.Point(12, 78);
-            this.pathSelectorControl3.Mode = Sphere10.Windows.WinForms.PathSelectionMode.File;
+            this.pathSelectorControl3.Mode = Sphere10.Framework.Windows.Forms.PathSelectionMode.File;
             this.pathSelectorControl3.Name = "pathSelectorControl3";
             this.pathSelectorControl3.Path = "";
             this.pathSelectorControl3.PlaceHolderText = "File";
@@ -68,7 +68,7 @@ namespace Sphere10.Windows.TestUtil {
             // pathSelectorControl2
             // 
             this.pathSelectorControl2.Location = new System.Drawing.Point(12, 52);
-            this.pathSelectorControl2.Mode = Sphere10.Windows.WinForms.PathSelectionMode.SaveFile;
+            this.pathSelectorControl2.Mode = Sphere10.Framework.Windows.Forms.PathSelectionMode.SaveFile;
             this.pathSelectorControl2.Name = "pathSelectorControl2";
             this.pathSelectorControl2.Path = "";
             this.pathSelectorControl2.PlaceHolderText = "Save File";
@@ -116,10 +116,10 @@ namespace Sphere10.Windows.TestUtil {
 
         #endregion
 
-        private Sphere10.Windows.WinForms.PathSelectorControl pathSelectorControl1;
-        private Sphere10.Windows.WinForms.PathSelectorControl pathSelectorControl2;
-        private Sphere10.Windows.WinForms.PathSelectorControl pathSelectorControl3;
-        private Sphere10.Windows.WinForms.PathSelectorControl pathSelectorControl4;
+        private Sphere10.Framework.Windows.Forms.PathSelectorControl pathSelectorControl1;
+        private Sphere10.Framework.Windows.Forms.PathSelectorControl pathSelectorControl2;
+        private Sphere10.Framework.Windows.Forms.PathSelectorControl pathSelectorControl3;
+        private Sphere10.Framework.Windows.Forms.PathSelectorControl pathSelectorControl4;
         private System.Windows.Forms.CheckBox checkBox1;
     }
 }

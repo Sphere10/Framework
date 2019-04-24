@@ -19,7 +19,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Sphere10.Windows.LevelDB;
+using Sphere10.Framework.Windows.LevelDB;
 
 // ReSharper disable CheckNamespace
 

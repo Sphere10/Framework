@@ -22,11 +22,11 @@ using System.Threading;
 using System.Windows.Forms;
 
 using Sphere10.Framework;
-using Sphere10.Windows;
+using Sphere10.Framework.Windows;
 
 
 
-namespace Sphere10.Windows.TestUtil {
+namespace Sphere10.FrameworkTester {
 
 	public partial class HooksForm : Form {
 		private WindowsKeyboardHook _keyHook;

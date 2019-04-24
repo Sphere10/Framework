@@ -8,8 +8,8 @@
     <ProjectGuid>{05D56A4B-6E13-4396-8B49-E2C55BC9B508}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sphere10.Windows</RootNamespace>
-    <AssemblyName>Sphere10.Windows</AssemblyName>
+    <RootNamespace>Sphere10.Framework.Windows</RootNamespace>
+    <AssemblyName>Sphere10.Framework.Windows</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>

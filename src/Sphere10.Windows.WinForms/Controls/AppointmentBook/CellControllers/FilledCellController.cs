@@ -18,7 +18,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Sphere10.Windows.WinForms.AppointmentBook {
+namespace Sphere10.Framework.Windows.Forms.AppointmentBook {
 
 	internal class FilledCellController : BaseCellController {
 		internal FilledCellController(BaseAppointmentBook owner)

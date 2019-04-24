@@ -11,7 +11,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace Sphere10.Windows.WinForms {
+namespace Sphere10.Framework.Windows.Forms {
 	partial class DialogEx {
 		/// <summary>
 		/// Required designer variable.
@@ -41,7 +41,7 @@ namespace Sphere10.Windows.WinForms {
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
-			this.pictureBoxEx1 = new Sphere10.Windows.WinForms.PictureBoxEx();
+			this.pictureBoxEx1 = new Sphere10.Framework.Windows.Forms.PictureBoxEx();
 			this._textLabel = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBoxEx1)).BeginInit();
 			this.SuspendLayout();
@@ -97,7 +97,7 @@ namespace Sphere10.Windows.WinForms {
 			this.pictureBoxEx1.Name = "pictureBoxEx1";
 			this.pictureBoxEx1.Size = new System.Drawing.Size(32, 32);
 			this.pictureBoxEx1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBoxEx1.SystemIcon = Sphere10.Windows.WinForms.SystemIconType.Question;
+			this.pictureBoxEx1.SystemIcon = Sphere10.Framework.Windows.Forms.SystemIconType.Question;
 			this.pictureBoxEx1.TabIndex = 0;
 			this.pictureBoxEx1.TabStop = false;
 			// 
