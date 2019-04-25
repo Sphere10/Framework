@@ -20,7 +20,7 @@ using Foundation;
 using ObjCRuntime;
 using Sphere10.Framework;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 
 	// See this for adding improvements: https://gist.github.com/praeclarum/10024108
 	public sealed class GenericTableViewSource<T> : UITableViewSource {
@@ -154,7 +154,7 @@ namespace Sphere10.iOS {
 					cell.BadgeView.BackgroundColor = itemDescription.BadgeTextColor;
 
 			} else {
-				if (cell.AccessoryView is Sphere10.iOS.BadgeView)
+				if (cell.AccessoryView is Sphere10.Framework.iOS.BadgeView)
 					cell.ShowBadgeView = false;
 			}
 			cell.Accessory = itemDescription.Accessory;

@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using ObjCRuntime;
 using System.Threading.Tasks;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 
 	// TODO needs work
 public class ApplicationScreenViewController : KeyboardAwareViewController {

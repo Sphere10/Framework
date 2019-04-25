@@ -1,1 +1,1 @@
-# Sphere10.iOS
+# Sphere10.Framework.iOS

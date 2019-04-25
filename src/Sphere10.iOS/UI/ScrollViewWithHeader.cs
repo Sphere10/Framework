@@ -16,7 +16,7 @@ using CoreGraphics;
 using UIKit;
 using Foundation;
 
-namespace Sphere10.iOS
+namespace Sphere10.Framework.iOS
 {
 	public class ScrollViewWithHeader : UIView
 	{

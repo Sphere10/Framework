@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Data.MSS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Data.Sqlite", "Sphere10.Framework.Data.Sqlite\Sphere10.Framework.Data.Sqlite.csproj", "{1DD01193-9CB6-4EA9-8987-39F454C5DBBB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Application", "Sphere10.Application\Sphere10.Application.csproj", "{143386E8-8873-42C1-8284-4105213DAC94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Application", "Sphere10.Framework.Application\Sphere10.Framework.Application.csproj", "{143386E8-8873-42C1-8284-4105213DAC94}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Services", "Sphere10.Framework.Services\Sphere10.Framework.Services.csproj", "{489005CE-B9B1-475D-A161-358254C7505A}"
 EndProject

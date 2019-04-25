@@ -15,7 +15,7 @@ using System;
 using UIKit;
 using CoreGraphics;
 
-namespace Sphere10.iOS
+namespace Sphere10.Framework.iOS
 {
 	public class UITextViewEx : UITextView	{
 		public UITextViewEx (UIColor backgroundColor, float cornerRadius = 8.0f) {

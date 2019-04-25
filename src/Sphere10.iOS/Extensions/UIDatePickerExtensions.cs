@@ -18,7 +18,7 @@ using CoreGraphics;
 using Foundation;
 using Sphere10.Framework;
 
-namespace Sphere10.iOS
+namespace Sphere10.Framework.iOS
 {
 	public static class UIDatePickerExtensions {
 		

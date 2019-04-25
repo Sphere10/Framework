@@ -21,7 +21,7 @@ using System.Threading.Tasks;
 using Foundation;
 using StoreKit;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 
 	internal class ProductPurchaser : SKPaymentTransactionObserver {
 		private readonly ManualResetEventSlim _waiter;

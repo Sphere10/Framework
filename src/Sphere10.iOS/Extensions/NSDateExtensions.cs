@@ -15,7 +15,7 @@ using System;
 using Foundation;
 
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 	public static class DateExtensions
 	{
 

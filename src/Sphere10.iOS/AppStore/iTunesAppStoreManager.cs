@@ -22,7 +22,7 @@ using Foundation;
 using Sphere10.Framework;
 using StoreKit;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 
 	public class iTunesAppStoreManager {
 		private readonly SynchronizedDictionary<string, SKProduct> _productCache;

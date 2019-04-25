@@ -14,7 +14,7 @@
 using System;
 using UIKit;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 	public class UIPanGestureRecognizerEx : UIPanGestureRecognizer {
 		private Action<UIPanGestureRecognizerEx> _handler;
 		private Token _token;

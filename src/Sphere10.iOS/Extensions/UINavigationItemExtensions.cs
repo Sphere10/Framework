@@ -17,7 +17,7 @@ using UIKit;
 using Sphere10.Framework;
 using System.Linq;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
     public static class UINavigationItemExtensions {
 
 

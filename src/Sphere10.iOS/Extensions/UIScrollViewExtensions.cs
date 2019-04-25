@@ -19,7 +19,7 @@ using Foundation;
 using Sphere10.Framework;
 using UIKit;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
     public static class UIScrollViewExtensions {
 
         /// <summary>

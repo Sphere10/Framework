@@ -19,7 +19,7 @@ using CoreGraphics;
 using CoreGraphics;
 using Sphere10.Framework;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
     public static class UIImageExtensions {
 
         public static UIImage ToUIImage(this byte[] imageBuffer) {

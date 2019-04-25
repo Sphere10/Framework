@@ -19,7 +19,7 @@ using Foundation;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
     public class DockTarget {
         private readonly UIView _view;
         private readonly float _percentage;

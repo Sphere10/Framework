@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Linq;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 	public enum MessageBoxResult {
 		None = 0,
 		OK,

@@ -15,7 +15,7 @@ using System;
 using CoreGraphics;
 using UIKit;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 
     public static class UICollectionViewExtensions {
 

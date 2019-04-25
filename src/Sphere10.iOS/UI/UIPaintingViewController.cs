@@ -24,7 +24,7 @@ using System.Text;
 using Sphere10.Framework;
 
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 
 	public partial class UIPaintingViewController : UIFixedOrientationViewController {
 

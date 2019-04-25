@@ -22,7 +22,7 @@ using CoreGraphics;
 using Foundation;
 using Sphere10.Framework;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 
 	// NOTE: refactor this to include editing, deleting, inserting, delay image loading and nicer interface
 

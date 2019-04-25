@@ -16,7 +16,7 @@ using UIKit;
 using CoreGraphics;
 using CoreAnimation;
 
-namespace Sphere10.iOS
+namespace Sphere10.Framework.iOS
 {
 	public class UIHorizontalButton : UIButton
 	{

@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Data.MSS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Data.Sqlite", "Sphere10.Framework.Data.Sqlite\Sphere10.Framework.Data.Sqlite.csproj", "{1DD01193-9CB6-4EA9-8987-39F454C5DBBB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Application", "Sphere10.Application\Sphere10.Application.csproj", "{143386E8-8873-42C1-8284-4105213DAC94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Application", "Sphere10.Framework.Application\Sphere10.Framework.Application.csproj", "{143386E8-8873-42C1-8284-4105213DAC94}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Services", "Sphere10.Framework.Services\Sphere10.Framework.Services.csproj", "{489005CE-B9B1-475D-A161-358254C7505A}"
 EndProject
@@ -23,9 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.NUnit", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Standard", "Standard", "{4086EB64-1D44-4D2A-9B4F-8437B60C86BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sphere10.iOS", "Sphere10.iOS\Sphere10.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sphere10.Framework.iOS", "Sphere10.iOS\Sphere10.Framework.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sphere10.Android", "Sphere10.Android\Sphere10.Android.csproj", "{A574303A-F6D7-4E41-ADB8-E3BA4A79AAC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sphere10.Framework.Android", "Sphere10.Android\Sphere10.Framework.Android.csproj", "{A574303A-F6D7-4E41-ADB8-E3BA4A79AAC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -18,9 +18,9 @@ using Sphere10.Framework;
 using Foundation;
 using System.Linq;
 using System.Collections.Generic;
-using Sphere10.iOS;
+using Sphere10.Framework.iOS;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
     public static class UIPopoverPresentationControllerExtensions {
 
         public static void SetPresentationAnchor(this UIPopoverPresentationController ppc, object anchorObject) {

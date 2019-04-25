@@ -19,7 +19,7 @@ using UIKit;
 using System.Linq;
 using Sphere10.Framework;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
     public class Animations {
 
         public static void FadeInAndOut(UIView view, FadeType initialFadeAction, float fadeInAlpha, TimeSpan fadeInDuration, TimeSpan fadeInDelay, float fadeOutAlpha, TimeSpan fadeOutDuration, TimeSpan fadeOutDelay, Func<UIView, bool> repeatCondition = null) {

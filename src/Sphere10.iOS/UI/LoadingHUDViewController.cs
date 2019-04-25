@@ -19,7 +19,7 @@ using UIKit;
 using CoreGraphics;
 
 
-namespace Sphere10.iOS
+namespace Sphere10.Framework.iOS
 {
 	
 	public partial class LoadingHUDViewController : UIViewController

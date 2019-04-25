@@ -16,7 +16,7 @@ using UIKit;
 using Foundation;
 using CoreGraphics;
 
-namespace Sphere10.iOS
+namespace Sphere10.Framework.iOS
 {
 
 	public delegate void ViewTap (UIView view);

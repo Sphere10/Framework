@@ -21,7 +21,7 @@ using System.Text;
 using Android.App;
 using System.IO;
 
-namespace Sphere10.Framework {
+namespace Sphere10.Framework.Android {
 
 	public class AndroidSettingsProvider : DirectorySettingsProvider {
 		private const string AppSettingsFolderName = "ApplicationSettings";

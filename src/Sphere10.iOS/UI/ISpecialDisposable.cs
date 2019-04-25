@@ -13,7 +13,7 @@
 
 using System;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 	public interface ISpecialDisposable {
 
 		void SpecialDispose();

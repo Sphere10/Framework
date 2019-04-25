@@ -18,7 +18,7 @@ using CoreGraphics;
 using Sphere10.Framework;
 using System.Collections.Generic;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 	public class KeyboardAwareViewController : UIViewController {
 		private const float KeyboardPadding = 10.0f;    // extra amount to scroll
 		private UIView _focusedView;            // Controller that activated the keyboard  

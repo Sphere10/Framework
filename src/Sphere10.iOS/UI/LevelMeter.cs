@@ -16,7 +16,7 @@ using AudioToolbox;
 using CoreGraphics;
 using UIKit;
 
-namespace Sphere10.iOS
+namespace Sphere10.Framework.iOS
 {
 	public class LevelMeter : UIView
 	{

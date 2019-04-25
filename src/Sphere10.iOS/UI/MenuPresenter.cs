@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using System.Threading;
 using CoreGraphics;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 	public static class MenuPresenter {
 
 		

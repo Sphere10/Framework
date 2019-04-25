@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Data.MSS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Data.Sqlite", "Sphere10.Framework.Data.Sqlite\Sphere10.Framework.Data.Sqlite.csproj", "{1DD01193-9CB6-4EA9-8987-39F454C5DBBB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Application", "Sphere10.Application\Sphere10.Application.csproj", "{143386E8-8873-42C1-8284-4105213DAC94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Application", "Sphere10.Framework.Application\Sphere10.Framework.Application.csproj", "{143386E8-8873-42C1-8284-4105213DAC94}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Services", "Sphere10.Framework.Services\Sphere10.Framework.Services.csproj", "{489005CE-B9B1-475D-A161-358254C7505A}"
 EndProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.NUnit", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Standard", "Standard", "{F4305EC7-2632-4313-B7F6-A0E05C64F9DD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.AspNetCore", "Sphere10.AspNetCore\Sphere10.AspNetCore.csproj", "{C5562B35-FCF5-467C-A98D-1BAFFE92F8FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sphere10.Framework.Web.AspNetCore", "Sphere10.Framework.Web.AspNetCore\Sphere10.Framework.Web.AspNetCore.csproj", "{C5562B35-FCF5-467C-A98D-1BAFFE92F8FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -19,7 +19,7 @@ using Sphere10.Framework;
 using Foundation;
 using CoreAnimation;
 
-namespace Sphere10.iOS {
+namespace Sphere10.Framework.iOS {
 
 	public class UICollectionViewImageCell : UICollectionViewCell, ISpecialDisposable {
 		public const string CellID = "UICollectionViewImageCell [fbb52a9f0a1640ceaf253bc080f94b89]";
