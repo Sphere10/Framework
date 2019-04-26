@@ -210,6 +210,10 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sphere10.Framework.Application\Sphere10.Framework.Application.csproj">
+      <Project>{143386e8-8873-42c1-8284-4105213dac94}</Project>
+      <Name>Sphere10.Framework.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sphere10.Framework.Data\Sphere10.Framework.Data.csproj">
       <Project>{50ce7b59-6c51-413e-adb3-2fa3e8102813}</Project>
       <Name>Sphere10.Framework.Data</Name>

@@ -20,6 +20,7 @@ using System.Reflection;
 using System.Text;
 using Android.App;
 using System.IO;
+using Sphere10.Framework.Application;
 
 namespace Sphere10.Framework.Android {
 

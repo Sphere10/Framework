@@ -30,6 +30,7 @@ using System.Reflection;
 using System.Text;
 using Foundation;
 using Sphere10.Framework;
+using Sphere10.Framework.Application;
 
 namespace Sphere10.Framework.iOS {
 

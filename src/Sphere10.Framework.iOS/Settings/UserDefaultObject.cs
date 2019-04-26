@@ -26,6 +26,7 @@ using System.ComponentModel;
 using System.Reflection;
 using Foundation;
 using Sphere10.Framework;
+using Sphere10.Framework.Application;
 
 namespace Sphere10.Framework.iOS {
 
