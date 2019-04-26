@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{05D56A4B-6E13-4396-8B49-E2C55BC9B508}</ProjectGuid>
+    <ProjectGuid>{A09540B1-88C0-47E6-98D8-731C490DB869}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sphere10.Framework.Windows</RootNamespace>

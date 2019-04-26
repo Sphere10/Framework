@@ -17,9 +17,11 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using Sphere10.Framework.Application;
 using Sphere10.Framework.Windows.Forms;
+using Sphere10.Framework.Windows.Forms.Components.BlockFramework;
 
 
 namespace Sphere10.Framework.Windows.Forms {
@@ -31,20 +33,27 @@ namespace Sphere10.Framework.Windows.Forms {
     /// NOTE: The ApplicationServiceProvider property, which defines the underlying provider all
     /// such  calls are routed to, is guaranteed to be set post-construction.
     /// </summary>
-    public class ApplicationScreen : ApplicationControl, IUpdatable, IHelpableObject {
-	    public event EventHandler StateChanged;
-		private List<ToolStripItem> _menuStripItems;
+    public class ApplicationScreen : ApplicationControl, IHelpableObject {
+		private int _showCount;
+		private readonly List<ToolStripItem> _menuStripItems;
 
-        public ApplicationScreen()
+	    public event EventHandler ScreenLoaded;
+		public event EventHandler ScreenDisplayed;
+		public event EventHandler ScreenDisplayedFirstTime;
+		public event EventHandler<HideScreenEventArgs> ScreenHidden;
+	    public event EventHandler ScreenDestroyed;
+
+		public ApplicationScreen()
             : this(null) {
-        }
+		}
 
         public ApplicationScreen(IApplicationBlock applicationBlock) {
             ApplicationBlock = applicationBlock;
 			Url = FileName = null;
 			Type = HelpType.None;
             _menuStripItems = new List<ToolStripItem>();
-        }
+	        _showCount = 0;
+		}
 
 		[Browsable(true), Category("Appearance")]
 		public string ApplicationMenuStripText { get; set; }
@@ -58,31 +67,14 @@ namespace Sphere10.Framework.Windows.Forms {
         [Browsable(true), Category("Behavior"), Description("How this screen will be displayed to the user")]
         public ScreenActivationMode ActivationMode { get; set; }
 
-        [Browsable(false)]
+		[Browsable(false)]
         public IApplicationBlock ApplicationBlock { get; set; }
 
-	    [Category("Behavior")]
-	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-	    [DefaultValue(true)]
-	    public bool AutoDetectChildStateChanges { get; set; }
+	    //[Category("Behavior")]
+	    //[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+	    //[DefaultValue(true)]
+	    //public bool AutoSave { get; set; }
 
-	    [Category("Behavior")]
-	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-	    [DefaultValue(true)]
-	    public bool AutoSave { get; set; }
-
-
-	    [Browsable(false)]
-	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-	    public bool Updating { get; set; }
-
-	    [Browsable(false)]
-	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-	    public bool Loaded { get; internal set; }
-
-
-		//[Browsable(false)]
-  //      public bool Dirty { get; set; }
         
         /// <summary>
         /// The menu items associated with this screen.
@@ -99,7 +91,6 @@ namespace Sphere10.Framework.Windows.Forms {
         /// </summary>
         [Browsable(true), Category("Behavior"), Description("The toolbar associated with this screen.")]
         public ToolStrip ToolBar { get; set; }
-
 
 	    public HelpType Type {
 		    get;
@@ -131,37 +122,24 @@ namespace Sphere10.Framework.Windows.Forms {
 		    private set;
 	    }
 
-		public virtual void SetLocalizedText() {
+		public override void SetLocalizedText(CultureInfo culture = null) {
+			base.SetLocalizedText(culture);
             SetLocalizedTextInApplicationControls(this.Controls);
         }
 
-	    internal virtual void OnCreateScreen() {
+		protected virtual void OnShowFirstTime() {
+		}
+
+		protected virtual void OnShow() {
+			if (_showCount++ == 0)
+				NotifyShowScreenFirstTime();
+		}
+
+	    protected virtual void OnHide(ref bool cancelHide) {
         }
 
-	    internal virtual void OnShowScreen() {
-        }
-
-	    internal virtual void OnHideScreen(ref bool cancelHide) {
-        }
-
-	    internal virtual void OnDestroyScreen() {
+	    protected virtual void OnDestroyScreen() {
 	    }
-
-	    internal virtual void OnStateChanged() {
-	    }
-
-		internal virtual void PopulatePrimingData() {
-	    }
-
-		internal virtual void SaveState() {
-	    }
-
-	    internal virtual void SaveUserInputToDataSource() {
-	    }
-
-	    internal virtual void RefreshUserInterfaceWithDataSource() {
-	    }
-
 
         protected void RegisterMenuItem(ToolStripItem item) {
             _menuStripItems.Add(item);
@@ -180,21 +158,28 @@ namespace Sphere10.Framework.Windows.Forms {
             }
         }
 
-	    public void NotifyStateChangedEvent(bool saveToDataSource = false) {
-			if (!Updating) {
-				if (AutoDetectChildStateChanges) {
-					OnStateChanged();
-					StateChanged?.Invoke(this, new EventArgs());
-				}
-				if (saveToDataSource) {
-					SaveUserInputToDataSource();
-					if (AutoSave) {
-						SaveState();
-					}
-				}
+	    internal void NotifyShow() {
+			OnShow();
+			ScreenDisplayed?.Invoke(this, EventArgs.Empty);
+		}
+
+		internal void NotifyShowScreenFirstTime() {
+			OnShowFirstTime();
+			ScreenDisplayedFirstTime?.Invoke(this, EventArgs.Empty);
+		}
+
+		internal void NotifyHideScreen(ref bool cancel) {
+			OnHide(ref cancel);
+			if (!cancel) {
+				var cancelArgs = new HideScreenEventArgs();
+				ScreenHidden?.Invoke(this, cancelArgs);
 			}
 		}
-	
+
+		internal void NotifyScreenDestroyed() {
+			OnDestroyScreen();
+			ScreenDestroyed?.Invoke(this, EventArgs.Empty);
+		}
 	}
 }
 

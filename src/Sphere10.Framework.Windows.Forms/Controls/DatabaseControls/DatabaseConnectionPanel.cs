@@ -42,47 +42,29 @@ namespace Sphere10.Framework.Windows.Forms {
 
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public DBMSType SelectedDBMSType {
-			get {
-				return (DBMSType)_dbmsCombo.SelectedEnum;
-			}
-			set {
-				if (DesignMode)
-					return;
-				_dbmsCombo.SelectedEnum = value;
-			}
+			get => (DBMSType)_dbmsCombo.SelectedEnum;
+			set => _dbmsCombo.SelectedEnum = value;
 		}
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DBMSType[] IgnoreDBMS {
-            get { return _dbmsCombo.IgnoreEnums.Cast<DBMSType>().ToArray(); }
-            set { _dbmsCombo.IgnoreEnums = (value ?? new DBMSType[0]).Cast<object>().ToArray(); }
+            get => _dbmsCombo.IgnoreEnums.Cast<DBMSType>().ToArray();
+	        set => _dbmsCombo.IgnoreEnums = (value ?? new DBMSType[0]).Cast<object>().ToArray();
         }
 
         //[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         //[Browsable(false)]
         public override string ConnectionString {
-			get {
-				return CurrentConnectionPanel.ConnectionString;
-			}
-			set {
-				CurrentConnectionPanel.ConnectionString = value;
-			}
-		}
+			get => CurrentConnectionPanel.ConnectionString;
+	        set => CurrentConnectionPanel.ConnectionString = value;
+        }
 
-	    public virtual DBReference Database {
-	        get {
-	            return new DBReference {
-	                DBMSType = SelectedDBMSType,
-	                ConnectionString = ConnectionString
-	            };
-	        }
-	    }
+	    public virtual DBReference Database => new DBReference {
+		    DBMSType = SelectedDBMSType,
+		    ConnectionString = ConnectionString
+	    };
 
-	    public override string DatabaseName {
-	        get {
-	            return CurrentConnectionPanel.DatabaseName;
-	        }
-	    }
+		public override string DatabaseName => CurrentConnectionPanel.DatabaseName;
 
 		protected virtual void OnDBMSTypeChanged() {
 		}
@@ -124,30 +106,27 @@ namespace Sphere10.Framework.Windows.Forms {
 		}
 
 		protected void ChangeConnectionPanel(string connectionPanelTypeName) {
+			if (Tools.Runtime.IsDesignMode)
+				return;
+
 			var connectionBar = (ConnectionPanelBase)Tools.Object.Create(connectionPanelTypeName);
 			ChangeConnectionPanel(connectionBar);
 		}
 
 		protected void ChangeConnectionPanel(ConnectionPanelBase connectionPanel) {
-			if (CurrentConnectionPanel != null)
+			if (CurrentConnectionPanel != null) 
 				_connectionProviderPanel.Controls.Remove(CurrentConnectionPanel);
 			CurrentConnectionPanel = connectionPanel;
 			CurrentConnectionPanel.Dock = DockStyle.Fill;
-		    CurrentConnectionPanel.DockPadding.All = 0;
-		    CurrentConnectionPanel.Margin = Padding.Empty;
-            _connectionProviderPanel.Controls.Add(CurrentConnectionPanel);
+			CurrentConnectionPanel.DockPadding.All = 0;
+			CurrentConnectionPanel.Margin = Padding.Empty;
+			_connectionProviderPanel.Controls.Add(CurrentConnectionPanel);
 			RaiseDBMSTypeChangedEvent();
 		}
 
 		private void RaiseDBMSTypeChangedEvent() {
 			OnDBMSTypeChanged();
-			if (DBMSTypeChanged != null)
-				DBMSTypeChanged(this, SelectedDBMSType);
-		}
-
-		protected class ComboItemModel {
-			public string Name { get; set; }
-			public int Value { get; set; }
+			DBMSTypeChanged?.Invoke(this, SelectedDBMSType);
 		}
 	}
 }

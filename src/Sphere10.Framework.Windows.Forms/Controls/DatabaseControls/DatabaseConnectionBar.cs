@@ -40,53 +40,37 @@ namespace Sphere10.Framework.Windows.Forms {
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DBMSType SelectedDBMSType {
-	        get { return (DBMSType) _dbmsCombo.SelectedEnum; }
-	        set {
-	            if (DesignMode)
-	                return;
-	            _dbmsCombo.SelectedEnum = value;
-	        }
-	    }
+	        get => (DBMSType) _dbmsCombo.SelectedEnum;
+	        set => _dbmsCombo.SelectedEnum = value;
+        }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DBMSType[] IgnoreDBMS {
-	        get { return _dbmsCombo.IgnoreEnums.Cast<DBMSType>().ToArray(); }
-            set { _dbmsCombo.IgnoreEnums = (value ?? new DBMSType[0]).Cast<object>().ToArray(); }
-	    }
+	        get => _dbmsCombo.IgnoreEnums.Cast<DBMSType>().ToArray();
+	        set => _dbmsCombo.IgnoreEnums = (value ?? new DBMSType[0]).Cast<object>().ToArray();
+        }
 
 
 	    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		[Browsable(false)]
 		public override string ConnectionString {
-			get {
-				return CurrentConnectionBar.ConnectionString;
-			}
-			set {
-				CurrentConnectionBar.ConnectionString = value;
-			}
-		}
+			get => CurrentConnectionBar.ConnectionString;
+		    set => CurrentConnectionBar.ConnectionString = value;
+	    }
 
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
-        public override string DatabaseName {
-            get {
-                return CurrentConnectionBar.DatabaseName;
-            }
-        }
+        public override string DatabaseName => CurrentConnectionBar.DatabaseName;
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         [Browsable(false)]
-        public virtual DBReference Database {
-            get {
-                return new DBReference {
-                    DBMSType = SelectedDBMSType,
-                    ConnectionString = ConnectionString
-                };
-            }
-        }
+        public virtual DBReference Database => new DBReference {
+			DBMSType = SelectedDBMSType,
+			ConnectionString = ConnectionString
+		};
 
-        protected virtual void SelectDefaultBar() {		   
+		protected virtual void SelectDefaultBar() {		   
 			ChangeConnectionBar(MSSQLConnectionBarTypeName);
 		}
 
@@ -101,8 +85,6 @@ namespace Sphere10.Framework.Windows.Forms {
 		protected ConnectionBarBase CurrentConnectionBar { get; set; }
 
 		protected virtual void _dbmsCombo_SelectedIndexChanged(object sender, EventArgs e) {
-			if (DesignMode)
-				return;
 			var comboItem = (DBMSType)_dbmsCombo.SelectedEnum;
 			switch (comboItem) {
 				case DBMSType.SQLServer:
@@ -125,6 +107,9 @@ namespace Sphere10.Framework.Windows.Forms {
 		}
 
 		protected void ChangeConnectionBar(string connectionBarTypeName) {
+			if (Tools.Runtime.IsDesignMode)
+				return;
+
 			var connectionBar = (ConnectionBarBase)Tools.Object.Create(connectionBarTypeName);
 			ChangeConnectionBar(connectionBar);
 		}
@@ -134,16 +119,10 @@ namespace Sphere10.Framework.Windows.Forms {
 				_connectionProviderPanel.Controls.Remove(CurrentConnectionBar);
 			CurrentConnectionBar = connectionBar;
 			CurrentConnectionBar.Location = new Point(0, (_connectionProviderPanel.Height - CurrentConnectionBar.Height).ClipTo(0, int.MaxValue));
-		    CurrentConnectionBar.Dock = DockStyle.Fill;
-		    CurrentConnectionBar.DockPadding.All = 0;		    
+			CurrentConnectionBar.Dock = DockStyle.Fill;
+			CurrentConnectionBar.DockPadding.All = 0;
 			CurrentConnectionBar.Width = _connectionProviderPanel.Width;
 			_connectionProviderPanel.Controls.Add(CurrentConnectionBar);
-		}
-
-
-		protected class ComboItemModel {
-			public string Name { get; set; }
-			public int Value { get; set; }
 		}
 	}
 }

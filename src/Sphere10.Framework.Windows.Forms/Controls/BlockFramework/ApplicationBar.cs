@@ -33,11 +33,11 @@ namespace Sphere10.Framework.Windows.Forms {
         public event ButtonPressedHandler ButtonPressed;
 
         public ApplicationBar() {
-            BeginUpdate();
-            InitializeComponent();
-            _items = new List<Item>();
-            ButtonHeight = 32;
-            EndUpdate();
+			using (this.EnterUpdateScope()) {
+				InitializeComponent();
+				_items = new List<Item>();
+				ButtonHeight = 32;
+			}
         }
 
         public Control ApplicationBarControl { get; set; }
@@ -111,51 +111,49 @@ namespace Sphere10.Framework.Windows.Forms {
             }
         }
 
-        public virtual void PerformCustomLayout() {
-            try {
-                BeginUpdate();
-                if (_items != null) {
+		public virtual void PerformCustomLayout() {
+			using (this.EnterUpdateScope()) {
 
-                    // place the buttons in the correct place
-                    if (!_splitContainer.Panel2Collapsed) {
-                        if (_items != null) {
-                            for (int i = 0; i < _items.Count && i < _buttonsToShow; i++) {
-                                Item item = _items[i];
-                                item.Button.Location = new Point(0, _buttonHeight * i);
-                                item.Button.Height = _buttonHeight;
-                                item.Button.Width = _splitContainer.Panel2.Width;
-                            }
-                            // show rest of buttons as 8x8 images in bottom toolbar
-                        }
-                        // make the height of panel1 correct
-                        _splitContainer.Panel1MinSize = 0;
-                        int buttonPanelHeight = _buttonHeight * _buttonsToShow;
+				if (_items != null) {
 
-                        _splitContainer.Panel1MinSize =
-                            Tools.Maths.ClipValue(
-                                _splitContainer.Height - _splitContainer.SplitterWidth
-                                        - _items.Count * _buttonHeight,
-                                0,
-                                _splitContainer.Height
-                        );
+					// place the buttons in the correct place
+					if (!_splitContainer.Panel2Collapsed) {
+						if (_items != null) {
+							for (int i = 0; i < _items.Count && i < _buttonsToShow; i++) {
+								Item item = _items[i];
+								item.Button.Location = new Point(0, _buttonHeight * i);
+								item.Button.Height = _buttonHeight;
+								item.Button.Width = _splitContainer.Panel2.Width;
+							}
+							// show rest of buttons as 8x8 images in bottom toolbar
+						}
+						// make the height of panel1 correct
+						_splitContainer.Panel1MinSize = 0;
+						int buttonPanelHeight = _buttonHeight * _buttonsToShow;
+
+						_splitContainer.Panel1MinSize =
+							Tools.Maths.ClipValue(
+								_splitContainer.Height - _splitContainer.SplitterWidth
+										- _items.Count * _buttonHeight,
+								0,
+								_splitContainer.Height
+						);
 
 
-                        if (_splitContainer.Height > _buttonHeight) {
-                            _splitContainer.SplitterDistance =
-                                Tools.Maths.ClipValue(
-                                    _splitContainer.Height - buttonPanelHeight -
-                                            _splitContainer.SplitterWidth,
-                                    _splitContainer.Panel1MinSize + 1,
-                                   _splitContainer.Height
-                            );
-                        }
-                    }
+						if (_splitContainer.Height > _buttonHeight) {
+							_splitContainer.SplitterDistance =
+								Tools.Maths.ClipValue(
+									_splitContainer.Height - buttonPanelHeight -
+											_splitContainer.SplitterWidth,
+									_splitContainer.Panel1MinSize + 1,
+								   _splitContainer.Height
+							);
+						}
+					}
 
-                }
-            } finally {
-                EndUpdate();
-            }
-        }
+				}
+			}
+		}
 
         protected override void OnResize(EventArgs e) {
             base.OnResize(e);
@@ -167,9 +165,7 @@ namespace Sphere10.Framework.Windows.Forms {
 
         protected void FireButtonPressedEvent(ApplicationBar source, ApplicationBar.Item button) {
             OnButtonPressed(source, button);
-            if (ButtonPressed != null) {
-                ButtonPressed(source, button);
-            }
+	        ButtonPressed?.Invoke(source, button);
         }
 
         #region Handlers

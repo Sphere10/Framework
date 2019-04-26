@@ -566,14 +566,7 @@ namespace Sphere10.Framework.Windows.Forms {
 				// add this screen to long running screens if it is not to be destroyed.
 				if (screen.ActivationMode == ScreenActivationMode.KeepAlive) {
 					LongRunningScreens.Add(screenType, screen);
-				}
-				screen.OnCreateScreen();
-				using (screen.EnterUpdateScope()) {					
-					screen.PopulatePrimingData();
-					screen.RefreshUserInterfaceWithDataSource();
-					screen.SetLocalizedText();
-					screen.Loaded = true;
-				}								
+				}				
 			}
 
 
@@ -589,12 +582,10 @@ namespace Sphere10.Framework.Windows.Forms {
 			Debug.Assert(screen != null);
 			#endregion
 
-			bool cancelRemove = false;
+			var cancelRemove = false;
 
 			// notify current view for permission to remove
-			if (ActiveScreen != null) {
-				ActiveScreen.OnHideScreen(ref cancelRemove);
-			}
+			ActiveScreen?.NotifyHideScreen(ref cancelRemove);
 
 			// remove if current view granted permission
 			if (!cancelRemove) {
@@ -604,9 +595,7 @@ namespace Sphere10.Framework.Windows.Forms {
 				if (ActiveScreen != null) {
 					UnregisterScreenFromMenu(ActiveScreen);
 					// put the tool buttons back into the screen toolbar
-					if (ActiveScreen.ToolBar != null) {
-						ActiveScreen.ToolBar.Items.AddRange(ActiveViewButtons.ToArray());
-					}
+					ActiveScreen.ToolBar?.Items.AddRange(ActiveViewButtons.ToArray());
 					ActiveViewButtons.Clear();
 
 					// remove the view control
@@ -667,7 +656,7 @@ namespace Sphere10.Framework.Windows.Forms {
 				RebuildToolBar();
 
 				// let view know that it has begun
-				ActiveScreen.OnShowScreen();
+				ActiveScreen.NotifyShow();
 			}
 		}
 
