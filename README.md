@@ -17,18 +17,18 @@ This framework also forms core dependency for PascalCoin Layer-2 smart-contracts
 | [Sphere10.Framework.Drawing](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Drawing)          | Drawing, Bitcoin and graphics support.                     | .NET Standard 2  |
 | [Sphere10.Framework.NUnit](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.NUnit)            | Unit test support.                                         | .NET Standard 2  |
 | [Sphere10.Framework.Services](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Services)         | WCF Client support                                         | .NET Standard 2  |
-| [Sphere10.Framework.Web.DotNet](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Web.DotNet)      | Framework components that could not be standardized            | .NET Framework 4.6.1 |
-| [Sphere10.Framework.Web.AspNet](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Web.AspNet)      | ASP.NET support                                            | .NET Framework 4.6.1 |
-| [Sphere10.Framework.Web.AspNetCore]((https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Web.AspNetCore))  | ASP.NET Core support                                       | .NET Core 2.2 |
-| [Sphere10.Windows.LevelDB](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Windows.LevelDB)           | Level-DB wrapper                                           | .NET Framework 4.6.1  |
-| [Sphere10.Windows.WinForms](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Windows.WinForms)          | WinForms library and Application framework                 | .NET Framework 4.6.1  |
-| [Sphere10.Windows.WinForms.Firebird](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Windows.WinForms.Firebird) | Firebird DB controls for WinForms/Data Framework           | .NET Framework 4.6.1  |
-| [Sphere10.Windows.WinForms.MSSQL](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Windows.WinForms.MSSQL)    | SQL Server DB controls for WinForms/Data Framework         | .NET Framework 4.6.1  |
-| [Sphere10.Windows.WinForms.Sqlite](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Windows.WinForms.Sqlite)   | SQL Server DB controls for WinForms/Data Framework         | .NET Framework 4.6.1  |
-| [Sphere10.Android](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Android)                   | Android specific components                                | .NET Standard 2  |
-| [Sphere10.iOS](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.iOS)                       | iOS specific components                                    | Xamarin.iOS      |
-| [Sphere10.macOS](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.macOS)                     | macOS specific components                                  | Xamarin.Mac, MonoMac|
-| [Sphere10.Windows](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Windows)                   | Windows specific components including WIN32 API wrapper, hook support, Local NTFS support, etc | .NET Framwork 4.6.1  |
+| [Sphere10.Framework.DotNet](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.DotNet)      | Framework components that could not be standardized            | .NET Framework 4.6.1 |
+| [Sphere10.Framework.Web.AspNet](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Web.AspNet)      | ASP.NET support and Application Framework support| .NET Framework 4.6.1 |
+| [Sphere10.Framework.Web.AspNetCore]((https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Web.AspNetCore))  | ASP.NET Core support and Application Framework| .NET Core 2.2 |
+| [Sphere10.Framework.Windows](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Windows)                   | Windows specific components including WIN32 API wrapper, hook support, Local NTFS support, etc | .NET Framwork 4.6.1  |
+| [Sphere10.Framework.Windows.LevelDB](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Windows.LevelDB)           | Level-DB wrapper | .NET Framework 4.6.1  |
+| [Sphere10.Framework.Windows.Forms](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Windows.Forms)          | Extensive WinForms controls, panels and helpers as well as Sphere 10's Application framework support for WinForms | .NET Framework 4.6.1  |
+| [Sphere10.Framework.Windows.Forms.Firebird](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Windows.Forms.Firebird) | Graphical components for Firebird in WinForms | .NET Framework 4.6.1  |
+| [Sphere10.Framework.Windows.Forms.MSSQL](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Windows.Forms.MSSQL)    | Graphical components for SQL Server in WinForms | .NET Framework 4.6.1  |
+| [Sphere10.Framework.Windows.Forms.Sqlite](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Windows.Forms.Sqlite)   | Graphical components for Sqlite in WinForms | .NET Framework 4.6.1  |
+| [Sphere10.Framework.Android](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.Android)                   | Android specific components                                | .NET Standard 2  |
+| [Sphere10.Framework.iOS](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.iOS)                       | iOS specific components                                    | Xamarin.iOS      |
+| [Sphere10.Framework.macOS](https://github.com/Sphere10/Framework/tree/master/src/Sphere10.Framework.macOS)                     | macOS specific components                                  | Xamarin.Mac, MonoMac|
 
 ## Roadmap / Dev notes
 
