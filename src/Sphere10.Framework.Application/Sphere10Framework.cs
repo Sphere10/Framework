@@ -22,23 +22,23 @@ using Sphere10.Framework;
 using Tools;
 
 namespace Sphere10.Framework.Application {
-    public class ApplicationLifecycle {
+    public class Sphere10Framework {
         private readonly object _threadLock;
         private bool _registeredConfig;
         private bool _registeredModuleConfig;
         private volatile IModuleConfiguration[] _moduleConfigurations;
 
 
-        static ApplicationLifecycle() {
-            Instance = new ApplicationLifecycle();
+        static Sphere10Framework() {
+            Instance = new Sphere10Framework();
         }
 
-        public ApplicationLifecycle() {
+        public Sphere10Framework() {
             _threadLock = new object();
             _moduleConfigurations = null;
         }
 
-        public static ApplicationLifecycle Instance { get; }
+        public static Sphere10Framework Instance { get; }
 
         public void RegisterAppConfig(string configSectionName = "ComponentRegistry") {
             if (_registeredConfig)
@@ -74,7 +74,7 @@ namespace Sphere10.Framework.Application {
 			if (!_registeredModuleConfig)
                 RegisterAllModuleConfig();
 
-            // Execute all the initialization tasks syncronously and in sequence
+	        // Execute all the initialization tasks syncronously and in sequence
             ComponentRegistry
                 .Instance
                 .ResolveAll<IApplicationInitializeTask>()
@@ -152,6 +152,7 @@ namespace Sphere10.Framework.Application {
                                     .Where(t => t.IsClass && !t.IsAbstract && typeof(IModuleConfiguration).IsAssignableFrom(t))
                                     .Select(TypeActivator.Create)
                                     .Cast<IModuleConfiguration>()
+	                                .OrderByDescending(x => x.Priority)
                                     .ToArray();
                         }
                     }

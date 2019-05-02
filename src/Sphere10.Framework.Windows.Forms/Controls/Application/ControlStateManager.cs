@@ -20,7 +20,8 @@ using System.Threading.Tasks;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
-namespace Sphere10.Framework.Windows.Forms.Controls {
+namespace Sphere10.Framework.Windows.Forms {
+
     public class ControlStateManager {
         private readonly HashSet<Type> _controlStateManagers;
         private int _lastKnownComponentRegistryState;
@@ -35,6 +36,10 @@ namespace Sphere10.Framework.Windows.Forms.Controls {
         }
 
         public static ControlStateManager Instance { get; }
+
+		public IDisposable EnterUpdateScope() {
+			return new ActionScope(null, Refresh);
+		}
 
         public void Refresh() {
             _controlStateManagers.Clear();
@@ -68,5 +73,6 @@ namespace Sphere10.Framework.Windows.Forms.Controls {
             manager = null;
             return false;
         }
+
     }
 }

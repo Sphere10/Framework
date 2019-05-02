@@ -20,7 +20,9 @@ using Sphere10.Framework.Application;
 
 namespace Sphere10.Framework.Application {
     public abstract class ModuleConfigurationBase : IModuleConfiguration {
-        public virtual void RegisterComponents(ComponentRegistry registry) {
+		public virtual int Priority => 0;
+
+	    public virtual void RegisterComponents(ComponentRegistry registry) {
         }
 
         public virtual void OnApplicationStart() {            

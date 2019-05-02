@@ -32,7 +32,6 @@ namespace Sphere10.Framework.Windows.Forms {
             InitializeComponent();
         }
 
-
         [Browsable(true)]
         [DefaultValue(PathSelectionMode.OpenFile)]
         public PathSelectionMode Mode { get; set; }

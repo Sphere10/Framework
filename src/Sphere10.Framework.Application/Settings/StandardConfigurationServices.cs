@@ -11,7 +11,6 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-#if !__MOBILE__
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,26 +27,18 @@ namespace Sphere10.Framework.Application {
 			ResolveSettingsImplementations();
 		}
 
-		public ISettingsServices UserSettingsImpl { get; private set; }
-		public ISettingsServices SystemSettingsImpl { get; private set; }
+		public ISettingsProvider UserSettingsImpl { get; private set; }
+		public ISettingsProvider SystemSettingsImpl { get; private set; }
 
 
-		public virtual void ResolveSettingsImplementations() {
-			UserSettingsImpl = ComponentRegistry.Instance.Resolve<ISettingsServices>("UserSettings");
-			SystemSettingsImpl = ComponentRegistry.Instance.Resolve<ISettingsServices>("SystemSettings");
+		protected virtual void ResolveSettingsImplementations() {
+			UserSettingsImpl = ComponentRegistry.Instance.Resolve<ISettingsProvider>("UserSettings");
+			SystemSettingsImpl = ComponentRegistry.Instance.Resolve<ISettingsProvider>("SystemSettings");
 		}
 
-		public override ISettingsServices UserSettings {
-			get { return UserSettingsImpl; }
-		}
+		public override ISettingsProvider UserSettings => UserSettingsImpl;
 
 
-		public override ISettingsServices SystemSettings {
-			get { return SystemSettingsImpl; }
-		}
-
+		public override ISettingsProvider SystemSettings => SystemSettingsImpl;
 	}
 }
-
-
-#endif

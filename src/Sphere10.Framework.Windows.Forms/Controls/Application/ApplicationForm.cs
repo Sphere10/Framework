@@ -39,24 +39,10 @@ namespace Sphere10.Framework.Windows.Forms {
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         protected IWinFormsApplicationServices ApplicationServices { get; private set; }
 
-        [Browsable(false)]
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        protected virtual ComponentSettings LocatedSettings { get; private set; }
-
         protected override void PopulatePrimingData() {
             base.PopulatePrimingData();
             Text = ApplicationServices.ProductInformation.ProcessTokensInString(this.Text);
             var useSettingsAttribute = this.GetType().GetCustomAttributesOfType<UseSettingsAttribute>().SingleOrDefault();
-            if (useSettingsAttribute != null) {
-                LocatedSettings = ApplicationServices.GetComponentSettings(useSettingsAttribute.SettingsTypeToUse);
-            }
-        }
-
-        protected override void SaveState() {
-            base.SaveState();
-            if (AutoSave && LocatedSettings != null) {
-                LocatedSettings.Save();
-            }
         }
 
     }

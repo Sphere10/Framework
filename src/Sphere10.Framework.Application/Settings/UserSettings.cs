@@ -52,8 +52,8 @@ namespace Sphere10.Framework.Application {
 		}
 
 		private static void CheckProvider() {
-			if (Provider == null)
-				throw new SoftwareException("Settings Provider has not been initialized");
+			if (_provider == null)
+				throw new SoftwareException("User Settings Provider has not been initialized");
 		}
 	}
 }

@@ -20,16 +20,19 @@ using Sphere10.Framework;
 
 namespace Sphere10.Framework.Application {
 	public class ModuleConfiguration : ModuleConfigurationBase {
+
+		public override int Priority => int.MinValue; // last to execute
+
 		public override void RegisterComponents(ComponentRegistry registry) {
 
 			if (!registry.HasImplementationFor<IBackgroundLicenseVerifier>())
 				registry.RegisterComponent<IBackgroundLicenseVerifier, NoOpBackgroundLicenseVerifier>();
 
-			if (!registry.HasImplementationFor<ISettingsServices>("UserSettings"))
-				registry.RegisterComponent<ISettingsServices, StandardUserSettingsProvider>("UserSettings", activation: ActivationType.Singleton);
+			if (!registry.HasImplementationFor<ISettingsProvider>("UserSettings"))
+				registry.RegisterComponentInstance<ISettingsProvider>(UserSettings.CreateDefaultProvider(), "UserSettings");
 
-			if (!registry.HasImplementationFor<ISettingsServices>("SystemSettings"))
-				registry.RegisterComponent<ISettingsServices, StandardSystemSettingsProvider>("SystemSettings", activation: ActivationType.Singleton);
+			if (!registry.HasImplementationFor<ISettingsProvider>("SystemSettings"))
+				registry.RegisterComponentInstance<ISettingsProvider>(GlobalSettings.CreateDefaultProvider(), "SystemSettings");
 
 			if (!registry.HasImplementationFor<IConfigurationServices>())
 				registry.RegisterComponent<IConfigurationServices, StandardConfigurationServices>(activation: ActivationType.Singleton);
@@ -48,7 +51,6 @@ namespace Sphere10.Framework.Application {
 				throw new SoftwareException("Illegal tampering with ILicenseKeyDecoder");
 			registry.RegisterComponent<ILicenseKeyDecoder, StandardLicenseKeyDecoder>();
 
-
 			if (registry.HasImplementationFor<ILicenseKeyValidator>())
 				throw new SoftwareException("Illegal tampering with ILicenseKeyValidator");
 			registry.RegisterComponent<ILicenseKeyValidator, StandardLicenseKeyValidatorWithVersionCheck>();
@@ -60,7 +62,6 @@ namespace Sphere10.Framework.Application {
 			if (registry.HasImplementationFor<ILicenseKeyServices>())
 				throw new SoftwareException("Illegal tampering with ILicenseKeyServices");
 			registry.RegisterComponent<ILicenseKeyServices, StandardLicenseKeyProvider>();
-
 
 			if (registry.HasImplementationFor<ILicenseServices>())
 				throw new SoftwareException("Illegal tampering with ILicenseServices");
@@ -74,20 +75,18 @@ namespace Sphere10.Framework.Application {
 				registry.RegisterComponent<IProductInstancesCounter, StandardProductInstancesCounter>();
 
 			if (!registry.HasImplementationFor<IProductUsageServices>())
-				registry.RegisterComponent<IProductUsageServices, StandardProductUsageProvider>(activation: ActivationType.Singleton);
+				registry.RegisterComponent<IProductUsageServices, StandardProductUsageServices>(activation: ActivationType.Singleton);
 
 			if (!registry.HasImplementationFor<IWebsiteLauncher>())
 				registry.RegisterComponent<IWebsiteLauncher, StandardWebsiteLauncher>();
 
-			// Initialize Tasks
-			if (!registry.HasInitializationTask<StandardProductUsageProvider.Initializer>())
-				registry.RegisterInitializationTask<StandardProductUsageProvider.Initializer>();
-
 			if (!registry.HasInitializationTask<IncrementUsageByOneTask>())
 				registry.RegisterInitializationTask<IncrementUsageByOneTask>();
 
-			if (!registry.HasInitializationTask<RegisterSettingsViaIocTask>())
-				registry.RegisterInitializationTask<RegisterSettingsViaIocTask>();
+			// Set singleton settings provider
+			UserSettings.Provider = ComponentRegistry.Instance.Resolve<ISettingsProvider>("UserSettings");
+			GlobalSettings.Provider = ComponentRegistry.Instance.Resolve<ISettingsProvider>("SystemSettings");
+
 
 			// Start Tasks
 			// ....
@@ -98,6 +97,5 @@ namespace Sphere10.Framework.Application {
 				registry.RegisterEndTask<SaveSettingsEndTask>();
 
 		}
-
 	}
 }

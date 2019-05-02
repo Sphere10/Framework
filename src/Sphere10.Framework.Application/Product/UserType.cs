@@ -1,5 +1,4 @@
-//-----------------------------------------------------------------------
-// <copyright file="Form1.cs" company="Sphere 10 Software">
+// <copyright file="UserType.cs" company="Sphere 10 Software">
 //
 // Copyright (c) Sphere 10 Software. All rights reserved. (http://www.sphere10.com)
 //
@@ -13,17 +12,18 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Text;
-using System.Windows.Forms;
-using Sphere10.Framework.Windows.Forms;
+using System.Reflection;
+using System.Runtime.Serialization;
 
+namespace Sphere10.Framework.Application {
 
-namespace Sphere10.FrameworkTester
-{
-    public partial class MainForm : BlockMainForm
-    {
-
+    [Obfuscation(Exclude = true)]
+    public enum UserType {
+		System,
+        HomeUser,
+        SmallBusiness,
+        MediumBusiness,
+        Corporation
     }
 }

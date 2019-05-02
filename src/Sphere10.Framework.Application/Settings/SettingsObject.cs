@@ -23,6 +23,7 @@ namespace Sphere10.Framework.Application {
 	[XmlRoot]
 	[Serializable]
 	public abstract class SettingsObject : ObjectWithDefaultValues {
+
 		[DefaultValue(null)]
 		public object ID { get; set; }
 

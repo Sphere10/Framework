@@ -21,9 +21,9 @@ using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
 namespace Sphere10.Framework.Windows.Forms {
-    public static class ApplicationLifecycleExtensions {
+    public static class Sphere10FrameworkExtensions {
 
-        public static void StartWinFormsApplication(this ApplicationLifecycle applicationLifecycle) {
+        public static void StartWinFormsApplication(this Sphere10Framework applicationLifecycle) {
             applicationLifecycle.StartFramework();
             var mainForm = ComponentRegistry.Instance.Resolve<IMainForm>();
             if (!(mainForm is Form)) {
@@ -37,13 +37,13 @@ namespace Sphere10.Framework.Windows.Forms {
             System.Windows.Forms.Application.Run(mainForm as Form);
         }
 
-        public static void StartWinFormsApplication<TMainForm>(this ApplicationLifecycle applicationLifecycle)
+        public static void StartWinFormsApplication<TMainForm>(this Sphere10Framework applicationLifecycle)
             where TMainForm : class, IMainForm {
             ComponentRegistry.Instance.RegisterMainForm<TMainForm>();
             applicationLifecycle.StartWinFormsApplication();
         }
 
-        public static void EndWinFormsApplication(this ApplicationLifecycle applicationLifecycle, out bool abort, out string abortReason) {
+        public static void EndWinFormsApplication(this Sphere10Framework applicationLifecycle, out bool abort, out string abortReason) {
             applicationLifecycle.EndFramework(out abort, out abortReason);
         }
     }

@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------
-// <copyright file="StandardSystemSettingsProvider.cs" company="Sphere 10 Software">
+// <copyright file="IUserNotificationServices.cs" company="Sphere 10 Software">
 //
 // Copyright (c) Sphere 10 Software. All rights reserved. (http://www.sphere10.com)
 //
@@ -13,20 +13,32 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using System.IO;
-using System.Reflection;
-
 
 namespace Sphere10.Framework.Application {
+	
+	
+	public interface IUserNotificationServices  {
 
+		void ShowSendCommentDialog();
 
-	public class StandardSystemSettingsProvider : BaseXMLFileSettingsProvider {
+		void ShowSubmitBugReportDialog();
 
-		public StandardSystemSettingsProvider(IProductInformationServices productInformationServices)
-			: base(productInformationServices, Environment.SpecialFolder.CommonApplicationData,	"ApplicationSettings.xml") {
-		}
+		void ShowRequestFeatureDialog();
 
+		void ShowAboutBox();
+
+		void ReportError(Exception e);
+
+		void ReportError(string msg);
+
+		void ReportError(string title, string msg);
+
+		void ReportFatalError(string title, string msg);
+
+		void ReportInfo(string title, string msg);
+
+		bool AskYN(string question);
 	}
 }
-

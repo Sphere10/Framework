@@ -188,8 +188,6 @@ namespace Sphere10.Framework.Application {
             }
         }
 
-
-
         public TInterface Resolve<TInterface>(string resolveKey = null) where TInterface : class {
             var resolvedImplementation = _tinyIoCContainer.Resolve<TInterface>(resolveKey ?? string.Empty);
             //if (!TryResolve(out resolvedImplementation, name)) {

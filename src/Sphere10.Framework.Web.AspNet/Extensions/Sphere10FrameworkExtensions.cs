@@ -20,9 +20,9 @@ using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
 namespace Sphere10.Framework.Web {
-    public static class ApplicationLifecycleExtensions {
+    public static class Sphere10FrameworkExtensions {
 
-        public static void StartAspNetApplication(this ApplicationLifecycle applicationLifecycle) {
+        public static void StartAspNetApplication(this Sphere10Framework applicationLifecycle) {
             applicationLifecycle.StartFramework();
             // Set MVC dep resolver
             System.Web.Mvc.DependencyResolver.SetResolver(new ComponentRegistryMvcDependencyResolver(ComponentRegistry.Instance));
@@ -31,11 +31,11 @@ namespace Sphere10.Framework.Web {
             System.Web.Http.GlobalConfiguration.Configuration.DependencyResolver = new ComponentRegistryWebApiDependencyResolver(ComponentRegistry.Instance);
 		}
 
-        public static void EndAspNetApplication(this ApplicationLifecycle applicationLifecycle, out bool abort, out string abortReason) {
+        public static void EndAspNetApplication(this Sphere10Framework applicationLifecycle, out bool abort, out string abortReason) {
             applicationLifecycle.EndFramework(out abort, out abortReason);
         }
 
-        public static void EndAspNetApplication(this ApplicationLifecycle applicationLifecycle) {
+        public static void EndAspNetApplication(this Sphere10Framework applicationLifecycle) {
             var abort = false;
             var abortReason = string.Empty;
             applicationLifecycle.EndFramework(out abort, out abortReason);

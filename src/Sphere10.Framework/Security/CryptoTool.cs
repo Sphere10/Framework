@@ -20,10 +20,6 @@ using System.Diagnostics;
 using System.Security.Cryptography;
 using Sphere10.Framework;
 
-#if __WP8__
-using Windows.Security;
-#endif
-
 namespace Tools {
 
 
@@ -118,9 +114,7 @@ namespace Tools {
             }
 		        return bytes;
 		    }
-	
 
-#if !__WP8__
 			public static string Hash(string plainText, SupportedHashAlgorithm hashAlgorithm, bool addSalt = true) {
 				// Define min and max salt sizes.
 				const int MinSaltSize = 4;
@@ -134,7 +128,6 @@ namespace Tools {
                         null
                 );
 			}
-#endif
 
 			/// <summary>
 			/// Generates a hash for the given plain text value and returns a
@@ -304,8 +297,6 @@ namespace Tools {
 				return (hashValue == expectedHashString);
 			}
 
-
-
 			//private static byte[] _salt = Encoding.ASCII.GetBytes("o6806642kbM7c5");
 
 			public static string EncryptStringAES(string plainText, string sharedSecret, string salt) {
@@ -360,7 +351,6 @@ namespace Tools {
 				// Return the encrypted bytes from the memory stream.
 				return outStr;
 			}
-
 
 			public static string DecryptStringAES(string cipherText, string sharedSecret, string salt) {
 				return DecryptStringAES(cipherText, sharedSecret, Encoding.UTF8.GetBytes(salt));
@@ -474,6 +464,3 @@ namespace Tools {
 			}
 		}
 	}
-    
-
-

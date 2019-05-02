@@ -23,12 +23,18 @@ using Sphere10.Framework;
 namespace Sphere10.Framework.Application {
 	public class StandardLicenseKeyProvider : ILicenseKeyServices {
 
-		public const string LicenseKeySettingName = "LicenseKey";
-		public const string LicenseOverrideCommandSettingName = "LicenseOverrideCommand";
+		public class LicenseKeySettings : SettingsObject {
+			public string LicenseKey { get; set; }
+			public bool HasRegisteredKey { get; set; }
+			public ProductLicenseCommand LicenseOverrideCommand { get; set; }
+		}
+
+		private readonly LicenseKeySettings _settings;
 
 		public StandardLicenseKeyProvider(IConfigurationServices configurationServices) {
 			ConfigurationServices = configurationServices;
 			AssemblyAttributesManager = new AssemblyAttributesManager();
+			_settings = ConfigurationServices.SystemSettings.Get<LicenseKeySettings>();
 		}
 
 		public IConfigurationServices ConfigurationServices { get; private set; }
@@ -36,7 +42,6 @@ namespace Sphere10.Framework.Application {
 		public AssemblyAttributesManager AssemblyAttributesManager { get; private set; }
 
 		public bool HasDefaultLicenseKey() {
-
 			return AssemblyAttributesManager.HasAssemblyDefaultProductKey();
 		}
 
@@ -46,54 +51,56 @@ namespace Sphere10.Framework.Application {
 		}
 
 		public bool HasRegisteredLicenseKey() {
-			return ConfigurationServices.SystemSettings.ContainsKey(LicenseKeySettingName);
+			return _settings.HasRegisteredKey;
 		}
 
 		public string GetRegisteredLicenseKey() {
-			Debug.Assert(HasRegisteredLicenseKey());
 			if (!HasRegisteredLicenseKey()) {
 				throw new SoftwareException("No license key has been registered with this product");
 			}
-			return (string)ConfigurationServices.SystemSettings[LicenseKeySettingName];
+			return _settings.LicenseKey;
 		}
 
 		public void SetLicenseKey(string key) {
 			if (string.IsNullOrEmpty(key)) {
 				throw new SoftwareException("Unable to set license key to empty string");
 			}
-			ConfigurationServices.SystemSettings[LicenseKeySettingName] = key;
-			ConfigurationServices.SystemSettings.Persist();
-
+			_settings.LicenseKey = key;
+			_settings.HasRegisteredKey = true;
+			_settings.Save();
 		}
 
 		public void RemoveRegisteredLicenseKey() {
 			if (HasRegisteredLicenseKey()) {
-				ConfigurationServices.SystemSettings.Remove(LicenseKeySettingName);
-				ConfigurationServices.SystemSettings.Persist();
+				_settings.LicenseKey = null;
+				_settings.HasRegisteredKey = false;
+				_settings.Save();
 			}
 		}
 
 		public bool HasLicenseOverrideCommand() {
-			return ConfigurationServices.SystemSettings.ContainsKey(LicenseOverrideCommandSettingName);
+			return _settings.LicenseOverrideCommand != null;
 		}
 
 		public ProductLicenseCommand GetLicenseOverrideCommand() {
-			Debug.Assert(HasLicenseOverrideCommand());
-			return (ProductLicenseCommand)ConfigurationServices.SystemSettings[LicenseOverrideCommandSettingName];
+			if (_settings.LicenseOverrideCommand == null)
+				throw new SoftwareException("No license override command has been found");
+			return _settings.LicenseOverrideCommand;
 		}
 
 		public void SetLicenseOverrideCommand(ProductLicenseCommand value) {
-			ConfigurationServices.SystemSettings[LicenseOverrideCommandSettingName] = value;
-			ConfigurationServices.SystemSettings.Persist();
+			_settings.LicenseOverrideCommand = value;
+			_settings.Save();
 		}
 
 		public void RemoveLicenseOverrideCommand() {
-			ConfigurationServices.SystemSettings.Remove(LicenseOverrideCommandSettingName);
-			ConfigurationServices.SystemSettings.Persist();
+			_settings.LicenseOverrideCommand = null;
+			_settings.Save();
 		}
-
-
 	}
+
+
+
 }
 
 #endif

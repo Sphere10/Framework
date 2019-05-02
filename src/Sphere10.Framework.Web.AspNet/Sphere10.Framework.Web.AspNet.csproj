@@ -120,7 +120,7 @@
     <Compile Include="ApplicationVariableInstanceHolder.cs" />
     <Compile Include="ComponentRegistryMvcDependencyResolver.cs" />
     <Compile Include="ComponentRegistryWebApiDependencyResolver.cs" />
-    <Compile Include="Extensions\ApplicationLifecycleExtensions.cs" />
+    <Compile Include="Extensions\Sphere10FrameworkExtensions.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\ModelStateDictionaryExtensions.cs" />
     <Compile Include="Extensions\UrlExtensions.cs" />

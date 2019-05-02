@@ -121,7 +121,7 @@ namespace Sphere10.Framework.Windows.Forms {
 						cancelExit = cancelArgs.Cancel;
 						// If no aborts, ask framework to confirm exit
 						if (!cancelExit) {
-							ApplicationLifecycle.Instance.EndWinFormsApplication(out cancelExit, out cancelReason);
+							Sphere10Framework.Instance.EndWinFormsApplication(out cancelExit, out cancelReason);
 						}
 
 

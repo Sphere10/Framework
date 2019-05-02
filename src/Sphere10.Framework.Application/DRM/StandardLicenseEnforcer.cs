@@ -51,9 +51,7 @@ namespace Sphere10.Framework.Application {
 			ConfigurationServices = configurationServices;
 			UserNotificationServices = userNotificationServices;
 			Rights = DetermineRights();
-			ConfigurationServices.ConfigurationChanged += new ConfigurationChangedEventHandler(
-				() => Rights = DetermineRights()
-			);
+			ConfigurationServices.ConfigurationChanged += (sender, args) => DetermineRights();
 
 		}
 

@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------
-// <copyright file="UserType.cs" company="Sphere 10 Software">
+// <copyright file="IUserInterfaceServices.cs" company="Sphere 10 Software">
 //
 // Copyright (c) Sphere 10 Software. All rights reserved. (http://www.sphere10.com)
 //
@@ -13,18 +13,25 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using System.Reflection;
-using System.Runtime.Serialization;
 
 namespace Sphere10.Framework.Application {
+	
+	
+	public interface IUserInterfaceServices  {
 
-    [Obfuscation(Exclude = true)]
-    public enum UserType {
-		System,
-        HomeUser,
-        SmallBusiness,
-        MediumBusiness,
-        Corporation
-    }
+		void Exit(bool force = false);
+
+		bool ApplicationExiting { get; set; }
+
+		string Status { get; set; }
+
+		void ExecuteInUIFriendlyContext(Action function, bool executeAsync = false);
+
+		void ShowNagScreen(bool modal = false, string nagMessage = null);
+
+		object PrimaryUIController { get; }
+
+	}
 }

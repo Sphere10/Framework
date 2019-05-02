@@ -11,7 +11,6 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-#if !__MOBILE__
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,25 +40,21 @@ namespace Sphere10.Framework.Application {
 		private IAutoRunServices AutoRunServices { get { return ComponentRegistry.Instance.Resolve<IAutoRunServices>(); } }
 
 
-		public event ConfigurationChangedEventHandler ConfigurationChanged {
+		public event EventHandler ConfigurationChanged {
 			add { ConfigurationServices.ConfigurationChanged += value; }
 			remove { ConfigurationServices.ConfigurationChanged -= value; }
 		}
 
-		public void FireConfigurationChangedEvent() {
-			ConfigurationServices.FireConfigurationChangedEvent();
+		public void NotifyConfigurationChangedEvent() {
+			ConfigurationServices.NotifyConfigurationChangedEvent();
 		}
 
-		public ISettingsServices UserSettings {
+		public ISettingsProvider UserSettings {
 			get { return ConfigurationServices.UserSettings; }
 		}
 
-		public ISettingsServices SystemSettings {
+		public ISettingsProvider SystemSettings {
 			get { return ConfigurationServices.SystemSettings; }
-		}
-
-		public ComponentSettings GetComponentSettings(Type componentSettingsType) {
-			return ConfigurationServices.GetComponentSettings(componentSettingsType);
 		}
 
 		public void RegisterLicenseKey(string key) {
@@ -208,5 +203,3 @@ namespace Sphere10.Framework.Application {
 	}
 }
 
-
-#endif

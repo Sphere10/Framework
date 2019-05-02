@@ -20,6 +20,7 @@ using Sphere10.Framework.Application;
 
 namespace Sphere10.Framework.Application {
     public interface IModuleConfiguration {
+		int Priority { get; }
         void RegisterComponents(ComponentRegistry registry);
         void OnApplicationStart();
         void OnApplicationEnd();

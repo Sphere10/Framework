@@ -94,7 +94,7 @@ namespace Sphere10.Framework.Application {
 
 		private void Apply() {
 			LicenseInformation = DetermineLicenseInformation();
-			ConfigurationServices.FireConfigurationChangedEvent();
+			ConfigurationServices.NotifyConfigurationChangedEvent();
 		}
 
 

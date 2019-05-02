@@ -17,14 +17,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Sphere10.Framework.Windows.Forms.Controls;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 using Sphere10.Framework.Windows;
 
 namespace Sphere10.Framework.Windows.Forms {
-    public class ModuleConfiguration : IModuleConfiguration {
-        public void RegisterComponents(ComponentRegistry registry) {
+    public class ModuleConfiguration : ModuleConfigurationBase {
+        public override void RegisterComponents(ComponentRegistry registry) {
 
             if (!registry.HasImplementationFor<IAboutBox>())
                 registry.RegisterComponent<IAboutBox, StandardAboutBox>();
@@ -61,33 +60,39 @@ namespace Sphere10.Framework.Windows.Forms {
             if (!registry.HasImplementationFor<IAutoRunServices>())
                 registry.RegisterComponent<IAutoRunServices, StartupFolderAutoRunServicesProvider>();
 
-            // This is the primary form of the application, so register it as a provider of the below services
-            if (!ControlStateManager.Instance.HasControlStateManger<ApplicationControl>())
-                registry.RegisterControlStateManager<ApplicationControl, CommonControlsControlStateChangeManager>();
+			// This is the primary form of the application, so register it as a provider of the below services
+			var hasAppControl = ControlStateManager.Instance.HasControlStateManger<ApplicationControl>();
+	        var hasNumUpDown = ControlStateManager.Instance.HasControlStateManger<NumericUpDown>();
+	        var hasTextBox = ControlStateManager.Instance.HasControlStateManger<TextBox>();
+	        var hasComboBox = ControlStateManager.Instance.HasControlStateManger<ComboBox>();
+	        var hasRadioButton = ControlStateManager.Instance.HasControlStateManger<RadioButton>();
+	        var hasCheckBox = ControlStateManager.Instance.HasControlStateManger<CheckBox>();
+	        var hasCheckedListBox = ControlStateManager.Instance.HasControlStateManger<CheckedListBox>();
+	        var hasDateTimePicker = ControlStateManager.Instance.HasControlStateManger<DateTimePicker>();
+			if (!hasAppControl)
+				registry.RegisterControlStateManager<ApplicationControl, DefaultControlStateChangeManager>();
 
-            if (!ControlStateManager.Instance.HasControlStateManger<NumericUpDown>())
-                registry.RegisterControlStateManager<NumericUpDown, CommonControlsControlStateChangeManager>();
+			if (!hasNumUpDown)
+				registry.RegisterControlStateManager<NumericUpDown, DefaultControlStateChangeManager>();
 
-            if (!ControlStateManager.Instance.HasControlStateManger<TextBox>())
-                registry.RegisterControlStateManager<TextBox, CommonControlsControlStateChangeManager>();
+			if (!hasTextBox)
+				registry.RegisterControlStateManager<TextBox, DefaultControlStateChangeManager>();
 
-            if (!ControlStateManager.Instance.HasControlStateManger<ComboBox>())
-                registry.RegisterControlStateManager<ComboBox, CommonControlsControlStateChangeManager>();
+			if (!hasComboBox)
+				registry.RegisterControlStateManager<ComboBox, DefaultControlStateChangeManager>();
 
-            if (!ControlStateManager.Instance.HasControlStateManger<RadioButton>())
-                registry.RegisterControlStateManager<RadioButton, CommonControlsControlStateChangeManager>();
+			if (!hasRadioButton)
+				registry.RegisterControlStateManager<RadioButton, DefaultControlStateChangeManager>();
 
-            if (!ControlStateManager.Instance.HasControlStateManger<CheckBox>())
-                registry.RegisterControlStateManager<CheckBox, CommonControlsControlStateChangeManager>();
+			if (!hasCheckBox)
+				registry.RegisterControlStateManager<CheckBox, DefaultControlStateChangeManager>();
 
-            if (!ControlStateManager.Instance.HasControlStateManger<CheckedListBox>())
-                registry.RegisterControlStateManager<CheckedListBox, CommonControlsControlStateChangeManager>();
+			if (!hasCheckedListBox)
+				registry.RegisterControlStateManager<CheckedListBox, DefaultControlStateChangeManager>();
 
-            if (!ControlStateManager.Instance.HasControlStateManger<DateTimePicker>())
-                registry.RegisterControlStateManager<DateTimePicker, CommonControlsControlStateChangeManager>();
-
-            if (!ControlStateManager.Instance.HasControlStateManger<ApplicationControl>())
-                registry.RegisterControlStateManager<ApplicationControl, CommonControlsControlStateChangeManager>();
+			if (!hasDateTimePicker)
+				registry.RegisterControlStateManager<DateTimePicker, DefaultControlStateChangeManager>();
+			
 
             // Initialize Tasks
             if (!registry.HasImplementation<SessionEndingHandlerTask>())
@@ -99,13 +104,6 @@ namespace Sphere10.Framework.Windows.Forms {
 
         }
 
-        public void OnApplicationStart() {
-
-        }
-
-        public void OnApplicationEnd() {
-
-        }
     }
 }
 

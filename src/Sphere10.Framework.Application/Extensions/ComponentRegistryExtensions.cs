@@ -64,15 +64,5 @@ namespace Sphere10.Framework.Application {
             );
         }
 
-#if !__MOBILE__
-
-		public static void RegisterComponentSettings<TComponentSettings>(this ComponentRegistry componentRegistry)
-            where TComponentSettings : ComponentSettings {
-            componentRegistry.RegisterComponent<ComponentSettings, TComponentSettings>(
-                typeof(TComponentSettings).FullName
-            );
-        }
-
-#endif
 	}
 }

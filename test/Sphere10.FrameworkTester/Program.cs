@@ -49,7 +49,7 @@ namespace Sphere10.FrameworkTester {
 			SystemLog.RegisterLogger(new ConsoleLogger());			
             ComponentRegistry.Instance.RegisterApplicationBlock<TestBlock>(1);
             ComponentRegistry.Instance.RegisterApplicationBlock<TestBlock2>(2);
-            ApplicationLifecycle.Instance.StartWinFormsApplication<MainForm>();
+            Sphere10Framework.Instance.StartWinFormsApplication<BlockMainForm>();
         }
     }
 }

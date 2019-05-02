@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------
-// <copyright file="ComponentSettingsScope.cs" company="Sphere 10 Software">
+// <copyright file="BaseConfigurationServices.cs" company="Sphere 10 Software">
 //
 // Copyright (c) Sphere 10 Software. All rights reserved. (http://www.sphere10.com)
 //
@@ -16,15 +16,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using System.Reflection;
-using System.ComponentModel;
+using System.IO;
+using Sphere10.Framework;
 
 namespace Sphere10.Framework.Application {
 
-    [Obfuscation(Exclude = true)]
-	public enum ComponentSettingsScope {
-		User,
-		Global
-	}
+	public abstract class BaseConfigurationServices : IConfigurationServices {
+		public event EventHandler ConfigurationChanged;
 
+		protected virtual void OnConfigurationChanged() {
+		}
+
+		public void NotifyConfigurationChangedEvent() {
+			OnConfigurationChanged();
+			ConfigurationChanged?.Invoke(this, EventArgs.Empty);
+		}
+
+		public abstract ISettingsProvider UserSettings { get; }
+
+		public abstract ISettingsProvider SystemSettings { get; }	
+	}
 }

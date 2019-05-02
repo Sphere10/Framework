@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------
-// <copyright file="ISettingsServices.cs" company="Sphere 10 Software">
+// <copyright file="IConfigurationServices.cs" company="Sphere 10 Software">
 //
 // Copyright (c) Sphere 10 Software. All rights reserved. (http://www.sphere10.com)
 //
@@ -11,21 +11,23 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-#if !__MOBILE__
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Sphere10.Framework.Application {
+	
+	public interface IConfigurationServices  {
 
-	public interface ISettingsServices : IDictionary<string, object> {
-		void Persist();
-		void Reload();
-		T GetComponentSettings<T>() where T : ComponentSettings, new();
+		event EventHandler ConfigurationChanged;
+
+		void NotifyConfigurationChangedEvent();
+
+		ISettingsProvider UserSettings { get; }
+
+		ISettingsProvider SystemSettings { get; }
+
 	}
-
 }
 
-#endif

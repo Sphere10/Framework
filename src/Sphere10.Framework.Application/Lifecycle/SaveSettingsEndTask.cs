@@ -34,8 +34,9 @@ namespace Sphere10.Framework.Application {
 		public Result End() {
 			Result result = Result.Default;
 			try {
-				ConfigurationServices.UserSettings.Persist();
-				ConfigurationServices.SystemSettings.Persist();
+				// TODO: add pattern for managing setting state
+				//ConfigurationServices.UserSettings.Persist();
+				//ConfigurationServices.SystemSettings.Persist();
 			} catch (Exception error) {
 				result.AddException(error);
 			}

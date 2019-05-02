@@ -16,7 +16,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Sphere10.Framework.Windows.Forms.Controls;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
@@ -47,9 +46,8 @@ namespace Sphere10.Framework.Windows.Forms {
         }
 
         public static void RegisterControlStateManager<TControl, TManager>(this ComponentRegistry componentRegistry) where TManager : class, IControlStateChangeManager {
-            var controlType = typeof(TControl);
+            var controlType = typeof(TControl);		 
             ComponentRegistry.Instance.RegisterComponent<IControlStateChangeManager, TManager>(controlType.FullName);
-            ControlStateManager.Instance.Refresh();
         }
     }
 }

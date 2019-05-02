@@ -18,7 +18,6 @@ using System.ComponentModel;
 
 using System.Windows.Forms;
 using System.Globalization;
-using Sphere10.Framework.Windows.Forms.Controls;
 using Sphere10.Framework;
 using Sphere10.Framework.Application;
 
@@ -46,11 +45,6 @@ namespace Sphere10.Framework.Windows.Forms {
 		[DefaultValue(false)]
 		public virtual bool AutoSaveSettingsOnStateChanged { get; set; }
 
-		[Category("Behavior")]
-		[DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-		[DefaultValue(false)]
-		public virtual bool AutoLocateSettings { get; set; }
-
 		[Browsable(false)]
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		protected IWinFormsApplicationServices ApplicationServices { get; private set; }
@@ -58,11 +52,6 @@ namespace Sphere10.Framework.Windows.Forms {
 		[Browsable(false)]
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public virtual bool Updating { get; set; }
-
-
-		[Browsable(false)]
-		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-		protected virtual ComponentSettings LocatedSettings { get; private set; }
 
 		[Browsable(false)]
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -74,14 +63,6 @@ namespace Sphere10.Framework.Windows.Forms {
 			if (!Tools.Runtime.IsDesignMode) {
 				using (this.EnterUpdateScope()) {
 					RegisterStateChangeListeners();
-					if (AutoLocateSettings) {
-						var useSettingsAttribute = this.GetType().GetCustomAttributesOfType<UseSettingsAttribute>().SingleOrDefault();
-						if (useSettingsAttribute == null) {
-							throw new SoftwareException(
-								"Unable to locate settings for component {0}. Disable the 'AutoLocateSettings' setting on the component or add a 'UseSettingsAttribute' attribute to class declaration.");
-						}
-						LocatedSettings = ApplicationServices.GetComponentSettings(useSettingsAttribute.SettingsTypeToUse);
-					}
 					PopulatePrimingData();
 					RefreshUserInterfaceWithDataSource();
 					SetLocalizedText();
@@ -118,9 +99,7 @@ namespace Sphere10.Framework.Windows.Forms {
 				}
 				if (saveToDataSource) {
 					SaveUserInputToDataSource();
-					if (AutoSaveSettingsOnStateChanged) {
-						LocatedSettings?.Save();
-					}
+
 				}
 			}
 		}
@@ -162,9 +141,5 @@ namespace Sphere10.Framework.Windows.Forms {
 		}
 
 		#endregion
-
-
-
 	}
-
 }

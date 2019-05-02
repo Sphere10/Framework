@@ -107,7 +107,7 @@ Some settings need to be stored in a safe way that the user (or malware) cannot 
 		public string ProductKey { get; set; }
 	}
 
-	The default encryption uses a reversable Hash algorithm, but you can change it with your own
+	The default encryption uses a reversable encryption algorithm, but you can change it with your own
 	
 	GlobalSettings.SetEncryptionProvider(new MyEncryptionProvider());
 

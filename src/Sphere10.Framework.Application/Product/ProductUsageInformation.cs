@@ -20,7 +20,6 @@ using System.Text;
 
 namespace Sphere10.Framework.Application {
 
-    [Obfuscation(Exclude = true)]
 	public class ProductUsageInformation {
 
 		public DateTime FirstUsedDateBySystemUTC { get; set; }

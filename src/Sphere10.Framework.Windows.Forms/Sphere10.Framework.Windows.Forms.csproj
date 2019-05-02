@@ -108,7 +108,7 @@
     <Compile Include="Components\BlockFramework\ScreenDisplayMode.cs" />
     <Compile Include="Components\BlockFramework\ScreenMenuItem.cs" />
     <Compile Include="Components\CHMHelpProvider.cs" />
-    <Compile Include="Components\CommonControlStateChangeManager.cs" />
+    <Compile Include="Components\DefaultControlStateChangeManager.cs" />
     <Compile Include="Components\FormApplicationIconProvider.cs" />
     <Compile Include="Components\FormApplicationIconProvider.Designer.cs">
       <DependentUpon>FormApplicationIconProvider.cs</DependentUpon>
@@ -334,7 +334,7 @@
       <DependentUpon>DatabaseConnectionBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\DatabaseControls\IDatabaseConnectionProvider.cs" />
-    <Compile Include="Extensions\ApplicationLifecycleExtensions.cs" />
+    <Compile Include="Extensions\Sphere10FrameworkExtensions.cs" />
     <Compile Include="Extensions\ComponentRegistryExtensions.cs" />
     <Compile Include="Extensions\LabelExtensions.cs" />
     <Compile Include="Extensions\NumericUpDownExtensions.cs" />
